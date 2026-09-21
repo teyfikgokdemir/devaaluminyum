@@ -43,17 +43,28 @@ def indexes():
     return r.json()
 
 def query_index(api):
-    params={"url":DOMAIN+"/*","output":"json","filter":"status:200"}
-    r=S.get(api,params=params,timeout=TIMEOUT)
-    if r.status_code==404: return []
-    r.raise_for_status()
-    out=[]
-    for line in r.text.splitlines():
-        line=line.strip()
-        if not line: continue
-        try: out.append(json.loads(line))
-        except: pass
-    return out
+    params={"url":DOMAIN,"matchType":"domain","output":"json","filter":"status:200"}
+    last=None
+    for attempt in range(4):
+        try:
+            r=S.get(api,params=params,timeout=TIMEOUT)
+            if r.status_code==404: return []
+            if r.status_code in (429,500,502,503,504):
+                last=RuntimeError("HTTP "+str(r.status_code))
+                time.sleep(1.2*(attempt+1))
+                continue
+            r.raise_for_status()
+            out=[]
+            for line in r.text.splitlines():
+                line=line.strip()
+                if not line: continue
+                try: out.append(json.loads(line))
+                except: pass
+            return out
+        except Exception as e:
+            last=e
+            time.sleep(1.0*(attempt+1))
+    raise last or RuntimeError("query failed")
 
 def recover(entry, used):
     length=int(entry.get("length") or 0)
@@ -77,20 +88,61 @@ def recover(entry, used):
 idx=indexes()
 all_entries={}
 index_hits=[]
-for i,item in enumerate(idx[:8]):
+
+# Phase 1: probe up to two crawl indexes per year to locate the site's active years.
+year_groups={}
+for item in idx:
+    m=re.search(r"CC-MAIN-(\\d{4})-", item.get("id",""))
+    if not m: continue
+    year_groups.setdefault(m.group(1),[]).append(item)
+
+probe=[]
+for year in sorted(year_groups.keys(), reverse=True):
+    probe.extend(year_groups[year][:2])
+
+hit_years=set()
+seen_ids=set()
+for item in probe:
     api=item.get("cdx-api")
     if not api: continue
+    seen_ids.add(item.get("id",""))
     try:
         rows=query_index(api)
-        index_hits.append({"index":item.get("id",""),"count":len(rows)})
-        print(item.get("id"),len(rows))
+        index_hits.append({"index":item.get("id",""),"count":len(rows),"phase":"probe"})
+        print("PROBE",item.get("id"),len(rows))
+        if rows:
+            m=re.search(r"CC-MAIN-(\\d{4})-",item.get("id",""))
+            if m: hit_years.add(m.group(1))
         for x in rows:
             key=(x.get("url"),x.get("digest"))
-            if key not in all_entries:
-                all_entries[key]=x
+            if key not in all_entries: all_entries[key]=x
     except Exception as e:
-        index_hits.append({"index":item.get("id",""),"count":-1,"error":type(e).__name__})
-    time.sleep(.06)
+        index_hits.append({"index":item.get("id",""),"count":-1,"phase":"probe","error":type(e).__name__})
+    time.sleep(.25)
+
+# Phase 2: fully scan only years where probes found captures, plus adjacent years.
+expand_years=set(hit_years)
+for y in list(hit_years):
+    try:
+        expand_years.add(str(int(y)-1))
+        expand_years.add(str(int(y)+1))
+    except: pass
+
+for year in sorted(expand_years, reverse=True):
+    for item in year_groups.get(year,[]):
+        if item.get("id","") in seen_ids: continue
+        api=item.get("cdx-api")
+        if not api: continue
+        try:
+            rows=query_index(api)
+            index_hits.append({"index":item.get("id",""),"count":len(rows),"phase":"deep"})
+            print("DEEP",item.get("id"),len(rows))
+            for x in rows:
+                key=(x.get("url"),x.get("digest"))
+                if key not in all_entries: all_entries[key]=x
+        except Exception as e:
+            index_hits.append({"index":item.get("id",""),"count":-1,"phase":"deep","error":type(e).__name__})
+        time.sleep(.3)
 
 entries=list(all_entries.values())
 entries.sort(key=lambda x:(x.get("url",""),x.get("timestamp","")))
