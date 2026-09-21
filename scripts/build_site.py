@@ -165,23 +165,7 @@ def shell(title,desc,path,body,service=None,article=None):
   <span>Bu site deneyimi iyileştirmek ve temel analizler için çerezleri kullanabilir.</span>
   <button type="button" id="cookie-ok">Tamam</button>
 </div>
-<script>
-(function(){
-  const banner=document.getElementById('cookie-banner');
-  const ok=document.getElementById('cookie-ok');
-  if(localStorage.getItem('deva_cookie_ok')==='1'){ if(banner) banner.remove(); }
-  if(ok) ok.addEventListener('click',function(){ localStorage.setItem('deva_cookie_ok','1'); if(banner) banner.remove(); });
-  const items=document.querySelectorAll('.card,.gallery a,.section-head,.meta-strip,.article-section');
-  if('IntersectionObserver' in window){
-    const io=new IntersectionObserver(function(entries){
-      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); }});
-    },{threshold:.12});
-    items.forEach(function(el){ el.classList.add('reveal'); io.observe(el); });
-  } else {
-    items.forEach(function(el){ el.classList.add('is-visible'); });
-  }
-})();
-</script>
+<script src="/assets/site.js" defer></script>
 </body></html>"""
 
 def write_route(path,content):
