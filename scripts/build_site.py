@@ -139,7 +139,19 @@ def build():
     DIST.mkdir()
     shutil.copytree(SITE/"assets",DIST/"assets")
     recovered=ROOT/"archive"/"known-assets"
-    if recovered.exists(): shutil.copytree(recovered,DIST/"assets"/"recovered",dirs_exist_ok=True)
+    recovered_out=DIST/"assets"/"recovered"
+    (recovered_out/"Tema").mkdir(parents=True,exist_ok=True)
+    (recovered_out/"resimler").mkdir(parents=True,exist_ok=True)
+    logo_src=recovered/"Tema"/"logo.png"
+    if logo_src.exists():
+      shutil.copy2(logo_src,recovered_out/"Tema"/"logo.png")
+    # Production'a yalnızca yüksek değerli medya alınır: 5 adet 1920x1080 hero + 23 tam boy referans.
+    for name in [hero]+refs:
+      src=recovered/"resimler"/name
+      if src.exists():
+        shutil.copy2(src,recovered_out/"resimler"/name)
+    for src in sorted((recovered/"resimler").glob("aaaaaa*.jpg")) if (recovered/"resimler").exists() else []:
+      shutil.copy2(src,recovered_out/"resimler"/src.name)
 
     body=f"""
 <main>
