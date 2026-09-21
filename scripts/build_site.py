@@ -293,7 +293,17 @@ def build():
     refs_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Referanslar</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Seçili çalışmalar</div><h1>Referans uygulamalarımız</h1><p class="lead">Deva Alüminyum’un farklı uygulama alanlarından seçili proje ve uygulama görselleri.</p></div></section><section class="section"><div class="wrap"><div class="gallery">{gallery}</div></div></section></main>"""
     write_route("referanslar",shell("Referanslar | Deva Alüminyum","Deva Alüminyum’un seçili uygulama ve referans projeleri.","/referanslar/",refs_body))
 
-    contact_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / İletişim</div><section class="page-hero"><div class="wrap"><div class="eyebrow">İletişim</div><h1>Projenizi konuşalım.</h1></div></section><section class="section"><div class="wrap contact-box"><div class="contact-panel"><h2>Deva Alüminyum</h2><p class="lead">Kayseri</p><p><strong>Telefon</strong><br><a href="tel:{PHONE}">{DISPLAY_PHONE}</a></p><p><strong>WhatsApp</strong><br><a href="https://wa.me/905333820705">Mesaj gönder</a></p><p><strong>E-posta</strong><br><a href="mailto:{EMAIL}">{EMAIL}</a></p><p><strong>Adres</strong><br>{ADDRESS}</p><p class="small">Telefon, e-posta ve adres bilgilerimiz üzerinden doğrudan iletişime geçebilirsiniz.</p></div><div class="contact-panel contact-services"><div class="contact-services-head"><div><div class="eyebrow">Hizmetler</div><h3>Uygulama alanlarımız</h3></div><p>Yapınıza uygun alüminyum ve cephe çözümlerini tek noktadan planlıyoruz.</p></div><div class="contact-service-grid">
+    contact_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / İletişim</div><section class="page-hero"><div class="wrap"><div class="eyebrow">İletişim</div><h1>Projenizi konuşalım.</h1></div></section><section class="section"><div class="wrap contact-box"><div class="contact-panel"><h2>Deva Alüminyum</h2><p class="lead">Kayseri</p><p><strong>Telefon</strong><br><a href="tel:{PHONE}">{DISPLAY_PHONE}</a></p><p><strong>WhatsApp</strong><br><a href="https://wa.me/905333820705">Mesaj gönder</a></p><p><strong>E-posta</strong><br><a href="mailto:{EMAIL}">{EMAIL}</a></p><p><strong>Adres</strong><br>{ADDRESS}</p><p class="small">Telefon, e-posta ve adres bilgilerimiz üzerinden doğrudan iletişime geçebilirsiniz.</p>
+<div class="contact-map">
+  <iframe
+    title="Deva Alüminyum konum haritası"
+    src="https://www.google.com/maps?q=Eski%20Sanayi%20Mahallesi%206025.%20Sokak%20No%3A%205%2FB%20Kocasinan%20Kayseri&output=embed"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen>
+  </iframe>
+</div>
+</div><div class="contact-panel contact-services"><div class="contact-services-head"><div><div class="eyebrow">Hizmetler</div><h3>Uygulama alanlarımız</h3></div><p>Yapınıza uygun alüminyum ve cephe çözümlerini tek noktadan planlıyoruz.</p></div><div class="contact-service-grid">
 <a href="/aluminyum-kompozit-kaplama/"><span>Kompozit cephe kaplama</span><b>↗</b></a>
 <a href="/aluminyum-dograma/"><span>Alüminyum doğrama</span><b>↗</b></a>
 <a href="/silikon-cephe-kaplama/"><span>Silikon cephe</span><b>↗</b></a>
