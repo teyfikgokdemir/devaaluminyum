@@ -100,6 +100,8 @@ def shell(title,desc,path,body,service=None):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0d0f10">
+<meta property="og:locale" content="tr_TR">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{esc(canonical)}">
@@ -109,10 +111,12 @@ def shell(title,desc,path,body,service=None):
 <meta property="og:url" content="{esc(canonical)}">
 <meta property="og:image" content="{DOMAIN}/assets/recovered/resimler/{hero}">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/assets/recovered/Tema/logo.png">
 <link rel="stylesheet" href="/assets/styles.css">
 {schema(title,canonical,service)}
 </head>
 <body>
+<a class="skip-link" href="#main-content">İçeriğe geç</a>
 <header class="header"><div class="wrap nav">
 <a class="brand" href="/"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum logo"><span>DEVA ALÜMİNYUM</span></a>
 <nav class="menu"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a></nav>
@@ -154,7 +158,7 @@ def build():
       shutil.copy2(src,recovered_out/"resimler"/src.name)
 
     body=f"""
-<main>
+<main id="main-content">
 <section class="hero"><div class="hero-media"><img src="/assets/recovered/resimler/{hero}" alt="Deva Alüminyum cephe uygulaması"></div>
 <div class="wrap hero-copy"><div class="eyebrow">Kayseri · Alüminyum & Cephe Sistemleri</div>
 <h1>Yapının çizgisini alüminyumla tamamlıyoruz.</h1>
@@ -170,21 +174,21 @@ def build():
 </main>"""
     (DIST/"index.html").write_text(shell("Deva Alüminyum | Kayseri Alüminyum ve Cephe Sistemleri","Kayseri’de kompozit cephe, alüminyum doğrama, korkuluk, cam balkon, ofis bölme ve fotoselli kapı uygulamaları.","/",body),encoding="utf-8")
 
-    services_body=f"""<main><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Hizmetler</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Hizmetler</div><h1>Alüminyum ve cephe uygulamaları</h1><p class="lead">Eski Deva Alüminyum sitesindeki doğrulanmış hizmet alanlarının tamamı.</p></div></section><section class="section"><div class="wrap"><div class="grid">{service_cards()}</div></div></section></main>"""
+    services_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Hizmetler</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Hizmetler</div><h1>Alüminyum ve cephe uygulamaları</h1><p class="lead">Eski Deva Alüminyum sitesindeki doğrulanmış hizmet alanlarının tamamı.</p></div></section><section class="section"><div class="wrap"><div class="grid">{service_cards()}</div></div></section></main>"""
     write_route("hizmetler",shell("Hizmetler | Deva Alüminyum","Deva Alüminyum’un Kayseri’de sunduğu alüminyum ve cephe uygulamaları.","/hizmetler/",services_body))
 
-    about_body="""<main><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Hakkımızda</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Deva Alüminyum</div><h1>Kayseri’de alüminyum ve cephe sistemleri.</h1></div></section><section class="section"><div class="wrap prose"><p>Deva Alüminyum Kompozit Cephe Sistemleri; alüminyum kompozit kaplama, bina giriş kompozit kaplama, alüminyum doğrama, silikon cephe, korkuluk sistemleri, bina giriş kapıları, ofis bölmeleri, fotoselli otomatik kapılar ve cam balkon uygulamalarıyla hizmet verir.</p><p>Eski kurumsal sitede müşteri memnuniyeti, dürüstlük, kalite ve sürekli gelişim temel çalışma ilkeleri olarak tanımlanmıştır. Yeni web sitesi bu kurumsal geçmişi korurken teknik yapıyı, içerik kalitesini ve erişilebilirliği günceller.</p></div></section></main>"""
+    about_body="""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Hakkımızda</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Deva Alüminyum</div><h1>Kayseri’de alüminyum ve cephe sistemleri.</h1></div></section><section class="section"><div class="wrap prose"><p>Deva Alüminyum Kompozit Cephe Sistemleri; alüminyum kompozit kaplama, bina giriş kompozit kaplama, alüminyum doğrama, silikon cephe, korkuluk sistemleri, bina giriş kapıları, ofis bölmeleri, fotoselli otomatik kapılar ve cam balkon uygulamalarıyla hizmet verir.</p><p>Eski kurumsal sitede müşteri memnuniyeti, dürüstlük, kalite ve sürekli gelişim temel çalışma ilkeleri olarak tanımlanmıştır. Yeni web sitesi bu kurumsal geçmişi korurken teknik yapıyı, içerik kalitesini ve erişilebilirliği günceller.</p></div></section></main>"""
     write_route("hakkimizda",shell("Hakkımızda | Deva Alüminyum","Deva Alüminyum’un Kayseri’deki alüminyum ve cephe sistemleri faaliyetleri hakkında.","/hakkimizda/",about_body))
 
     gallery=''.join(f'<a href="/assets/recovered/resimler/{x}" target="_blank"><img loading="lazy" src="/assets/recovered/resimler/{x}" alt="Deva Alüminyum referans uygulaması {i:02d}"></a>' for i,x in enumerate(refs,1))
-    refs_body=f"""<main><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Referanslar</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Arşivden kurtarıldı</div><h1>Referans uygulamalarımız</h1><p class="lead">Eski Deva Alüminyum Referanslarımız sayfasından kurtarılan 23 tam boy çalışma fotoğrafı.</p></div></section><section class="section"><div class="wrap"><div class="gallery">{gallery}</div></div></section></main>"""
+    refs_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Referanslar</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Arşivden kurtarıldı</div><h1>Referans uygulamalarımız</h1><p class="lead">Eski Deva Alüminyum Referanslarımız sayfasından kurtarılan 23 tam boy çalışma fotoğrafı.</p></div></section><section class="section"><div class="wrap"><div class="gallery">{gallery}</div></div></section></main>"""
     write_route("referanslar",shell("Referanslar | Deva Alüminyum","Deva Alüminyum’un eski sitesinden kurtarılan gerçek uygulama ve referans fotoğrafları.","/referanslar/",refs_body))
 
-    contact_body=f"""<main><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / İletişim</div><section class="page-hero"><div class="wrap"><div class="eyebrow">İletişim</div><h1>Projenizi konuşalım.</h1></div></section><section class="section"><div class="wrap contact-box"><div class="contact-panel"><h2>Deva Alüminyum</h2><p class="lead">Kayseri</p><p><strong>Telefon</strong><br><a href="tel:{PHONE}">{DISPLAY_PHONE}</a></p><p><strong>WhatsApp</strong><br><a href="https://wa.me/905333820705">Mesaj gönder</a></p><p><strong>E-posta</strong><br><a href="mailto:{EMAIL}">{EMAIL}</a></p><p><strong>Adres</strong><br>{ADDRESS}</p><p class="small">Bu iletişim bilgileri 11 Temmuz 2025 arşivinde doğrulandı; final yayından önce güncelliği tekrar teyit edilecektir.</p></div><div class="contact-panel"><h3>Hizmet alanları</h3><p>Kompozit cephe, alüminyum doğrama, silikon cephe, korkuluk sistemleri, bina giriş kapıları, ofis bölmeleri, fotoselli kapılar ve cam balkon.</p><p class="small">Sokak adresi, yayın öncesi güncel işletme kaydıyla son kez doğrulanacaktır.</p></div></div></section></main>"""
+    contact_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / İletişim</div><section class="page-hero"><div class="wrap"><div class="eyebrow">İletişim</div><h1>Projenizi konuşalım.</h1></div></section><section class="section"><div class="wrap contact-box"><div class="contact-panel"><h2>Deva Alüminyum</h2><p class="lead">Kayseri</p><p><strong>Telefon</strong><br><a href="tel:{PHONE}">{DISPLAY_PHONE}</a></p><p><strong>WhatsApp</strong><br><a href="https://wa.me/905333820705">Mesaj gönder</a></p><p><strong>E-posta</strong><br><a href="mailto:{EMAIL}">{EMAIL}</a></p><p><strong>Adres</strong><br>{ADDRESS}</p><p class="small">Bu iletişim bilgileri 11 Temmuz 2025 arşivinde doğrulandı; final yayından önce güncelliği tekrar teyit edilecektir.</p></div><div class="contact-panel"><h3>Hizmet alanları</h3><p>Kompozit cephe, alüminyum doğrama, silikon cephe, korkuluk sistemleri, bina giriş kapıları, ofis bölmeleri, fotoselli kapılar ve cam balkon.</p><p class="small">Sokak adresi, yayın öncesi güncel işletme kaydıyla son kez doğrulanacaktır.</p></div></div></section></main>"""
     write_route("iletisim",shell("İletişim | Deva Alüminyum","Deva Alüminyum Kayseri telefon ve WhatsApp iletişim bilgileri.","/iletisim/",contact_body))
 
     for slug,name,desc,_id in services:
-      body=f"""<main><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / <a href="/hizmetler/">Hizmetler</a> / {esc(name)}</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Kayseri · Deva Alüminyum</div><h1>{esc(name)}</h1><p class="lead">{esc(desc)}</p><div class="actions"><a class="btn primary" href="https://wa.me/905333820705">Teklif ve bilgi alın</a><a class="btn" href="/referanslar/">Referansları görün</a></div></div></section><section class="section"><div class="wrap prose"><h2>Uygulama hakkında</h2><p>{esc(desc)} Uygulama öncesinde ölçü, kullanım amacı, mevcut yapı ve mimari detaylar değerlendirilir. Malzeme ve montaj yaklaşımı proje koşullarına göre belirlenir.</p><h2>Planlama süreci</h2><p>Keşif ve ölçülendirme sonrasında uygulama alanına uygun detaylar netleştirilir. Amaç; estetik görünüm, kullanım güvenliği, bakım kolaylığı ve yapıyla uyum arasında dengeli bir çözüm oluşturmaktır.</p><h2>Teklif için gerekenler</h2><p>Uygulama yapılacak alanın fotoğrafları, yaklaşık ölçüleri ve varsa proje çizimleri ilk değerlendirme için paylaşılabilir. Nihai ölçüler uygulama öncesinde teyit edilir.</p><p class="small">Bu hizmet, Deva Alüminyum’un eski kurumsal sitesinde ayrı bir hizmet sayfası olarak yer almaktaydı; yeni sürümde eski anahtar kelime tekrarları temizlenerek hizmet ilişkisi korunmuştur.</p></div></section></main>"""
+      body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / <a href="/hizmetler/">Hizmetler</a> / {esc(name)}</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Kayseri · Deva Alüminyum</div><h1>{esc(name)}</h1><p class="lead">{esc(desc)}</p><div class="actions"><a class="btn primary" href="https://wa.me/905333820705">Teklif ve bilgi alın</a><a class="btn" href="/referanslar/">Referansları görün</a></div></div></section><section class="section"><div class="wrap prose"><h2>Uygulama hakkında</h2><p>{esc(desc)} Uygulama öncesinde ölçü, kullanım amacı, mevcut yapı ve mimari detaylar değerlendirilir. Malzeme ve montaj yaklaşımı proje koşullarına göre belirlenir.</p><h2>Planlama süreci</h2><p>Keşif ve ölçülendirme sonrasında uygulama alanına uygun detaylar netleştirilir. Amaç; estetik görünüm, kullanım güvenliği, bakım kolaylığı ve yapıyla uyum arasında dengeli bir çözüm oluşturmaktır.</p><h2>Teklif için gerekenler</h2><p>Uygulama yapılacak alanın fotoğrafları, yaklaşık ölçüleri ve varsa proje çizimleri ilk değerlendirme için paylaşılabilir. Nihai ölçüler uygulama öncesinde teyit edilir.</p><p class="small">Bu hizmet, Deva Alüminyum’un eski kurumsal sitesinde ayrı bir hizmet sayfası olarak yer almaktaydı; yeni sürümde eski anahtar kelime tekrarları temizlenerek hizmet ilişkisi korunmuştur.</p></div></section></main>"""
       write_route(slug,shell(f"{name} | Deva Alüminyum Kayseri",desc,f"/{slug}/",body,name))
 
     redirects=[
@@ -213,7 +217,7 @@ def build():
     sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{DOMAIN}{u}</loc></url>\n' for u in urls)+'</urlset>\n'
     (DIST/"sitemap.xml").write_text(sitemap,encoding="utf-8")
     (DIST/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n",encoding="utf-8")
-    (DIST/"404.html").write_text(shell("Sayfa bulunamadı | Deva Alüminyum","Aradığınız sayfa bulunamadı.","/404",'<main><section class="page-hero"><div class="wrap"><h1>Sayfa bulunamadı</h1><p class="lead"><a href="/">Anasayfaya dönün</a></p></div></section></main>'),encoding="utf-8")
+    (DIST/"404.html").write_text(shell("Sayfa bulunamadı | Deva Alüminyum","Aradığınız sayfa bulunamadı.","/404",'<main id="main-content"><section class="page-hero"><div class="wrap"><h1>Sayfa bulunamadı</h1><p class="lead"><a href="/">Anasayfaya dönün</a></p></div></section></main>'),encoding="utf-8")
 
 if __name__=="__main__":
     build()
