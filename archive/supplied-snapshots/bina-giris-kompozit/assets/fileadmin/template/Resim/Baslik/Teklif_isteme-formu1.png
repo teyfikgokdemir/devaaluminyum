@@ -1,0 +1,3471 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+<meta charset="utf-8">
+<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2024 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+
+<link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+<title>Sayfa Bulunamadı</title>
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+<meta name="generator" content="TYPO3 CMS" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="keywords" content="Sayfa bulunamadı, 404" />
+<meta name="author" content="Elementel Analitik ve Bio Teknolojik Sistemler San. ve Tic. Ltd. Şti." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:locale" content="tr_TR" />
+<meta property="og:locale:alternate" content="en_EN" />
+<meta property="og:site_name" content="Elementel" />
+<meta name="twitter:card" content="summary" />
+<meta name="copyright" content="Elementel copyright©. All rights reserved." />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<link rel="stylesheet" href="/fileadmin/template/Css/mainstyles.min.css?1710422345" media="all">
+<link rel="stylesheet" href="/fileadmin/template/Css/orstyles.min.css?1694042839" media="all">
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5D4ZZGXGB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K5D4ZZGXGB');
+</script>
+
+<script defer src="/typo3conf/ext/aimeos/Resources/Public/Themes/default/catalog-filter.js?v=1"></script>
+
+<script defer src="/typo3conf/ext/aimeos/Resources/Public/Themes/default/locale-select.js?v=1"></script>
+
+<script defer src="/typo3conf/ext/aimeos/Resources/Public/Themes/default/basket-mini.js?v=1"></script>
+
+
+
+</head>
+<body data-container="body" id="sayfa-92" class="sayfa-92 dil-tr t10-04">
+<div class="page-wrapper"><div class="header"><div class="header-content"><div class="header-content-top"><div class="header-border-top"><div class="logo"><a href="/" class="logo-elementel"><img loading="lazy" width="218" height="44" src="/fileadmin/template/Resim/logo-normal.svg" alt="Elementel"></a></div><div class="section aimeos catalog-filter" data-jsonurl="https://www.elementel.com/ueruenler-ve-hizmetler/jsonapi?type=191351524">
+
+<nav class="container-xxl">
+<form method="GET" action="/ueruenler-ve-hizmetler?ai%5Baction%5D=lists&ai%5Bcontroller%5D=Catalog">
+
+
+<div class="section catalog-filter-search" aria-label="Ürün arama">
+
+<div class="header-name">Ürün adı, stok kodu arayın...</div>
+<div class="search-lists">
+<div class="input-group">
+<input class="form-control value" autocomplete="off"
+name="ai[f_search]"
+title="Ürün adı, stok kodu arayın..."
+placeholder="Ürün adı, stok kodu arayın..."
+value=""
+data-url="/ueruenler-ve-hizmetler/arama-sonuclari?ai%5Baction%5D=suggest&ai%5Bcontroller%5D=Catalog&ai%5Bf_search%5D=_term_&type=191351524"
+data-hint="Lütfen en az üç karakter girin"
+><!--
+--><button class="btn reset" type="reset" title="Sıfırla"><span class="symbol"></span></button><!--
+--><button class="btn btn-search" type="submit" title="Ürün adı, stok kodu arayın..."></button>
+</div>
+</div>
+</div>
+
+</form>
+</nav>
+
+</div>
+<div class="user-nav"><div class="usernav-list"><ul class="user-nav-container"><li class="para-birimi-cubugu"><div class="section aimeos locale-select" data-jsonurl="https://www.elementel.com/ueruenler-ve-hizmetler/jsonapi?type=191351524">
+
+<div class="locale-select-currency">
+<h2 class="header">Para birimi seç</h2>
+
+<ul class="select-menu">
+<li class="select-dropdown select-current"><a href="#">TRY</a>
+<ul class="select-dropdown">
+
+<li class="select-item active">
+<a href="/sayfa-bulunamadi/l?ai%5Bcurrency%5D=TRY&ai%5Blocale%5D=tr">
+₺</a>
+</li>
+<li class="select-item ">
+<a href="/sayfa-bulunamadi/l?ai%5Bcurrency%5D=EUR&ai%5Blocale%5D=tr">
+€</a>
+</li>
+<li class="select-item ">
+<a href="/sayfa-bulunamadi/l?ai%5Bcurrency%5D=USD&ai%5Blocale%5D=tr">
+US$</a>
+</li>
+<li class="select-item ">
+<a href="/sayfa-bulunamadi/l?ai%5Bcurrency%5D=GBP&ai%5Blocale%5D=tr">
+£</a>
+</li>
+<li class="select-item ">
+<a href="/sayfa-bulunamadi/l?ai%5Bcurrency%5D=CHF&ai%5Blocale%5D=tr">
+Fr</a>
+</li>
+
+</ul>
+</li>
+</ul>
+
+</div>
+
+</div>
+</li><li class="dil-cubugu"><div class="section aimeos locale-select"><div class="locale-select-language"><ul class="select-menu"><li class="select-dropdown select-current"><a href="#">TR</a><ul class="select-dropdown"><li class="select-item active"><a href="/sayfa-bulunamadi" hreflang="tr-TR">Türkçe</a></li><li class="select-item"><a href="/en/page-not-found" hreflang="en-EN">English</a></li></ul></li></ul></div></div></li><li class="help-icon"><a href="/haber-makale/sikca-sorulan-sorular" class="SSS-elementel"><img loading="lazy" width="35" height="36" src="/fileadmin/template/Resim/help-icon.svg" alt="Elementel"/></a></li><li class="profil-butonu" style="position: relative"><a href="/hesabiniz"><img loading="lazy" width="35" height="36" src="/fileadmin/template/Resim/profile-icon.svg" alt="Profil"/></a><ul class="profil-kapsayici"><div class="mini-oturum-kapsayici"><div class="poligon"></div><div class="mini-oturum-icerik-kapsayici"><div class="mini-oturum-metin"><h4 style="margin: 0px;">Hoşgeldin Sevgili&nbsp;Ziyaretçimiz!</h4></div><div class="mini-oturum-ana"><div class="mini-oturum-formu">
+    
+
+            <div id="c3" class="frame frame-default frame-type-felogin_login frame-layout-0">
+                
+                
+                    
+
+
+
+                
+                
+                    
+
+    
+
+
+
+                
+                
+
+    
+    
+
+
+
+
+    <h3>
+        
+Oturum Aç
+
+
+    </h3>
+    <p>
+        
+Giriş için kullanıcı adınızı veya e-posta adresinizi ve şifrenizi girin.
+
+
+    </p>
+
+
+<form spellcheck="false" method="post" target="_top" action="/sayfa-bulunamadi?tx_felogin_login%5Baction%5D=login&amp;tx_felogin_login%5Bcontroller%5D=Login&amp;cHash=9b5eff6de30a4ab9c671296bfe54834f">
+<div>
+<input type="hidden" name="__referrer[@extension]" value="Felogin" />
+<input type="hidden" name="__referrer[@controller]" value="Login" />
+<input type="hidden" name="__referrer[@action]" value="login" />
+<input type="hidden" name="__referrer[arguments]" value="YTowOnt95fcabcd928be737f1ee8dc5442edab9dd22e6f95" />
+<input type="hidden" name="__referrer[@request]" value="{&quot;@extension&quot;:&quot;Felogin&quot;,&quot;@controller&quot;:&quot;Login&quot;,&quot;@action&quot;:&quot;login&quot;}94c32da4f4701f912dfb6292fa74bf296f095135" />
+<input type="hidden" name="__RequestToken" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6IntcInR5cGVcIjpcIm5vbmNlXCIsXCJuYW1lXCI6XCJZeWZtLTU5Q25UdUY2eU1fdHYyMWpnXCJ9In0.eyJzY29wZSI6ImNvcmUvdXNlci1hdXRoL2ZlIiwidGltZSI6IjIwMjQtMDQtMTBUMDI6MDM6MjIrMDM6MDAiLCJwYXJhbXMiOnsicGlkIjoiNzMiLCJyZXF1ZXN0Ijp7InVyaSI6Ii9zYXlmYS1idWx1bmFtYWRpP3R4X2ZlbG9naW5fbG9naW4lNUJhY3Rpb24lNUQ9bG9naW4mYW1wO3R4X2ZlbG9naW5fbG9naW4lNUJjb250cm9sbGVyJTVEPUxvZ2luJmFtcDtjSGFzaD05YjVlZmY2ZGUzMGE0YWI5YzY3MTI5NmJmZTU0ODM0ZiJ9fX0.h0_l5BE4xVSLsBeExTbTQcEFQ2_7zV4r4m3iV-oTN2g"/><input type="hidden" name="__trustedProperties" value="{&quot;user&quot;:1,&quot;pass&quot;:1,&quot;permalogin&quot;:1,&quot;submit&quot;:1,&quot;logintype&quot;:1,&quot;noredirect&quot;:1}bc46c87737da553ae931215e8b295abe5d2cad4c" />
+</div>
+
+    
+    <fieldset>
+        <legend>
+            Oturum Aç
+        </legend>
+        <div>
+            <label for="tx-felogin-input-username">
+                E-Posta veya Kullanıcı Adı
+                <input autocomplete="username" id="tx-felogin-input-username" type="text" name="user" required="required" />
+            </label>
+        </div>
+        <div>
+            <label for="tx-felogin-input-password">
+                Şifre
+                <input required="required" autocomplete="current-password" id="tx-felogin-input-password" type="password" name="pass" value="" />
+            </label>
+        </div>
+
+        
+            <div>
+                <label for="permalogin">
+                    Oturumu Açık Tut
+                    
+                            <input disabled="disabled" type="hidden" name="permalogin" value="0" />
+                            <input type="hidden" name="permalogin" value="" /><input id="permalogin" type="checkbox" name="permalogin" value="1" checked="checked" />
+                        
+                </label>
+            </div>
+        
+
+        <div>
+            <input type="submit" value="Oturum Aç" name="submit" />
+        </div>
+
+        <div class="felogin-hidden">
+            <input type="hidden" name="logintype" value="login" />
+            
+            
+            
+            
+                <input type="hidden" name="noredirect" value="1" />
+            
+        </div>
+    </fieldset>
+
+</form>
+
+
+    <a href="/sayfa-bulunamadi?tx_felogin_login%5Baction%5D=recovery&amp;tx_felogin_login%5Bcontroller%5D=PasswordRecovery&amp;cHash=4d270bb663d2ee40376f91991db7831f">
+        
+Şifrenizi mi Unuttunuz?
+
+
+    </a>
+
+
+
+
+
+
+
+                
+                    
+
+
+
+                
+                
+                    
+
+
+
+                
+            </div>
+
+        
+
+</div><div class="oturum-diger-menu"><a href="/hesabiniz?tx_felogin_login%5Baction%5D=recovery&amp;tx_felogin_login%5Bcontroller%5D=PasswordRecovery&amp;cHash=33e51d683ec0472218527025cc52e6a9" class="oturum-sifremi-unuttum" style="margin: 0px;"><i><img width="24" height="24" src="/fileadmin/template/Resim/sifremi-unuttum.svg" alt="Şifre al"></i>ŞİFREMİ UNUTTUM</a><a href="/bize-ulasin/iletisim-formu" class="oturum-sorun-bildir" style="margin: 0px;"><i><img width="24" height="24" src="/fileadmin/template/Resim/sorun-bildir.svg" alt="Sorun bildir"></i>SORUN BİLDİR</a><a href="/kayit-ol" class="oturum-hesaba-git-butonu">HESAP OLUŞTUR</a></div></div></div></div></ul></li><li>
+<div class="section aimeos basket-mini" data-jsonurl="https://www.elementel.com/ueruenler-ve-hizmetler/jsonapi?type=191351524">
+
+
+
+<div class="aimeos-overlay-offscreen"></div>
+
+<div class="basket-mini-main menu">
+<span class="quantity">0</span>
+<span class="value">0,00 ₺</span>
+</div>
+
+<div class="basket-mini-product zeynep">
+<div class="header row">
+<div class="col-2 close"></div>
+<div class="col-8 name">Sepet</div>
+<div class="col-2"></div>
+</div>
+
+<div class="basket">
+<div class="basket-header row">
+<div class="col-5 name">Ürün</div>
+<div class="col-2 quantity">Miktar</div>
+<div class="col-4 price">Fiyat</div>
+<div class="col-1 action"></div>
+</div>
+<div class="basket-body">
+<div class="product-item row prototype">
+<div class="col-5 name"></div>
+<div class="col-2 quantity"></div>
+<div class="col-4 price"></div>
+<div class="col-1 action"><a class="delete" href="#" title="Sil"></a></div>
+</div>
+</div>
+<div class="basket-footer">
+<div class="delivery row">
+<div class="col-7 name">
+Nakliye</div>
+<div class="col-3 price">
+0,00 ₺</div>
+<div class="col-2 action"></div>
+</div>
+<div class="total row">
+<div class="col-7 name">
+Toplam</div>
+<div class="col-3 price">
+0,00 ₺</div>
+<div class="col-2 action"></div>
+</div>
+</div>
+</div>
+<div class="to-basket">
+<a class="btn btn-primary" href="/ueruenler-ve-hizmetler/ueruen-sepeti?ai%5Baction%5D=standard&ai%5Bcontroller%5D=Basket">
+Sepet</a>
+</div>
+</div>
+</div>
+</li></ul></div></div></div></div><div class="header-content-bottom"><nav data-action="navigation"><ul class="navbar"><li id="navbarbutton"><a href="#!" id="allbutton"><i> <img width="25" height="18" src="/fileadmin/template/Resim/Navicons/nav-icon-1.svg" alt="Ürünler ve Hizmetler"/></i><span><b>ÜRÜNLER ve HİZMETLER</b></span></a><ul id="header-navbar-megamenu"><div class="section aimeos catalog-filter" data-jsonurl="https://www.elementel.com/ueruenler-ve-hizmetler/jsonapi?type=191351524">
+
+<nav class="container-xxl">
+<form method="GET" action="/ueruenler-ve-hizmetler?ai%5Baction%5D=lists&ai%5Bcontroller%5D=Catalog">
+
+
+
+<div class="section catalog-filter-tree catalog-filter-count"
+aria-label="Ürün kategorileri"
+data-counturl="/ueruenler-ve-hizmetler/sayimlar?ai%5Baction%5D=count&ai%5Bcontroller%5D=Catalog&ai%5Bcount%5D=tree&type=191351524">
+
+<div class="aimeos-overlay-offscreen"></div>
+<a class="menu" href="#" title="Kategoriler"><span class="icon"></span></a>
+<div class="zeynep list-container level-0 catcode-home ">
+
+<div class="row header">
+<div class="col-2"></div>
+<div class="col-8 name">Kategoriler</div>
+<div class="col-2 close" data-submenu-close="1"></div>
+</div>
+
+
+
+<div class="list-container level-1">
+
+
+<div class="cat-item catid-2 withchild catcode-genel-uygulamalar "
+data-id="2">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/genel-uygulamalar~2">
+<div class="media-list">
+
+<span class="media-item" ><!--
+--><img sizes="100vw"
+alt="Genel-laboratuvar-icon.svg" src="/uploads/tx_aimeos/1.d/preview/4/1/41ca91b7_genel-laboratuvar-icon.svg?v=20240220025546"
+srcset="/uploads/tx_aimeos/1.d/preview/4/1/41ca91b7_genel-laboratuvar-icon.svg?v=20240220025546 32w"><!--
+--></span>
+
+</div>
+<span class="cat-name">Genel Laboratuvar Ekipmanları</span>
+</a>
+<div class="col-2 next" data-submenu="2"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="2" class="submenu  withchild"
+data-id="2">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="2"></div>
+<div class="col-8 name">Genel Laboratuvar Ekipmanları</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-2">
+
+
+<div class="cat-item catid-3 withchild catcode-banyolar-sirkulatorler "
+data-id="3">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/banyolar-sirkulatorler~3">
+<div class="media-list">
+</div>
+<span class="cat-name">Banyolar ve Sirkülatörler</span>
+</a>
+<div class="col-2 next" data-submenu="3"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="3" class="submenu  withchild"
+data-id="3">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="3"></div>
+<div class="col-8 name">Banyolar ve Sirkülatörler</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-4 nochild catcode-duz-su-banyolari "
+data-id="4">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/duz-su-banyolari~4">
+<div class="media-list">
+</div>
+<span class="cat-name">Düz Su Banyoları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-5 nochild catcode-sirkulasyonlu-su-banyolari "
+data-id="5">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/sirkulasyonlu-su-banyolari~5">
+<div class="media-list">
+</div>
+<span class="cat-name">Sirkülasyonlu Su Banyoları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-6 nochild catcode-calkalamalı-su-banyolari "
+data-id="6">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/calkalamali-su-banyolari~6">
+<div class="media-list">
+</div>
+<span class="cat-name">Çalkalamalı Su Banyoları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-17 nochild catcode-ultrasonik-banyolar "
+data-id="17">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/ultrasonik-banyolar~17">
+<div class="media-list">
+</div>
+<span class="cat-name">Ultrasonik Banyolar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-18 nochild catcode-yag-banyolari "
+data-id="18">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/yag-banyolari~18">
+<div class="media-list">
+</div>
+<span class="cat-name">Yağ Banyoları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-19 nochild catcode-kum-banyolari "
+data-id="19">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kum-banyolari~19">
+<div class="media-list">
+</div>
+<span class="cat-name">Kum Banyoları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-20 nochild catcode-daldirmali-sirkulatorler "
+data-id="20">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/daldirmali-sirkulatorler~20">
+<div class="media-list">
+</div>
+<span class="cat-name">Daldırmalı Sirkülatörler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-21 nochild catcode-devridaim-sogutucular "
+data-id="21">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/devridaim-sogutucular~21">
+<div class="media-list">
+</div>
+<span class="cat-name">Devridaim Soğutucular (Chiller)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-7 withchild catcode-karistiricilar-isiticilar "
+data-id="7">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/karistiricilar-isiticilar~7">
+<div class="media-list">
+</div>
+<span class="cat-name">Karıştırıcılar ve Isıtıcılar</span>
+</a>
+<div class="col-2 next" data-submenu="7"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="7" class="submenu  withchild"
+data-id="7">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="7"></div>
+<div class="col-8 name">Karıştırıcılar ve Isıtıcılar</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-8 nochild catcode-manyetik-karistiricilar "
+data-id="8">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/manyetik-karistiricilar~8">
+<div class="media-list">
+</div>
+<span class="cat-name">Manyetik Karıştırıcılar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-9 nochild catcode-mekanik-karistiricilar "
+data-id="9">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/mekanik-karistiricilar~9">
+<div class="media-list">
+</div>
+<span class="cat-name">Mekanik Karıştırıcılar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-22 nochild catcode-isitici-tablalar "
+data-id="22">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/isitici-tablalar~22">
+<div class="media-list">
+</div>
+<span class="cat-name">Isıtıcı Tablalar (Hot Plate)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-23 nochild catcode-mantolu-balon-isiticilar "
+data-id="23">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/mantolu-balon-isiticilar~23">
+<div class="media-list">
+</div>
+<span class="cat-name">Mantolu Balon Isıtıcılar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-24 nochild catcode-kuru-blok-isiticilar "
+data-id="24">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kuru-blok-isiticilar~24">
+<div class="media-list">
+</div>
+<span class="cat-name">Kuru Blok Isıtıcılar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-25 nochild catcode-bunzen-bekleri "
+data-id="25">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/bunzen-bekleri~25">
+<div class="media-list">
+</div>
+<span class="cat-name">Bunzen Bekleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-26 nochild catcode-doner-calkalayicilar "
+data-id="26">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/doner-calkalayicilar~26">
+<div class="media-list">
+</div>
+<span class="cat-name">Döner Çalkalayıcılar (Rotatörler)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-27 nochild catcode-orbital-calkalayicilar "
+data-id="27">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/orbital-calkalayicilar~27">
+<div class="media-list">
+</div>
+<span class="cat-name">Orbital (Dairesel) Çalkalayıcılar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-28 nochild catcode-lineer-calkalayicilar "
+data-id="28">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/lineer-calkalayicilar~28">
+<div class="media-list">
+</div>
+<span class="cat-name">Lineer (Doğrusal) Çalkalayıcılar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-29 nochild catcode-yatay-calkalayicilar "
+data-id="29">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/yatay-calkalayicilar~29">
+<div class="media-list">
+</div>
+<span class="cat-name">Yatay Çalkalayıcılar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-30 nochild catcode-tup-calkalayicilar "
+data-id="30">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/tup-calkalayicilar~30">
+<div class="media-list">
+</div>
+<span class="cat-name">Tüp Çalkalayıcılar (Vorteks)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-31 nochild catcode-mikroplaka-calkalayicilar "
+data-id="31">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/mikroplaka-calkalayicilar~31">
+<div class="media-list">
+</div>
+<span class="cat-name">Mikroplaka Çalkalayıcılar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-10 withchild catcode-terazi-tartim "
+data-id="10">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/terazi-tartim~10">
+<div class="media-list">
+</div>
+<span class="cat-name">Terazi ve Tartım Sistemleri</span>
+</a>
+<div class="col-2 next" data-submenu="10"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="10" class="submenu  withchild"
+data-id="10">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="10"></div>
+<div class="col-8 name">Terazi ve Tartım Sistemleri</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-11 nochild catcode-analitik-teraziler "
+data-id="11">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/analitik-teraziler~11">
+<div class="media-list">
+</div>
+<span class="cat-name">Analitik Teraziler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-12 nochild catcode-hassas-teraziler "
+data-id="12">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/hassas-teraziler~12">
+<div class="media-list">
+</div>
+<span class="cat-name">Hassas Teraziler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-32 nochild catcode-mikro-teraziler "
+data-id="32">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/mikro-teraziler~32">
+<div class="media-list">
+</div>
+<span class="cat-name">Mikro Teraziler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-33 nochild catcode-nem-tayin-terazileri "
+data-id="33">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/nem-tayin-terazileri~33">
+<div class="media-list">
+</div>
+<span class="cat-name">Nem Tayin Terazileri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-34 withchild catcode-firinlar-sterilizatorler "
+data-id="34">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/firinlar-sterilizatorler~34">
+<div class="media-list">
+</div>
+<span class="cat-name">Fırınlar ve Sterilizatörler</span>
+</a>
+<div class="col-2 next" data-submenu="34"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="34" class="submenu  withchild"
+data-id="34">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="34"></div>
+<div class="col-8 name">Fırınlar ve Sterilizatörler</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-35 nochild catcode-inkubatorler "
+data-id="35">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/inkubatorler~35">
+<div class="media-list">
+</div>
+<span class="cat-name">İnkübatörler (Bakteriyolojik Etüvler)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-36 nochild catcode-sterilizatorler "
+data-id="36">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/sterilizatorler~36">
+<div class="media-list">
+</div>
+<span class="cat-name">Sterilizatörler (Kurutma Fırınları)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-37 nochild catcode-otoklavlar "
+data-id="37">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/otoklavlar~37">
+<div class="media-list">
+</div>
+<span class="cat-name">Otoklavlar (Buharlı Sterilizatörler)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-38 nochild catcode-hibridizasyon-firinlari "
+data-id="38">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/hibridizasyon-firinlari~38">
+<div class="media-list">
+</div>
+<span class="cat-name">Hibridizasyon Fırınları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-39 nochild catcode-kul-firinlari "
+data-id="39">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kul-firinlari~39">
+<div class="media-list">
+</div>
+<span class="cat-name">Kül Fırınları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-40 nochild catcode-tup-firinlar "
+data-id="40">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/tup-firinlar~40">
+<div class="media-list">
+</div>
+<span class="cat-name">Tüp Fırınlar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-41 nochild catcode-yuksek-sicaklik-firinlar "
+data-id="41">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/yuksek-sicaklik-firinlar~41">
+<div class="media-list">
+</div>
+<span class="cat-name">Yüksek Sıcaklık Fırınlar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-42 withchild catcode-pompalar-komprasorler "
+data-id="42">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/pompalar-komprasorler~42">
+<div class="media-list">
+</div>
+<span class="cat-name">Pompalar ve Kompresörler</span>
+</a>
+<div class="col-2 next" data-submenu="42"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="42" class="submenu  withchild"
+data-id="42">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="42"></div>
+<div class="col-8 name">Pompalar ve Kompresörler</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-43 nochild catcode-peristaltik-pompalar "
+data-id="43">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/peristaltik-pompalar~43">
+<div class="media-list">
+</div>
+<span class="cat-name">Peristaltik Pompalar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-44 nochild catcode-vakum-pompalari "
+data-id="44">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/vakum-pompalari~44">
+<div class="media-list">
+</div>
+<span class="cat-name">Vakum Pompaları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-45 nochild catcode-vakum-manifold "
+data-id="45">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/vakum-manifold~45">
+<div class="media-list">
+</div>
+<span class="cat-name">Vakum Manifold Düzenekleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-46 nochild catcode-santrifuj-pompalar "
+data-id="46">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/santrifuj-pompalar~46">
+<div class="media-list">
+</div>
+<span class="cat-name">Santrifüj Pompalar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-47 nochild catcode-siringa-pompalar "
+data-id="47">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/siringa-pompalar~47">
+<div class="media-list">
+</div>
+<span class="cat-name">Şırınga Pompalar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-48 nochild catcode-hava-kompresorleri "
+data-id="48">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/hava-kompresorleri~48">
+<div class="media-list">
+</div>
+<span class="cat-name">Hava Kompresörleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-152 nochild catcode-azot-jeneratorleri "
+data-id="152">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/azot-jeneratorleri~152">
+<div class="media-list">
+</div>
+<span class="cat-name">Azot Jeneratörleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-49 withchild catcode-ocak-kabin-tezgah "
+data-id="49">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/ocak-kabin-tezgah~49">
+<div class="media-list">
+</div>
+<span class="cat-name">Ocak & Kabin ve Tezgahlar</span>
+</a>
+<div class="col-2 next" data-submenu="49"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="49" class="submenu  withchild"
+data-id="49">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="49"></div>
+<div class="col-8 name">Ocak & Kabin ve Tezgahlar</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-50 nochild catcode-ceker-ocaklar "
+data-id="50">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/ceker-ocaklar~50">
+<div class="media-list">
+</div>
+<span class="cat-name">Çeker Ocaklar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-51 nochild catcode-steril-kabinler "
+data-id="51">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/steril-kabinler~51">
+<div class="media-list">
+</div>
+<span class="cat-name">Steril Kabinler (Laminar Flow)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-52 nochild catcode-bitki-buyutme-kabinleri "
+data-id="52">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/bitki-buyutme-kabinleri~52">
+<div class="media-list">
+</div>
+<span class="cat-name">Bitki Büyütme Kabinleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-53 nochild catcode-biyoguvenlik-kabinleri "
+data-id="53">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/biyoguvenlik-kabinleri~53">
+<div class="media-list">
+</div>
+<span class="cat-name">Biyogüvenlik Kabinleri (Glove Box)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-54 nochild catcode-asit-saklama-dolaplari "
+data-id="54">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/asit-saklama-dolaplari~54">
+<div class="media-list">
+</div>
+<span class="cat-name">Asit Saklama Dolapları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-55 nochild catcode-laboratuvar-tezgahlari "
+data-id="55">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/laboratuvar-tezgahlari~55">
+<div class="media-list">
+</div>
+<span class="cat-name">Laboratuvar Tezgahları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-56 nochild catcode-terazi-masalari "
+data-id="56">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/terazi-masalari~56">
+<div class="media-list">
+</div>
+<span class="cat-name">Terazi Masaları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-57 withchild catcode-olcum-test-aletleri "
+data-id="57">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/olcum-test-aletleri~57">
+<div class="media-list">
+</div>
+<span class="cat-name">Ölçüm ve Test Aletleri</span>
+</a>
+<div class="col-2 next" data-submenu="57"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="57" class="submenu  withchild"
+data-id="57">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="57"></div>
+<div class="col-8 name">Ölçüm ve Test Aletleri</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-58 nochild catcode-ph-iletkenlik-multi "
+data-id="58">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/ph-iletkenlik-multi~58">
+<div class="media-list">
+</div>
+<span class="cat-name">ph & İletkenlik ve Multi Ölçerler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-59 nochild catcode-termometre-higrometre "
+data-id="59">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/termometre-higrometre~59">
+<div class="media-list">
+</div>
+<span class="cat-name">Termometre ve Higrometreler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-60 nochild catcode-kronometre-saat "
+data-id="60">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kronometre-saat~60">
+<div class="media-list">
+</div>
+<span class="cat-name">Kronometre ve Saatler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-61 nochild catcode-elektrotlar "
+data-id="61">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/elektrotlar~61">
+<div class="media-list">
+</div>
+<span class="cat-name">Elektrot ve Problar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-62 nochild catcode-strip-kit "
+data-id="62">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/strip-kit~62">
+<div class="media-list">
+</div>
+<span class="cat-name">Test Stripleri ve Kitleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-63 withchild catcode-saf-su "
+data-id="63">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/saf-su~63">
+<div class="media-list">
+</div>
+<span class="cat-name">Su Saflaştırma Sistemleri</span>
+</a>
+<div class="col-2 next" data-submenu="63"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="63" class="submenu  withchild"
+data-id="63">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="63"></div>
+<div class="col-8 name">Su Saflaştırma Sistemleri</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-64 nochild catcode-ultra-saf-tip1 "
+data-id="64">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/ultra-saf-tip1~64">
+<div class="media-list">
+</div>
+<span class="cat-name">Ultrasaf Su Sistemleri (Tip 1)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-65 nochild catcode-saf-tip2 "
+data-id="65">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/saf-tip2~65">
+<div class="media-list">
+</div>
+<span class="cat-name">Saf Su Sistemleri (Tip 2)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-66 nochild catcode-genel-tip3 "
+data-id="66">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/genel-tip3~66">
+<div class="media-list">
+</div>
+<span class="cat-name">Genel Amaçlı Saf Su Sistemleri (Tip 3)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-67 nochild catcode-saf-ultrasaf-su "
+data-id="67">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/saf-ultrasaf-su~67">
+<div class="media-list">
+</div>
+<span class="cat-name">Saf + Ultrasaf Su Sistemleri (Çoklu Tip)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-68 nochild catcode-klinik-teshis-su "
+data-id="68">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/klinik-teshis-su~68">
+<div class="media-list">
+</div>
+<span class="cat-name">Klinik Amaçlı Su Saflaştırma Sistemleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-69 nochild catcode-distile-su "
+data-id="69">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/distile-su~69">
+<div class="media-list">
+</div>
+<span class="cat-name">Distile Su Cihazları (Kaynatmalı Tip)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+
+
+<a class="cat-img "
+title="Genel Laboratuvar Ekipmanları"
+href="/ueruenler-ve-hizmetler/c/genel-uygulamalar~2">
+
+
+</a>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-13 withchild catcode-analitik-cihazlar "
+data-id="13">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/analitik-cihazlar~13">
+<div class="media-list">
+
+<span class="media-item" ><!--
+--><img sizes="100vw"
+alt="Analitik-cihaz-icon.svg" src="/uploads/tx_aimeos/1.d/preview/e/7/e7d8cb21_analitik-cihaz-icon.svg?v=20240220025612"
+srcset="/uploads/tx_aimeos/1.d/preview/e/7/e7d8cb21_analitik-cihaz-icon.svg?v=20240220025612 39w"><!--
+--></span>
+
+</div>
+<span class="cat-name">Analitik Cihazlar ve Sistemler</span>
+</a>
+<div class="col-2 next" data-submenu="13"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="13" class="submenu  withchild"
+data-id="13">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="13"></div>
+<div class="col-8 name">Analitik Cihazlar ve Sistemler</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-2">
+
+
+<div class="cat-item catid-70 withchild catcode-kromatografi "
+data-id="70">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kromatografi~70">
+<div class="media-list">
+</div>
+<span class="cat-name">Kromatografi Ekipman ve Sistemleri</span>
+</a>
+<div class="col-2 next" data-submenu="70"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="70" class="submenu  withchild"
+data-id="70">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="70"></div>
+<div class="col-8 name">Kromatografi Ekipman ve Sistemleri</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-71 nochild catcode-hplc-kolon "
+data-id="71">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/hplc-kolon~71">
+<div class="media-list">
+</div>
+<span class="cat-name">HPLC ve UHPLC Kolonlar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-72 nochild catcode-gc-kolon "
+data-id="72">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/gc-kolon~72">
+<div class="media-list">
+</div>
+<span class="cat-name">Gaz Kromatografi (GC) Kolonları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-73 nochild catcode-spektroskopi "
+data-id="73">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/spektroskopi~73">
+<div class="media-list">
+</div>
+<span class="cat-name">Spektroskopi Ekipman ve Sistemleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-74 withchild catcode-elektrokimya "
+data-id="74">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/elektrokimya~74">
+<div class="media-list">
+</div>
+<span class="cat-name">Elektrokimyasal Ekipman ve Sistemleri</span>
+</a>
+<div class="col-2 next" data-submenu="74"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="74" class="submenu  withchild"
+data-id="74">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="74"></div>
+<div class="col-8 name">Elektrokimyasal Ekipman ve Sistemleri</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-75 nochild catcode-su-aktivitesi "
+data-id="75">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/su-aktivitesi~75">
+<div class="media-list">
+</div>
+<span class="cat-name">Su Aktivitesi Tayin Cihazları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-76 nochild catcode-potansiyometrik-titratorler "
+data-id="76">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/potansiyometrik-titratorler~76">
+<div class="media-list">
+</div>
+<span class="cat-name">Potansiyometrik Titratörler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-77 nochild catcode-volumetrik-titratorler "
+data-id="77">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/volumetrik-titratorler~77">
+<div class="media-list">
+</div>
+<span class="cat-name">Volumetrik Titratörler (Karl Fischer)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-78 nochild catcode-kolorimetrik-titratorler "
+data-id="78">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kolorimetrik-titratorler~78">
+<div class="media-list">
+</div>
+<span class="cat-name">Kolorimetrik Titratörler (Karl Fischer)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-79 nochild catcode-potansiyostat-galvanostat "
+data-id="79">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/potansiyostat-galvanostat~79">
+<div class="media-list">
+</div>
+<span class="cat-name">Potansiyostat & Galvanostat Cihazları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-80 nochild catcode-pcr-termocycler "
+data-id="80">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/pcr-termocycler~80">
+<div class="media-list">
+</div>
+<span class="cat-name">PCR Thermocycler Cihazları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-81 nochild catcode-elektroforez "
+data-id="81">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/elektroforez~81">
+<div class="media-list">
+</div>
+<span class="cat-name">Elektroforez Sistemleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-82 withchild catcode-optik "
+data-id="82">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/optik~82">
+<div class="media-list">
+</div>
+<span class="cat-name">Optik Ölçüm Cihazları</span>
+</a>
+<div class="col-2 next" data-submenu="82"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="82" class="submenu  withchild"
+data-id="82">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="82"></div>
+<div class="col-8 name">Optik Ölçüm Cihazları</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-83 nochild catcode-mikroskoplar "
+data-id="83">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/mikroskoplar~83">
+<div class="media-list">
+</div>
+<span class="cat-name">Mikroskoplar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-84 nochild catcode-refraktometreler "
+data-id="84">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/refraktometreler~84">
+<div class="media-list">
+</div>
+<span class="cat-name">Refraktometreler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-85 nochild catcode-polarimetreler "
+data-id="85">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/polarimetreler~85">
+<div class="media-list">
+</div>
+<span class="cat-name">Polarimetreler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+
+
+<a class="cat-img "
+title="Analitik Cihazlar ve Sistemler"
+href="/ueruenler-ve-hizmetler/c/analitik-cihazlar~13">
+
+
+</a>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-14 withchild catcode-numune-hazirlama "
+data-id="14">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/numune-hazirlama~14">
+<div class="media-list">
+
+<span class="media-item" ><!--
+--><img sizes="100vw"
+alt="Numune-hazirlama-icon.svg" src="/uploads/tx_aimeos/1.d/preview/7/b/7b6c8e7e_numune-hazirlama-icon.svg?v=20240220025630"
+srcset="/uploads/tx_aimeos/1.d/preview/7/b/7b6c8e7e_numune-hazirlama-icon.svg?v=20240220025630 38w"><!--
+--></span>
+
+</div>
+<span class="cat-name">Numune Hazırlama ve Saflaştırma</span>
+</a>
+<div class="col-2 next" data-submenu="14"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="14" class="submenu  withchild"
+data-id="14">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="14"></div>
+<div class="col-8 name">Numune Hazırlama ve Saflaştırma</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-2">
+
+
+<div class="cat-item catid-86 withchild catcode-filtrasyon-laboratuvar "
+data-id="86">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/filtrasyon-laboratuvar~86">
+<div class="media-list">
+</div>
+<span class="cat-name">Laboratuvar Filtrasyon Ürünleri</span>
+</a>
+<div class="col-2 next" data-submenu="86"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="86" class="submenu  withchild"
+data-id="86">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="86"></div>
+<div class="col-8 name">Laboratuvar Filtrasyon Ürünleri</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-87 nochild catcode-filtre-kagitlari-membranlar "
+data-id="87">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/filtre-kagitlari-membranlar~87">
+<div class="media-list">
+</div>
+<span class="cat-name">Filtre Kağıtları ve Membranlar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-88 withchild catcode-ekstraksiyon "
+data-id="88">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/ekstraksiyon~88">
+<div class="media-list">
+</div>
+<span class="cat-name">Ekstraksiyon Sistemleri</span>
+</a>
+<div class="col-2 next" data-submenu="88"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="88" class="submenu  withchild"
+data-id="88">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="88"></div>
+<div class="col-8 name">Ekstraksiyon Sistemleri</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-89 nochild catcode-soxhlet-ekstraksiyon "
+data-id="89">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/soxhlet-ekstraksiyon~89">
+<div class="media-list">
+</div>
+<span class="cat-name">Soxhlet Ekstraksiyon Sistemleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-90 nochild catcode-solvent-ekstraksiyon "
+data-id="90">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/solvent-ekstraksiyon~90">
+<div class="media-list">
+</div>
+<span class="cat-name">Solvent Ekstraksiyon Sistemleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-91 nochild catcode-kati-faz-ekstraksiyon "
+data-id="91">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kati-faz-ekstraksiyon~91">
+<div class="media-list">
+</div>
+<span class="cat-name">Katı Faz Ekstraksiyon (SPE)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-92 withchild catcode-evaporator-konsantrator "
+data-id="92">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/evaporator-konsantrator~92">
+<div class="media-list">
+</div>
+<span class="cat-name">Evaporatör ve Konsantratörler</span>
+</a>
+<div class="col-2 next" data-submenu="92"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="92" class="submenu  withchild"
+data-id="92">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="92"></div>
+<div class="col-8 name">Evaporatör ve Konsantratörler</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-93 nochild catcode-solvent-evaporator "
+data-id="93">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/solvent-evaporator~93">
+<div class="media-list">
+</div>
+<span class="cat-name">Solvent Evaporasyon Sistemleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-94 nochild catcode-azot-evaporator "
+data-id="94">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/azot-evaporator~94">
+<div class="media-list">
+</div>
+<span class="cat-name">Azot Blöflü Evaporasyon Sistemleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-95 nochild catcode-rotary-evaporator "
+data-id="95">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/rotary-evaporator~95">
+<div class="media-list">
+</div>
+<span class="cat-name">Rotary Evaporatörler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-96 nochild catcode-liyofilizatorler "
+data-id="96">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/liyofilizatorler~96">
+<div class="media-list">
+</div>
+<span class="cat-name">Liyofilizatörler (Dondurucu Kurutucular)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-97 nochild catcode-santrifujler "
+data-id="97">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/santrifujler~97">
+<div class="media-list">
+</div>
+<span class="cat-name">Laboratuvar Santrifüjleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-98 nochild catcode-distilasyon-yakma "
+data-id="98">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/distilasyon-yakma~98">
+<div class="media-list">
+</div>
+<span class="cat-name">Distilasyon ve Yakma Üniteleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-99 withchild catcode-sivi-aktarma "
+data-id="99">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/sivi-aktarma~99">
+<div class="media-list">
+</div>
+<span class="cat-name">Sıvı Aktarma Ekipmanları</span>
+</a>
+<div class="col-2 next" data-submenu="99"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="99" class="submenu  withchild"
+data-id="99">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="99"></div>
+<div class="col-8 name">Sıvı Aktarma Ekipmanları</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-100 nochild catcode-siseustu-buret "
+data-id="100">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/siseustu-buret~100">
+<div class="media-list">
+</div>
+<span class="cat-name">Şişe Üstü Dijital Büretler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-101 nochild catcode-siseustu-dispenser "
+data-id="101">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/siseustu-dispenser~101">
+<div class="media-list">
+</div>
+<span class="cat-name">Şişe Üstü Dispenserlar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-102 nochild catcode-otomatik-pipet "
+data-id="102">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/otomatik-pipet~102">
+<div class="media-list">
+</div>
+<span class="cat-name">Otomatik & Elektronik & Mikro Pipetler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-103 nochild catcode-pipet-ucu "
+data-id="103">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/pipet-ucu~103">
+<div class="media-list">
+</div>
+<span class="cat-name">Otomatik Pipet Uçları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-104 withchild catcode-blender-homojenizator "
+data-id="104">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/blender-homojenizator~104">
+<div class="media-list">
+</div>
+<span class="cat-name">Blender ve Homojenizatörler</span>
+</a>
+<div class="col-2 next" data-submenu="104"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="104" class="submenu  withchild"
+data-id="104">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="104"></div>
+<div class="col-8 name">Blender ve Homojenizatörler</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-105 nochild catcode-ultrasonik-homojenizator "
+data-id="105">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/ultrasonik-homojenizator~105">
+<div class="media-list">
+</div>
+<span class="cat-name">Ultrasonik Homojenizatörler (Sonikatör)</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-106 nochild catcode-stomacher-homojenizator "
+data-id="106">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/stomacher-homojenizator~106">
+<div class="media-list">
+</div>
+<span class="cat-name">Stomacher Homojenizatörler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+
+
+<a class="cat-img "
+title="Numune Hazırlama ve Saflaştırma"
+href="/ueruenler-ve-hizmetler/c/numune-hazirlama~14">
+
+
+</a>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-15 withchild catcode-gerec-sarf "
+data-id="15">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/gerec-sarf~15">
+<div class="media-list">
+
+<span class="media-item" ><!--
+--><img sizes="100vw"
+alt="Laboratuvar-sarf-icon.svg" src="/uploads/tx_aimeos/1.d/preview/3/e/3e836972_laboratuvar-sarf-icon.svg?v=20240220025656"
+srcset="/uploads/tx_aimeos/1.d/preview/3/e/3e836972_laboratuvar-sarf-icon.svg?v=20240220025656 39w"><!--
+--></span>
+
+</div>
+<span class="cat-name">Laboratuvar Gereç ve Sarf Malzemeleri</span>
+</a>
+<div class="col-2 next" data-submenu="15"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="15" class="submenu  withchild"
+data-id="15">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="15"></div>
+<div class="col-8 name">Laboratuvar Gereç ve Sarf Malzemeleri</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-2">
+
+
+<div class="cat-item catid-107 withchild catcode-volumetrik-malzemeler "
+data-id="107">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/volumetrik-malzemeler~107">
+<div class="media-list">
+</div>
+<span class="cat-name">Volumetrik Lab Malzemeleri</span>
+</a>
+<div class="col-2 next" data-submenu="107"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="107" class="submenu  withchild"
+data-id="107">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="107"></div>
+<div class="col-8 name">Volumetrik Lab Malzemeleri</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-108 nochild catcode-balon-joje "
+data-id="108">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/balon-joje~108">
+<div class="media-list">
+</div>
+<span class="cat-name">Balon Jojeler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-109 nochild catcode-mezur "
+data-id="109">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/mezur~109">
+<div class="media-list">
+</div>
+<span class="cat-name">Mezürler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-110 nochild catcode-beher "
+data-id="110">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/beher~110">
+<div class="media-list">
+</div>
+<span class="cat-name">Beherler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-111 nochild catcode-erlen "
+data-id="111">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/erlen~111">
+<div class="media-list">
+</div>
+<span class="cat-name">Erlenler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-112 nochild catcode-piset "
+data-id="112">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/piset~112">
+<div class="media-list">
+</div>
+<span class="cat-name">Pisetler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-113 nochild catcode-huni "
+data-id="113">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/huni~113">
+<div class="media-list">
+</div>
+<span class="cat-name">Huniler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-114 nochild catcode-buret "
+data-id="114">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/buret~114">
+<div class="media-list">
+</div>
+<span class="cat-name">Büretler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-115 nochild catcode-pipet-puar "
+data-id="115">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/pipet-puar~115">
+<div class="media-list">
+</div>
+<span class="cat-name">Pipet ve Puarlar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-116 nochild catcode-balon "
+data-id="116">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/balon~116">
+<div class="media-list">
+</div>
+<span class="cat-name">Balonlar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-117 nochild catcode-sise "
+data-id="117">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/sise~117">
+<div class="media-list">
+</div>
+<span class="cat-name">Şişeler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-118 nochild catcode-tup "
+data-id="118">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/tup~118">
+<div class="media-list">
+</div>
+<span class="cat-name">Tüpler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-119 withchild catcode-genel-sarflar "
+data-id="119">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/genel-sarflar~119">
+<div class="media-list">
+</div>
+<span class="cat-name">Genel Sarf Ürünleri</span>
+</a>
+<div class="col-2 next" data-submenu="119"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="119" class="submenu  withchild"
+data-id="119">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="119"></div>
+<div class="col-8 name">Genel Sarf Ürünleri</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-120 nochild catcode-lam-lamel "
+data-id="120">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/lam-lamel~120">
+<div class="media-list">
+</div>
+<span class="cat-name">Lam ve Lameller</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-121 nochild catcode-adaptor "
+data-id="121">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/adaptor~121">
+<div class="media-list">
+</div>
+<span class="cat-name">Adaptörler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-122 nochild catcode-sogutucu-ekstraktor "
+data-id="122">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/sogutucu-ekstraktor~122">
+<div class="media-list">
+</div>
+<span class="cat-name">Soğutucu ve Ekstraktörler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-123 nochild catcode-petri "
+data-id="123">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/petri~123">
+<div class="media-list">
+</div>
+<span class="cat-name">Petri Kapları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-124 nochild catcode-saat-cami-baget "
+data-id="124">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/saat-cami-baget~124">
+<div class="media-list">
+</div>
+<span class="cat-name">Saat Camı ve Bagetler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-125 nochild catcode-piknometre-vezin "
+data-id="125">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/piknometre-vezin~125">
+<div class="media-list">
+</div>
+<span class="cat-name">Piknometre ve Vezin Kapları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-126 nochild catcode-desikator "
+data-id="126">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/desikator~126">
+<div class="media-list">
+</div>
+<span class="cat-name">Desikatörler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-127 nochild catcode-stand-tutucu "
+data-id="127">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/stand-tutucu~127">
+<div class="media-list">
+</div>
+<span class="cat-name">Stand ve Tutucular</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-128 nochild catcode-pens "
+data-id="128">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/pens~128">
+<div class="media-list">
+</div>
+<span class="cat-name">Pensler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-129 nochild catcode-balik-yakalayici "
+data-id="129">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/balik-yakalayici~129">
+<div class="media-list">
+</div>
+<span class="cat-name">Manyetik Balık ve Tutucular</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-130 nochild catcode-kurek-kasik-spatul "
+data-id="130">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kurek-kasik-spatul~130">
+<div class="media-list">
+</div>
+<span class="cat-name">Kürek & Kaşık ve Spatüller</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-131 nochild catcode-kroze-kapsul-havan "
+data-id="131">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kroze-kapsul-havan~131">
+<div class="media-list">
+</div>
+<span class="cat-name">Kroze & Kapsül ve Havanlar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-132 withchild catcode-yardimci-urunler "
+data-id="132">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/yardimci-urunler~132">
+<div class="media-list">
+</div>
+<span class="cat-name">Yardımcı Ürünler</span>
+</a>
+<div class="col-2 next" data-submenu="132"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="132" class="submenu  withchild"
+data-id="132">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="132"></div>
+<div class="col-8 name">Yardımcı Ürünler</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-133 nochild catcode-mercek-buyutec "
+data-id="133">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/mercek-buyutec~133">
+<div class="media-list">
+</div>
+<span class="cat-name">Mercekler ve  Büyüteçler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-134 nochild catcode-sizdirmazlik-kapak "
+data-id="134">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/sizdirmazlik-kapak~134">
+<div class="media-list">
+</div>
+<span class="cat-name">Sızdırmazlık Ürünleri ve Kapaklar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-135 nochild catcode-is-guvenligi "
+data-id="135">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/is-guvenligi~135">
+<div class="media-list">
+</div>
+<span class="cat-name">İş Güvenliği Ekipmanları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-136 nochild catcode-kesme-yazma "
+data-id="136">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kesme-yazma~136">
+<div class="media-list">
+</div>
+<span class="cat-name">Kesme & Yazma Ekipmanları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-137 nochild catcode-etiket "
+data-id="137">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/etiket~137">
+<div class="media-list">
+</div>
+<span class="cat-name">Etiketleme Ürünleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-138 nochild catcode-temizlik-koruma "
+data-id="138">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/temizlik-koruma~138">
+<div class="media-list">
+</div>
+<span class="cat-name">Temizlik ve Koruma Ekipmanları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-139 nochild catcode-hortum-vana-baglanti "
+data-id="139">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/hortum-vana-baglanti~139">
+<div class="media-list">
+</div>
+<span class="cat-name">Hortum & Vana ve Bağlantı Parçaları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-140 nochild catcode-kutu-kap "
+data-id="140">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kutu-kap~140">
+<div class="media-list">
+</div>
+<span class="cat-name">Kutular ve Kaplar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-141 nochild catcode-kase-kavanoz "
+data-id="141">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kase-kavanoz~141">
+<div class="media-list">
+</div>
+<span class="cat-name">Kaseler ve Kavanozlar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-142 nochild catcode-kova-bidon "
+data-id="142">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kova-bidon~142">
+<div class="media-list">
+</div>
+<span class="cat-name">Kovalar ve  Bidonlar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-143 nochild catcode-poset-torba "
+data-id="143">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/poset-torba~143">
+<div class="media-list">
+</div>
+<span class="cat-name">Poşetler ve Torbalar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-144 nochild catcode-ekipman-yedek-parca "
+data-id="144">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/ekipman-yedek-parca~144">
+<div class="media-list">
+</div>
+<span class="cat-name">Ekipman Yedek Parçaları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-145 withchild catcode-analitik-sarflar "
+data-id="145">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/analitik-sarflar~145">
+<div class="media-list">
+</div>
+<span class="cat-name">Analitik Cihaz Sarf Malzemeleri</span>
+</a>
+<div class="col-2 next" data-submenu="145"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="145" class="submenu  withchild"
+data-id="145">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="145"></div>
+<div class="col-8 name">Analitik Cihaz Sarf Malzemeleri</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-146 nochild catcode-vial-kapak-insert "
+data-id="146">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/vial-kapak-insert~146">
+<div class="media-list">
+</div>
+<span class="cat-name">Vialler & Kapaklar ve Insertler</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-147 nochild catcode-siringa "
+data-id="147">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/siringa~147">
+<div class="media-list">
+</div>
+<span class="cat-name">Şırıngalar</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-148 nochild catcode-kuvet-hucre "
+data-id="148">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kuvet-hucre~148">
+<div class="media-list">
+</div>
+<span class="cat-name">Küvetler ve Akış Hücreleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+
+<div class="cat-item catid-149 nochild catcode-ince-tabaka-kromatografisi "
+data-id="149">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/ince-tabaka-kromatografisi~149">
+<div class="media-list">
+</div>
+<span class="cat-name">İnce Tabaka Kromatografisi</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-150 withchild catcode-kimyasal-solusyon "
+data-id="150">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kimyasal-solusyon~150">
+<div class="media-list">
+</div>
+<span class="cat-name">Kimyasal Madde ve Solüsyonlar</span>
+</a>
+<div class="col-2 next" data-submenu="150"
+title="Alt Kategoriyi Aç">
+</div>
+</div>
+
+
+<div id="150" class="submenu  withchild"
+data-id="150">
+
+<div class="row header">
+<div class="col-2 back" data-submenu-close="150"></div>
+<div class="col-8 name">Kimyasal Madde ve Solüsyonlar</div>
+<div class="col-2 close"></div>
+</div>
+
+<div class="list-container level-3">
+
+
+<div class="cat-item catid-151 nochild catcode-kalibrasyon-saklama-solusyon "
+data-id="151">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/kalibrasyon-saklama-solusyon~151">
+<div class="media-list">
+</div>
+<span class="cat-name">Kalibrasyon ve Saklama Solüsyonları</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+
+
+<a class="cat-img "
+title="Laboratuvar Gereç ve Sarf Malzemeleri"
+href="/ueruenler-ve-hizmetler/c/gerec-sarf~15">
+
+
+</a>
+
+
+</div>
+
+
+</div>
+
+<div class="cat-item catid-16 nochild catcode-firsat-urunleri "
+data-id="16">
+
+<div class="item-links row">
+<a class="col-10 cat-link name "
+href="/ueruenler-ve-hizmetler/c/firsat-urunleri~16">
+<div class="media-list">
+
+<span class="media-item" ><!--
+--><img sizes="100vw"
+alt="Firsat-urunleri-icon.svg" src="/uploads/tx_aimeos/1.d/preview/3/4/343691dc_firsat-urunleri-icon.svg?v=20240220025714"
+srcset="/uploads/tx_aimeos/1.d/preview/3/4/343691dc_firsat-urunleri-icon.svg?v=20240220025714 39w"><!--
+--></span>
+
+</div>
+<span class="cat-name">Fırsat Ürünleri</span>
+</a>
+<div class="col-2"></div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+</form>
+</nav>
+
+</div>
+<li class="header-navbar-megamenu-button navbar-usttaraf"><a href="/doekueman-merkezi" class="hmenu-ilkseviye"><i><img width="30" height="30" src="/fileadmin/template/Resim/Navicons/nav-icon-25.svg" alt="Döküman Merkezi" title="Döküman Merkezi"/></i><span class="hmenu-resimici">Döküman Merkezi</span></a><div id="header-navbar-megamenu-main"><div id="secondarymegamenu" class="all-dropdown-megamenu"><a href="/doekueman-merkezi/katalog-brosuer" class="hmenu-ikinciseviye"><span class="megacategory">Katalog & Broşür</span></a><a href="/doekueman-merkezi/kullanim-kilavuzlari" class="hmenu-ikinciseviye"><span class="megacategory">Kullanım Kılavuzları</span></a><a href="/doekueman-merkezi/uygulama-notlari" class="hmenu-ikinciseviye"><span class="megacategory">Uygulama Notları</span></a></div></div></li><li class="header-navbar-megamenu-button navbar-usttaraf"><a href="/haber-makale" class="hmenu-ilkseviye"><i><img width="30" height="30" src="/fileadmin/template/Resim/Navicons/nav-icon-33.svg" alt="Haber & Makale" title="Haber & Makale"/></i><span class="hmenu-resimici">Haber & Makale</span></a><div id="header-navbar-megamenu-main"><div id="secondarymegamenu" class="all-dropdown-megamenu"><a href="/haber-makale/haberler" class="hmenu-ikinciseviye"><span class="megacategory">Haberler</span></a><a href="/haber-makale/sikca-sorulan-sorular" class="hmenu-ikinciseviye"><span class="megacategory">Sıkça Sorulan Sorular</span></a><a href="/haber-makale/kimya-terimleri" class="hmenu-ikinciseviye"><span class="megacategory">Kimya Terimleri</span></a></div></div></li><li class="header-navbar-megamenu-button navbar-usttaraf"><a href="/coezuem-ortaklari" class="hmenu-ilkseviye"><i><img width="30" height="30" src="/fileadmin/template/Resim/Navicons/nav-icon-45.svg" alt="Çözüm Ortakları" title="Çözüm Ortakları"/></i><span class="hmenu-resimici">Çözüm Ortakları</span></a><div id="header-navbar-megamenu-main"><div id="secondarymegamenu" class="all-dropdown-megamenu"><a href="/coezuem-ortaklari/hahnemuehle-fineart-gmbh" class="hmenu-ikinciseviye"><span class="megacategory">Hahnemühle FineArt GmbH</span></a><a href="/coezuem-ortaklari/quadrex-corporation" class="hmenu-ikinciseviye"><span class="megacategory">Quadrex Corporation</span></a><a href="/coezuem-ortaklari/organomation-manufacturing-inc" class="hmenu-ikinciseviye"><span class="megacategory">Organomation Manufacturing Inc</span></a></div></div></li><li class="header-navbar-megamenu-button navbar-usttaraf"><a href="/kurumsal-bilgiler" class="hmenu-ilkseviye"><i><img width="30" height="30" src="/fileadmin/template/Resim/Navicons/nav-icon-53.svg" alt="Kurumsal Bilgiler" title="Kurumsal Bilgiler"/></i><span class="hmenu-resimici">Kurumsal Bilgiler</span></a><div id="header-navbar-megamenu-main"><div id="secondarymegamenu" class="all-dropdown-megamenu"><a href="/kurumsal-bilgiler/sirketimiz-hakkinda" class="hmenu-ikinciseviye"><span class="megacategory">Şirketimiz Hakkında</span></a><a href="/kurumsal-bilgiler/referanslarimiz" class="hmenu-ikinciseviye"><span class="megacategory">Referanslarımız</span></a><a href="/kurumsal-bilgiler/fatura-bilgilerimiz" class="hmenu-ikinciseviye"><span class="megacategory">Fatura Bilgilerimiz</span></a></div></div></li><li class="header-navbar-megamenu-button navbar-usttaraf"><a href="/bize-ulasin" class="hmenu-ilkseviye"><i><img width="30" height="30" src="/fileadmin/template/Resim/Navicons/nav-icon-63.svg" alt="Bize Ulaşın" title="Bize Ulaşın"/></i><span class="hmenu-resimici">Bize Ulaşın</span></a><div id="header-navbar-megamenu-main"><div id="secondarymegamenu" class="all-dropdown-megamenu"><a href="/bize-ulasin/iletisim-bilgileri" class="hmenu-ikinciseviye"><span class="megacategory">İletişim Bilgileri</span></a><a href="/bize-ulasin/iletisim-formu" class="hmenu-ikinciseviye"><span class="megacategory">İletişim Formu</span></a><a href="/bize-ulasin/insan-kaynaklari" class="hmenu-ikinciseviye"><span class="megacategory">İnsan Kaynakları</span></a><a href="/bize-ulasin/hizli-toplu-siparis" class="hmenu-ikinciseviye"><span class="megacategory">Hızlı & Toplu Sipariş</span></a></div></div></li><li id="megamenu-diger-linkler"><a href="/hesabiniz" class="megamenu-oturum-butonu"><img loading="lazy" width="35" height="35" src="/fileadmin/template/Resim/profile-icon.svg" alt="Profil" /><span>Giriş Yap / Kaydol</span></a><a href="/kullanim-sartlari">Kullanım Şartları</a></li></ul><div class="shadow-overlay"></div></li><li id="navbarbutton" class="navbar-alttaraf"><a href="/doekueman-merkezi" class="hmenu-ilkseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-25.svg" alt="Döküman Merkezi" title="Döküman Merkezi"/></i><span class="hmenu-resimici">Döküman Merkezi</span></a><ul id="header-navbar-megamenu"><li class="header-navbar-megamenu-button"><a href="/doekueman-merkezi/katalog-brosuer" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-27.svg" alt="Katalog & Broşür" title="Katalog & Broşür"/></i><span class="hmenu-resimici">Katalog & Broşür</span></a></li><li class="header-navbar-megamenu-button"><a href="/doekueman-merkezi/kullanim-kilavuzlari" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-29.svg" alt="Kullanım Kılavuzları" title="Kullanım Kılavuzları"/></i><span class="hmenu-resimici">Kullanım Kılavuzları</span></a></li><li class="header-navbar-megamenu-button"><a href="/doekueman-merkezi/uygulama-notlari" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-31.svg" alt="Uygulama Notları" title="Uygulama Notları"/></i><span class="hmenu-resimici">Uygulama Notları</span></a></li></ul></li><li id="navbarbutton" class="navbar-alttaraf"><a href="/haber-makale" class="hmenu-ilkseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-33.svg" alt="Haber & Makale" title="Haber & Makale"/></i><span class="hmenu-resimici">Haber & Makale</span></a><ul id="header-navbar-megamenu"><li class="header-navbar-megamenu-button"><a href="/haber-makale/haberler" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-35.svg" alt="Haberler" title="Haberler"/></i><span class="hmenu-resimici">Haberler</span></a></li><li class="header-navbar-megamenu-button"><a href="/haber-makale/sikca-sorulan-sorular" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-37.svg" alt="Sıkça Sorulan Sorular" title="Sıkça Sorulan Sorular"/></i><span class="hmenu-resimici">Sıkça Sorulan Sorular</span></a></li><li class="header-navbar-megamenu-button"><a href="/haber-makale/kimya-terimleri" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-39.svg" alt="Kimya Terimleri" title="Kimya Terimleri"/></i><span class="hmenu-resimici">Kimya Terimleri</span></a></li></ul></li><li id="navbarbutton" class="navbar-alttaraf"><a href="/coezuem-ortaklari" class="hmenu-ilkseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-45.svg" alt="Çözüm Ortakları" title="Çözüm Ortakları"/></i><span class="hmenu-resimici">Çözüm Ortakları</span></a><ul id="header-navbar-megamenu"><li class="header-navbar-megamenu-button"><a href="/coezuem-ortaklari/hahnemuehle-fineart-gmbh" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-47.svg" alt="Hahnemühle FineArt GmbH" title="Hahnemühle FineArt GmbH"/></i><span class="hmenu-resimici">Hahnemühle FineArt GmbH</span></a></li><li class="header-navbar-megamenu-button"><a href="/coezuem-ortaklari/quadrex-corporation" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-49.svg" alt="Quadrex Corporation" title="Quadrex Corporation"/></i><span class="hmenu-resimici">Quadrex Corporation</span></a></li><li class="header-navbar-megamenu-button"><a href="/coezuem-ortaklari/organomation-manufacturing-inc" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-51.svg" alt="Organomation Manufacturing Inc" title="Organomation Manufacturing Inc"/></i><span class="hmenu-resimici">Organomation Manufacturing Inc</span></a></li></ul></li><li id="navbarbutton" class="navbar-alttaraf"><a href="/kurumsal-bilgiler" class="hmenu-ilkseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-53.svg" alt="Kurumsal Bilgiler" title="Kurumsal Bilgiler"/></i><span class="hmenu-resimici">Kurumsal Bilgiler</span></a><ul id="header-navbar-megamenu"><li class="header-navbar-megamenu-button"><a href="/kurumsal-bilgiler/sirketimiz-hakkinda" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-55.svg" alt="Şirketimiz Hakkında" title="Şirketimiz Hakkında"/></i><span class="hmenu-resimici">Şirketimiz Hakkında</span></a></li><li class="header-navbar-megamenu-button"><a href="/kurumsal-bilgiler/referanslarimiz" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-57.svg" alt="Referanslarımız" title="Referanslarımız"/></i><span class="hmenu-resimici">Referanslarımız</span></a></li><li class="header-navbar-megamenu-button"><a href="/kurumsal-bilgiler/fatura-bilgilerimiz" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-61.svg" alt="Fatura Bilgilerimiz" title="Fatura Bilgilerimiz"/></i><span class="hmenu-resimici">Fatura Bilgilerimiz</span></a></li></ul></li><li id="navbarbutton" class="navbar-alttaraf"><a href="/bize-ulasin" class="hmenu-ilkseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-63.svg" alt="Bize Ulaşın" title="Bize Ulaşın"/></i><span class="hmenu-resimici">Bize Ulaşın</span></a><ul id="header-navbar-megamenu"><li class="header-navbar-megamenu-button"><a href="/bize-ulasin/iletisim-bilgileri" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-65.svg" alt="İletişim Bilgileri" title="İletişim Bilgileri"/></i><span class="hmenu-resimici">İletişim Bilgileri</span></a></li><li class="header-navbar-megamenu-button"><a href="/bize-ulasin/iletisim-formu" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-67.svg" alt="İletişim Formu" title="İletişim Formu"/></i><span class="hmenu-resimici">İletişim Formu</span></a></li><li class="header-navbar-megamenu-button"><a href="/bize-ulasin/insan-kaynaklari" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-69.svg" alt="İnsan Kaynakları" title="İnsan Kaynakları"/></i><span class="hmenu-resimici">İnsan Kaynakları</span></a></li><li class="header-navbar-megamenu-button"><a href="/bize-ulasin/hizli-toplu-siparis" class="hmenu-ikinciseviye"><i><img width="40" height="40" src="/fileadmin/template/Resim/Navicons/nav-icon-71.svg" alt="Hızlı & Toplu Sipariş" title="Hızlı & Toplu Sipariş"/></i><span class="hmenu-resimici">Hızlı & Toplu Sipariş</span></a></li></ul></li></ul></nav></div></div></div><div class="section aimeos catalog-stage"><div class="catalog-stage-image single-item"><div class="stage-item"><img width="1580" height="300" class="stage-resim" alt="Sayfa Bulunamadı" src="/fileadmin/template/Resim/Sayfa_Baslik/sayfa-baslik-92.jpg" loading="lazy"></div><div class="catalog-list-head"><h1>Aradığınız Sayfayı Bulamadık</h1></div></div><div class="catalog-stage-breadcrumb container-xxl"><nav class="breadcrumb"><ol><li><a href="/">Ana Sayfa</a></li></ol></nav></div></div><main id="anaicerik" class="content"><div class="kolon-ic"><div class="kolon-1">
+    
+
+            <div id="c159" class="frame frame-default frame-type-menu_pages frame-layout-0">
+                
+                
+                    
+
+
+
+                
+                
+                    
+
+    
+        <header>
+            
+
+    
+            
+                
+
+    
+            <h2 class="">
+                Hızlı Menü
+            </h2>
+        
+
+
+
+            
+        
+
+
+
+            
+
+
+
+            
+
+
+
+        </header>
+    
+
+
+
+                
+                
+    
+        <ul>
+            
+                <li>
+                    <a href="/iptal-ve-iade-politikasi" title="İptal ve İade Politikası">
+                        <span>İptal ve İade Politikası</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/gizlilik-politikasi" title="Gizlilik Politikası">
+                        <span>Gizlilik Politikası</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/kullanim-sartlari" title="Kullanım Şartları">
+                        <span>Kullanım Şartları</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/haber-makale/sikca-sorulan-sorular" title="Sıkça Sorulan Sorular">
+                        <span>Sıkça Sorulan Sorular</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/bize-ulasin/hizli-toplu-siparis" title="Hızlı &amp; Toplu Sipariş">
+                        <span>Hızlı &amp; Toplu Sipariş</span>
+                    </a>
+                </li>
+            
+        </ul>
+    
+
+
+                
+                    
+
+
+
+                
+                
+                    
+
+
+
+                
+            </div>
+
+        
+
+<script type="text/javascript"> function mobileAdditionalPagesSidebar() { let sidebar = document.querySelector(".frame-type-menu_subpages ul, .frame-type-menu_pages ul").parentElement; let mobileHeaderBot = document.createElement("div"); mobileHeaderBot.classList.add("uste-sabit-kategori"); let sidebarCurrentDiv = document.createElement("div"); sidebarCurrentDiv.classList.add("sol-kolon-alt-kategori-aktif"); for (var i = 0; i < sidebar.firstElementChild.children.length; i++) { if (document.querySelector('[aria-current="page"]') != null) { sidebarCurrentDiv.innerHTML = "<span>" + document.querySelector('[aria-current="page"]').textContent + "</span>"; } else { sidebarCurrentDiv.innerHTML = "<span>" + document.querySelector(".frame-type-menu_subpages header h2, .frame-type-menu_pages header h2").textContent + "</span>"; } } if (window.innerWidth <= 812) { if (document.querySelector(".header-content-top").lastElementChild != document.querySelector(".uste-sabit-kategori")) { document.querySelector(".header-content-top").append(mobileHeaderBot); mobileHeaderBot.append(sidebarCurrentDiv); mobileHeaderBot.append(sidebar); sidebarCurrentDiv.onclick = function() { sidebar.classList.toggle("baslat"); if (sidebar.classList.contains("baslat")) { document.querySelector(".header-content").classList.add("uste-sabit-kategori-golge"); sidebar.style.maxHeight = window.innerHeight - document.querySelector(".header-content-top").offsetHeight - 20 + "px"; document.querySelector("body").classList.add("uste-sabit-kategori-golge"); } else { document.querySelector(".header-content").classList.remove("uste-sabit-kategori-golge"); sidebar.style.maxHeight = null; document.querySelector("body").classList.remove("uste-sabit-kategori-golge"); } }; } } else { if (document.querySelector(".kolon-ic>div").firstElementChild != document.querySelector(".frame-type-menu_subpages ul, .frame-type-menu_pages ul").parentElement) { document.querySelector(".kolon-ic>div").insertBefore(sidebar, document.querySelector(".kolon-ic>div").firstElementChild); if (document.querySelector(".uste-sabit-kategori")) { document.querySelector(".uste-sabit-kategori").remove(); } } } } mobileAdditionalPagesSidebar(); window.addEventListener("resize", mobileAdditionalPagesSidebar); function closeMobileAdditionalPagesSidebar(e) { if (window.innerWidth < 812) { let sidebar = document.querySelector(".frame-type-menu_subpages ul, .frame-type-menu_pages ul").parentElement; let sidebarContainer = document.querySelector(".uste-sabit-kategori"); if (!sidebar.contains(e.target) && !sidebarContainer.contains(e.target)) { sidebar.classList.remove("baslat"); document.querySelector(".header-content").classList.remove("uste-sabit-kategori-golge"); sidebar.style.maxHeight = null; document.querySelector("body").classList.remove("uste-sabit-kategori-golge"); } } } window.addEventListener("click", closeMobileAdditionalPagesSidebar); </script></div><div class="kolon-2">
+    
+
+            <div id="c160" class="frame frame-default frame-type-html frame-layout-0">
+                
+                
+                    
+
+
+
+                
+                
+                
+
+    <header>
+  <h2>Açmaya çalıştığınız sayfa artık mevcut değil. Son zamanlarda web sitemizi yeniledik ve bu süreçte bazı sayfaları taşımış veya kaldırmış olabiliriz.</h2>
+  <h3 style="padding-bottom:15px;">Laboratuvar çalışmalarınızda daha iyi sonuçlar elde etmeniz için size nasıl yardımcı olabileceğimiz hakkında daha fazla bilgi için lütfen sitemizde arama yapın.</h3>
+</header>
+<h5>OLASI NEDENLER:</h5>
+<ul>
+  <li>Sayfa farklı bir URL'ye taşınmış olabilir.</li>
+  <li>Aradığınız sayfa tamamen kaldırılmış olabilir.</li>
+  <li>Sayfaya ulaşmak için doğru URL'yi girmemiş olabilirsiniz.</li>
+  <li>Sayfa geçici olarak kaldırılmış olabilir.</li>
+</ul>
+<p>İşte deneyebileceğiniz birkaç şey:</p>
+<ul>
+  <li><a href="https://www.elementel.com/" style="text-decoration:underline;color: #ee994b">Ana Sayfa</a>'ya dönmek isteyebilirsiniz.</li>
+  <li>Yaşadığınız bir sorunu bize bildirmek için lütfen <a href="https://www.elementel.com/bize-ulasin/iletisim-formu" style="text-decoration:underline;color: #ee994b">İletişim Formu</a>'nu kullanın.</li>
+  <li>İstediğiniz ürünü kolayca bulmak için üst tarafta yer alan arama formunu kullanmayı deneyin.</li>
+</ul>
+<p>Anlayışınız için teşekkür ederiz.</p>
+
+
+
+                
+                    
+
+
+
+                
+                
+                    
+
+
+
+                
+            </div>
+
+        
+
+</div></div></main><div class="footer"><div class="footer-main"><div class="footer-top"><div class="footer-contact-follow"><div class="adresimiz"><div class="adresimiz-image"><img width="34" height="41" loading="lazy" src="/fileadmin/template/Resim/footer_icon_location.svg" alt="Tel"></div><div class="adresimiz-text"><span>Adreslerimiz</span><p><b>Genel Merkez:</b> Folkart Towers - Adalet Mah. Manas Blv. No: 39/3408, PK 35530, Bayraklı/İZMİR <br><b>İstanbul Ofis:</b> Fatih/İSTANBUL</p></div></div><div class="questions"><div class="questions-image"><img width="34" height="41" loading="lazy" src="/fileadmin/template/Resim/footer_icon_phone.svg" alt="Tel"></div><div class="questions-text"><span>Bizi Arayın</span></div><div class="questions-phone"><a aria-label="telephone" href="tel:0232 472 17 11">İzmir: (0232) 472 17 11</a><br><a aria-label="telephone" href="tel:0212 529 43 19">İstanbul: (0212) 529 43 19</a></div><div class="questions-fax"><a aria-label="fax" href="fax:0232 472 17 11">Faks: (0232) 472 17 11</a></div></div><div class="contact"><div class="contact-image"><img width="35" height="27" loading="lazy" src="/fileadmin/template/Resim/footer_icon_email.svg" alt="Е-mail"></div><div class="contact-text"><a aria-label="email" href="mailto:bilgi@elementel.com">bilgi@elementel.com</a></div></div><div class="follow"><div class="follow-text"><span>BİZİ TAKİP EDİN</span></div><div class="follow-image-first"><a href="https://www.facebook.com/elementel.ltd" target="_blank"><img width="28" height="28" loading="lazy" src="/fileadmin/template/Resim/facebook-logo.svg" alt="Facebook"></a><a href="https://twitter.com/elementel_ltd" target="_blank"><img width="28" height="28" loading="lazy" src="/fileadmin/template/Resim/x-logo.svg" alt="X"></a><a href="https://www.linkedin.com/company/elementel_ltd" target="_blank"><img width="28" height="28" loading="lazy" src="/fileadmin/template/Resim/linkedin-logo.svg" alt="Linkedin"></a><a href="https://www.youtube.com/c/Elementel" target="_blank"><img width="28" height="28" loading="lazy" src="/fileadmin/template/Resim/youtube-logo.svg" alt="Youtube"></a></div></div></div><div class="footer-links"><div class="footer-shop"><div class="shop-tex"><span>ÖNE ÇIKANLAR</span></div> <div class="shop-list"><ul></ul></div></div><div class="footer-for-us"><div class="for-us-text"><span>HIZLI ERİŞİM</span></div><div class="for-us-list"><ul><li><a href="/bize-ulasin/hizli-toplu-siparis">Hızlı & Toplu Sipariş</a></li><li><a href="/kurumsal-bilgiler/sirketimiz-hakkinda">Şirketimiz Hakkında</a></li><li><a href="/kurumsal-bilgiler/fatura-bilgilerimiz">Fatura Bilgilerimiz</a></li><li><a href="/bize-ulasin/insan-kaynaklari">İnsan Kaynakları</a></li><li><a href="/doekueman-merkezi/katalog-brosuer">Katalog & Broşür</a></li><li><a href="/kullanim-sartlari">Kullanım Şartları</a></li><li><a href="/gizlilik-politikasi">Gizlilik Politikası</a></li><li><a href="/iptal-ve-iade-politikasi">İptal ve İade Politikası</a></li></ul></div></div><div class="footer-categories"><div class="categories-text"><span>TEMSİLCİLİKLER</span></div><div class="categories-list"><ul><li><a href="/coezuem-ortaklari/hahnemuehle-fineart-gmbh">Hahnemühle FineArt GmbH</a></li><li><a href="/coezuem-ortaklari/quadrex-corporation">Quadrex Corporation</a></li><li><a href="/coezuem-ortaklari/organomation-manufacturing-inc">Organomation Manufacturing Inc</a></li></ul></div></div></div><div class="shop-payment"><div class="payment-text"><span>Güvenliğinize Önem Veriyoruz</span></div><div class="payment-image"><br><img width="234" height="40" loading="lazy" src="/fileadmin/template/Resim/comodo-ssl.svg" alt="SSL Sertifika"></div></div></div><div class="footer-bot"><div class="copyrights"><span>Elementel Copyright© 2024. Tüm hakları saklıdır.</span></div><div class="logofooter" style="align-self: center;"><a href="/"><div class="logofooter-text"><span>GÜVENİLİR ÇÖZÜMLER</span></div><div class="logofooter-image"><img width="139" height="30" loading="lazy" src="/fileadmin/template/Resim/logo-footer.svg" alt="Elementel"></div></a></div></div></div></div></div>
+<script src="https://www.google.com/recaptcha/api.js?hl="></script>
+<script src="/fileadmin/template/Js/jquery-3.7.1.min.js?1701124755"></script>
+
+<script src="/typo3conf/ext/aimeos/Resources/Public/Themes/default/aimeos.js?1711104316"></script>
+<script src="/typo3conf/ext/sr_feuser_register/Resources/Public/JavaScript/formEvents.js?1704237608"></script>
+<script src="/fileadmin/template/Js/flickity.pkgd.min.js?1701122898"></script>
+<script src="/fileadmin/template/Js/sayfa-ici.js?1708389473"></script>
+<script src="/fileadmin/template/Js/bootstrap.min.js?1701124545"></script>
+
+
+
+</body>
+</html>
