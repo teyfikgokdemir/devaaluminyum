@@ -171,7 +171,7 @@ def write_route(path,content):
 def service_cards():
     out=[]
     for i,(slug,name,desc,_id) in enumerate(services,1):
-      out.append(f'<a class="card service-card" href="/{slug}/"><div class="card-body"><div class="num">{i:02d}</div><h3>{esc(name)}</h3><p>{esc(desc)}</p></div></a>')
+      out.append(f'<a class="card service-card" href="/{slug}/"><div class="card-body"><div class="service-top"><span class="service-kicker">Deva Alüminyum</span><span class="service-arrow" aria-hidden="true">↗</span></div><h3>{esc(name)}</h3><p>{esc(desc)}</p><span class="service-link">Detayları incele</span></div></a>')
     return "".join(out)
 
 def blog_cards(items=None):
