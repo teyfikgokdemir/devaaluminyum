@@ -1413,3 +1413,62 @@ body{
   .footer-v2-cta>a{margin-top:16px;padding:12px 16px}
   .footer-v2-bottom{font-size:10.5px}
 }
+
+/* New Deva brand assets */
+.brand-new{
+  display:flex;
+  align-items:center;
+  width:210px;
+  min-width:210px;
+}
+.brand-new img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.footer-v2-logo-new{
+  display:inline-flex;
+  width:min(330px,100%);
+}
+.footer-v2-logo-new img{
+  width:100%;
+  height:auto;
+}
+
+/* Restored premium footer marquee */
+.footer-marquee-v2{
+  overflow:hidden;
+  border-bottom:1px solid rgba(47,128,255,.12);
+  background:
+    linear-gradient(90deg,rgba(47,128,255,.08),rgba(9,13,19,.96),rgba(47,128,255,.08));
+}
+.footer-marquee-v2>div{
+  width:max-content;
+  padding:13px 0 12px;
+  color:rgba(164,201,255,.44);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.17em;
+  white-space:nowrap;
+  animation:footerTicker 34s linear infinite;
+}
+.footer-marquee-v2:hover>div{animation-play-state:paused}
+@keyframes footerTicker{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+
+@media(max-width:820px){
+  .brand-new{width:170px;min-width:170px}
+  .footer-v2-logo-new{width:255px}
+  .footer-marquee-v2>div{
+    padding:11px 0 10px;
+    font-size:9px;
+    letter-spacing:.14em;
+    animation-duration:26s;
+  }
+}
+@media(max-width:420px){
+  .brand-new{width:150px;min-width:150px}
+  .footer-v2-logo-new{width:225px}
+}
