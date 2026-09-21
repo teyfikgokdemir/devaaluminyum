@@ -180,8 +180,8 @@ def shell(title,desc,path,body,service=None,article=None):
   <div class="footer-topline"></div>
   <div class="footer-marquee-v2" aria-hidden="true">
     <div class="footer-marquee-track">
-      <span>DEVA ALÜMİNYUM · KOMPOZİT CEPHE · ALÜMİNYUM DOĞRAMA · CAM BALKON · KORKULUK SİSTEMLERİ · OTOMATİK KAPI · </span>
-      <span>DEVA ALÜMİNYUM · KOMPOZİT CEPHE · ALÜMİNYUM DOĞRAMA · CAM BALKON · KORKULUK SİSTEMLERİ · OTOMATİK KAPI · </span>
+      <span class="footer-marquee-group">DEVA ALÜMİNYUM · KOMPOZİT CEPHE · ALÜMİNYUM DOĞRAMA · CAM BALKON · KORKULUK SİSTEMLERİ · OTOMATİK KAPI · DEVA ALÜMİNYUM · KOMPOZİT CEPHE · ALÜMİNYUM DOĞRAMA · CAM BALKON · KORKULUK SİSTEMLERİ · OTOMATİK KAPI · </span>
+      <span class="footer-marquee-group">DEVA ALÜMİNYUM · KOMPOZİT CEPHE · ALÜMİNYUM DOĞRAMA · CAM BALKON · KORKULUK SİSTEMLERİ · OTOMATİK KAPI · DEVA ALÜMİNYUM · KOMPOZİT CEPHE · ALÜMİNYUM DOĞRAMA · CAM BALKON · KORKULUK SİSTEMLERİ · OTOMATİK KAPI · </span>
     </div>
   </div>
   <div class="wrap footer-v2-main">
