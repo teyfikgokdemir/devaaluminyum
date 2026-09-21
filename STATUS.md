@@ -73,3 +73,6 @@ Temmuz 2025 arşivinde doğrulanan fakat güncelliği işletmeden son kez teyit 
 - Preview QA sonrası custom domain bağlanır
 - Search Console + Bing Webmaster + sitemap gönderimi yapılır
 - Google Business Profile web adresi güncellenir
+
+
+<!-- cloudflare-redeploy-trigger: 2026-09-21 -->
