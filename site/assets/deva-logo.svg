@@ -5,7 +5,6 @@
   <linearGradient id="m" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset=".55" stop-color="#EEF3F8"/><stop offset="1" stop-color="#B8C3CC"/></linearGradient>
 </defs>
 
-<!-- Stylized D as DEVA initial -->
 <g transform="translate(4 16) scale(.79)">
   <path fill="url(#b)" d="M14 0h62c50 0 88 35 88 82s-38 82-88 82H14V0Zm35 34v96h26c31 0 53-19 53-48S106 34 75 34H49Z"/>
   <path fill="#07101A" d="M18 150c17-52 50-87 101-105-35 25-59 53-76 88 17-25 37-44 63-60-24 24-42 48-55 77H18Z"/>
@@ -14,11 +13,10 @@
 
 <text x="135" y="112" fill="url(#m)" font-family="Arial,Helvetica,sans-serif" font-size="112" font-weight="800" letter-spacing="-7">EVA</text>
 
-<!-- Smaller ALÜMİNYUM, centered to the full DEVA mark and tucked up to D height -->
-<text x="154" y="143" fill="#E8EEF4" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="600" letter-spacing="8.8">ALÜMİNYUM</text>
+<!-- Preserve previous vertical placement; extend ALÜMİNYUM to the same right edge as A/tagline -->
+<text x="100" y="154" fill="#E8EEF4" font-family="Arial,Helvetica,sans-serif" font-size="25.5" font-weight="600" letter-spacing="11.05">ALÜMİNYUM</text>
 
-<!-- Tagline spans from D start to A end -->
-<line x1="14" y1="169" x2="50" y2="169" stroke="#2F80FF" stroke-width="4"/>
-<text x="64" y="174" fill="#9DAAB5" font-family="Arial,Helvetica,sans-serif" font-size="11.5" font-weight="700" letter-spacing="3.1">KAYSERİ · CEPHE SİSTEMLERİ</text>
-<line x1="395" y1="169" x2="431" y2="169" stroke="#2F80FF" stroke-width="4"/>
+<line x1="100" y1="178" x2="125" y2="178" stroke="#2F80FF" stroke-width="4"/>
+<text x="137" y="183" fill="#9DAAB5" font-family="Arial,Helvetica,sans-serif" font-size="11.8" font-weight="700" letter-spacing="3.15">KAYSERİ · CEPHE SİSTEMLERİ</text>
+<line x1="396" y1="178" x2="431" y2="178" stroke="#2F80FF" stroke-width="4"/>
 </svg>
