@@ -16,13 +16,13 @@ SERVICES=[
 ]
 BLOGS=[
  "kayseri-cam-balkon-fiyatlari-2026",
- "katlanir-mi-surgulu-mu-cam-balkon-sistem-secim-rehberi",
- "kompozit-cephe-kaplama-nedir-avantajlari-ve-secim-kriterleri",
- "aluminyum-dograma-nedir-pvc-ile-farklari",
- "balkon-korkuluk-secimi-guvenlik-ve-estetik",
- "fotoselli-otomatik-kapi-sistemleri-secim-rehberi",
- "aluminyum-ofis-bolme-sistemleri",
- "silikon-cephe-sistemleri-nedir",
+ "katlanir-mi-surgulu-mu-cam-balkon",
+ "kompozit-cephe-kaplama-nedir",
+ "kompozit-cephede-fr-a2-panel-secimi",
+ "aluminyum-dograma-mi-pvc-mi",
+ "balkon-merdiven-korkuluk-secim-rehberi",
+ "aluminyum-ofis-bolme-sistemleri-rehberi",
+ "fotoselli-otomatik-kapi-secim-rehberi",
 ]
 PAGES=CORE+[(f"/{s}/",f"svc-{i}") for i,s in enumerate(SERVICES,1)]+[(f"/blog/{s}/",f"blog-{i}") for i,s in enumerate(BLOGS,1)]
 issues=[]
@@ -74,7 +74,7 @@ with sync_playwright() as p:
         # Footer accordion must be operable.
         first=page.locator(".footer-v2-mobile details").first
         first.locator("summary").click()
-        if not first.get_attribute("open"):
+        if not first.evaluate("(el) => el.open"):
             issues.append(f"{path}: footer accordion did not open")
         if name in {"home","services","references","blog","about","contact"}:
             page.screenshot(path=f"qa/mobile-{name}.png",full_page=True)
