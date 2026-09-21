@@ -127,7 +127,7 @@ def schema(page_name, page_url, service=None, article=None):
         "mainEntityOfPage":page_url,
         "image":DOMAIN+"/assets/recovered/resimler/"+hero
       })
-    return '<script type="application/ld+json">'+json.dumps(data,ensure_ascii=False,separators=(",",":"))+'</script>
+    return '<script type="application/ld+json">'+json.dumps(data,ensure_ascii=False,separators=(",",":"))+'</script>'
 
 def shell(title,desc,path,body,service=None,article=None):
     canonical=DOMAIN+path
