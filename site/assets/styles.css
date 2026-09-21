@@ -164,3 +164,94 @@ html{scroll-behavior:smooth}
   .reveal{opacity:1;transform:none;transition:none}
   html{scroll-behavior:auto}
 }
+
+/* Modern header */
+.header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(12,15,16,.78);
+  backdrop-filter:blur(18px) saturate(1.25);
+  border-bottom:1px solid rgba(255,255,255,.06);
+  box-shadow:0 10px 30px rgba(0,0,0,.14);
+}
+.nav{min-height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{
+  width:38px;height:38px;border-radius:12px;display:grid;place-items:center;
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(235,235,235,.9));
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 8px 22px rgba(0,0,0,.18);
+}
+.brand-mark img{width:25px;height:auto}
+.brand-copy{display:flex;flex-direction:column;line-height:1.05}
+.brand-copy strong{font-size:13px;letter-spacing:.04em}
+.brand-copy small{margin-top:5px;font-size:9px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+.menu a{position:relative;padding:9px 2px}
+.menu a::after{
+  content:"";position:absolute;left:0;right:100%;bottom:2px;height:1px;background:var(--accent);
+  transition:right .28s ease
+}
+.menu a:hover::after{right:0}
+.header .cta{
+  background:rgba(255,255,255,.035);
+  border-color:rgba(255,255,255,.13);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04)
+}
+
+/* Infinite service ticker */
+.work-ticker{
+  overflow:hidden;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);
+  background:linear-gradient(90deg,rgba(217,146,76,.05),rgba(255,255,255,.015),rgba(217,146,76,.05));
+}
+.ticker-track{
+  display:flex;align-items:center;gap:22px;width:max-content;padding:15px 0;
+  animation:devaTicker 32s linear infinite;
+  will-change:transform;
+}
+.ticker-track span{
+  white-space:nowrap;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.78)
+}
+.ticker-track i{font-style:normal;color:var(--accent);opacity:.8}
+.work-ticker:hover .ticker-track{animation-play-state:paused}
+@keyframes devaTicker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* Pointer-reactive cards */
+.service-card,.blog-card,.card{
+  --mx:50%;--my:50%;
+}
+.service-card::after,.blog-card::after,.card::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:0;
+  background:radial-gradient(260px circle at var(--mx) var(--my),rgba(217,146,76,.14),transparent 55%);
+  transition:opacity .28s ease;
+}
+.service-card:hover::after,.blog-card:hover::after,.card:hover::after{opacity:1}
+
+/* Cookie banner v2 */
+.cookie-banner{
+  width:min(980px,calc(100% - 28px));
+  padding:10px 12px 10px 14px;
+  border-radius:18px;
+  background:linear-gradient(145deg,rgba(21,25,27,.96),rgba(13,16,17,.96));
+  border:1px solid rgba(255,255,255,.10);
+}
+.cookie-copy{display:flex;align-items:center;gap:10px;min-width:0}
+.cookie-copy span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cookie-icon{
+  width:28px;height:28px;display:grid;place-items:center;flex:0 0 auto;
+  border:1px solid rgba(217,146,76,.28);border-radius:9px;color:var(--accent);background:rgba(217,146,76,.06)
+}
+.cookie-actions{display:flex;align-items:center;gap:8px}
+.cookie-banner button{padding:8px 13px}
+.cookie-reject{background:transparent!important;color:var(--muted)!important}
+.cookie-accept{
+  background:var(--text)!important;color:#111!important;border-color:var(--text)!important
+}
+.cookie-accept:hover{transform:translateY(-1px);filter:brightness(1.05)}
+@media(max-width:760px){
+  .brand-copy small{display:none}
+  .cookie-banner{border-radius:14px;padding:9px 9px 9px 12px}
+  .cookie-copy span:last-child{font-size:10.5px}
+  .cookie-actions{gap:5px}
+  .cookie-banner button{padding:7px 9px;font-size:10px}
+  .ticker-track{gap:16px;padding:12px 0;animation-duration:26s}
+  .ticker-track span{font-size:10px}
+}
