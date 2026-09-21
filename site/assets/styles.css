@@ -1748,3 +1748,69 @@ body{
     font-size:clamp(32px,9.5vw,44px);
   }
 }
+
+/* Homepage hero — isolated from inner-page hero rules */
+.hero{
+  min-height:68vh;
+}
+.hero .hero-copy{
+  max-width:760px;
+  padding:92px 0 66px;
+  margin-left:0;
+  margin-right:auto;
+}
+.hero .hero-copy h1{
+  max-width:760px;
+  margin:0 0 22px;
+  font-size:clamp(46px,5.45vw,72px);
+  line-height:.99;
+  letter-spacing:-.05em;
+  white-space:normal;
+  text-align:left;
+  text-wrap:balance;
+}
+.hero .hero-copy .lead{
+  max-width:660px;
+  margin:0;
+  font-size:clamp(17px,1.55vw,20px);
+  line-height:1.62;
+  text-align:left;
+}
+.hero .hero-copy .actions{
+  margin-top:26px;
+}
+@media(max-width:900px){
+  .hero{
+    min-height:66vh;
+  }
+  .hero .hero-copy{
+    max-width:680px;
+    padding:84px 0 58px;
+  }
+  .hero .hero-copy h1{
+    max-width:680px;
+    font-size:clamp(42px,7vw,62px);
+  }
+}
+@media(max-width:560px){
+  .hero{
+    min-height:560px;
+  }
+  .hero .hero-copy{
+    max-width:none;
+    padding:82px 0 50px;
+  }
+  .hero .hero-copy h1{
+    max-width:100%;
+    font-size:clamp(40px,12vw,52px);
+    line-height:.98;
+  }
+  .hero .hero-copy .lead{
+    max-width:94%;
+    font-size:15.5px;
+    line-height:1.58;
+  }
+  .hero .hero-copy .actions{
+    margin-top:22px;
+  }
+}
