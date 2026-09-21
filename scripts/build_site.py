@@ -103,6 +103,7 @@ def shell(title,desc,path,body,service=None):
 <header class="header"><div class="wrap nav">
 <a class="brand" href="/"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum logo"><span>DEVA ALÜMİNYUM</span></a>
 <nav class="menu"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a></nav>
+<details class="mobile-nav"><summary>Menü</summary><div class="mobile-nav-panel"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a><a href="https://wa.me/905333820705">WhatsApp</a></div></details>
 <a class="cta" href="https://wa.me/905333820705">WhatsApp</a>
 </div></header>
 {body}
