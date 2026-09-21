@@ -270,7 +270,7 @@ html{scroll-behavior:smooth}
 }
 body{
   background:
-    radial-gradient(circle at 20% -10%,rgba(195,160,109,.055),transparent 28%),
+    radial-gradient(circle at 20% -10%,rgba(59,130,246,.055),transparent 28%),
     var(--bg);
 }
 .hero-media img{filter:saturate(.68) contrast(1.04) brightness(.46)}
@@ -338,7 +338,7 @@ body{
   pointer-events:auto;
 }
 .back-to-top:hover{
-  border-color:rgba(195,160,109,.42);
+  border-color:rgba(59,130,246,.42);
   color:var(--accent);
   transform:translateY(-2px);
 }
@@ -425,7 +425,7 @@ body:has(.cookie-banner) .back-to-top{
 }
 .faq-item[open] summary span{
   transform:rotate(45deg);
-  border-color:rgba(195,160,109,.4);
+  border-color:rgba(59,130,246,.4);
   color:var(--accent);
 }
 .faq-answer{
@@ -607,8 +607,8 @@ body:has(.cookie-banner) .back-to-top{
 }
 .contact-service-grid a:hover{
   transform:translateY(-2px);
-  border-color:rgba(195,160,109,.32);
-  background:rgba(195,160,109,.055);
+  border-color:rgba(59,130,246,.32);
+  background:rgba(59,130,246,.055);
 }
 .contact-services-cta{
   margin-top:auto;
@@ -701,7 +701,7 @@ body:has(.cookie-banner) .back-to-top{
 /* Visual services page */
 .service-manifesto{
   border-bottom:1px solid var(--line);
-  background:linear-gradient(90deg,rgba(195,160,109,.055),rgba(255,255,255,.01));
+  background:linear-gradient(90deg,rgba(59,130,246,.055),rgba(255,255,255,.01));
 }
 .manifesto-line{
   min-height:110px;
@@ -731,7 +731,7 @@ body:has(.cookie-banner) .back-to-top{
 }
 .service-visual-card:hover{
   transform:translateY(-4px);
-  border-color:rgba(195,160,109,.32);
+  border-color:rgba(59,130,246,.32);
   box-shadow:0 20px 48px rgba(0,0,0,.24);
 }
 .service-visual-media{
@@ -787,7 +787,7 @@ body:has(.cookie-banner) .back-to-top{
   padding:0;
   border-top:1px solid var(--line);
   background:
-    radial-gradient(circle at 12% 0%,rgba(195,160,109,.06),transparent 28%),
+    radial-gradient(circle at 12% 0%,rgba(59,130,246,.06),transparent 28%),
     #0a0d0e;
 }
 .footer-marquee{
@@ -974,4 +974,88 @@ body:has(.cookie-banner) .back-to-top{
   .footer-brand strong{font-size:16px}
   .footer-logo{width:44px;height:44px}
   .footer-main{padding-top:34px}
+}
+
+/* Final Deva palette — graphite + technical blue + cool metal */
+:root{
+  --bg:#090C10;
+  --panel:#11161C;
+  --panel2:#171E26;
+  --text:#F4F7FA;
+  --muted:#98A4AE;
+  --line:rgba(210,220,228,.11);
+  --metal:#D7E0E6;
+  --accent:#3B82F6;
+  --accent-soft:#245FB8;
+}
+body{
+  background:
+    radial-gradient(circle at 18% -8%,rgba(59,130,246,.08),transparent 26%),
+    radial-gradient(circle at 92% 10%,rgba(99,158,255,.035),transparent 20%),
+    var(--bg);
+}
+.header{
+  background:rgba(8,11,15,.91);
+  border-bottom-color:rgba(214,224,232,.08);
+}
+.eyebrow,.service-kicker,.meta-item strong,.read-more,
+.service-visual-copy>span,.footer-col h3{
+  color:var(--accent);
+}
+.menu a::after{background:var(--accent)}
+.header .cta:hover,
+.btn:hover{
+  border-color:rgba(59,130,246,.34);
+}
+.service-card{
+  background:
+    radial-gradient(circle at 100% 0%,rgba(59,130,246,.11),transparent 36%),
+    linear-gradient(145deg,rgba(19,25,31,.98),rgba(12,17,22,.98));
+}
+.service-card:hover{
+  border-color:rgba(59,130,246,.38);
+  box-shadow:0 24px 64px rgba(0,0,0,.30),0 0 0 1px rgba(59,130,246,.05);
+}
+.service-card::after,.blog-card::after,.card::after{
+  background:radial-gradient(260px circle at var(--mx) var(--my),rgba(59,130,246,.16),transparent 56%);
+}
+.service-card:hover .service-arrow,
+.faq-item[open] summary span,
+.back-to-top:hover{
+  border-color:rgba(59,130,246,.42);
+  color:var(--accent);
+}
+.work-ticker{
+  background:linear-gradient(90deg,rgba(59,130,246,.055),rgba(255,255,255,.012),rgba(59,130,246,.055));
+}
+.ticker-track i{color:var(--accent)}
+.cookie-icon{
+  border-color:rgba(59,130,246,.30);
+  color:var(--accent);
+  background:rgba(59,130,246,.07);
+}
+.cookie-banner button:hover{border-color:rgba(59,130,246,.42);color:var(--accent)}
+.contact-service-grid a:hover{
+  border-color:rgba(59,130,246,.34);
+  background:rgba(59,130,246,.055);
+}
+.about-service-list span:hover{
+  border-color:rgba(59,130,246,.28);
+}
+.service-manifesto{
+  background:linear-gradient(90deg,rgba(59,130,246,.055),rgba(255,255,255,.008));
+}
+.service-visual-card:hover{
+  border-color:rgba(59,130,246,.34);
+}
+.footer-premium{
+  background:
+    radial-gradient(circle at 12% 0%,rgba(59,130,246,.075),transparent 28%),
+    #090C10;
+}
+.footer-marquee{color:rgba(95,157,255,.045)}
+.footer-mobile-cols details[open] summary span{color:var(--accent)}
+.footer-contact-link:hover,.footer-col a:hover{color:var(--accent)}
+.footer-whatsapp{
+  box-shadow:0 14px 32px rgba(37,211,102,.18);
 }
