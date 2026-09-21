@@ -176,7 +176,70 @@ def shell(title,desc,path,body,service=None,article=None):
 <a class="cta" href="https://wa.me/905333820705">WhatsApp</a>
 </div></header>
 {body}
-<footer class="footer"><div class="wrap footer-inner"><div>Deva Alüminyum · Kayseri</div><div class="small">Alüminyum doğrama · cephe · korkuluk · cam balkon · otomatik kapı</div></div></footer>
+<footer class="footer footer-premium">
+  <div class="footer-marquee" aria-hidden="true"><div>DEVA ALÜMİNYUM · CEPHE SİSTEMLERİ · DEVA ALÜMİNYUM · CEPHE SİSTEMLERİ · DEVA ALÜMİNYUM · CEPHE SİSTEMLERİ · </div></div>
+  <div class="wrap footer-main">
+    <div class="footer-brand-block">
+      <a class="footer-brand" href="/">
+        <span class="footer-logo"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum"></span>
+        <span><strong>DEVA ALÜMİNYUM</strong><small>KAYSERİ · CEPHE SİSTEMLERİ</small></span>
+      </a>
+      <p>Alüminyum, cephe ve yapı sistemlerinde ölçüye ve projeye uygun uygulama çözümleri.</p>
+      <a class="footer-contact-link" href="tel:{PHONE}">{DISPLAY_PHONE}</a>
+      <a class="footer-contact-link" href="mailto:{EMAIL}">{EMAIL}</a>
+    </div>
+
+    <div class="footer-desktop-cols">
+      <div class="footer-col"><h3>Hizmetler</h3>
+        <a href="/aluminyum-kompozit-kaplama/">Kompozit cephe</a>
+        <a href="/aluminyum-dograma/">Alüminyum doğrama</a>
+        <a href="/cam-balkon-sistemleri/">Cam balkon</a>
+        <a href="/fotoselli-otomatik-kapi/">Otomatik kapı</a>
+      </div>
+      <div class="footer-col"><h3>Kurumsal</h3>
+        <a href="/hakkimizda/">Hakkımızda</a>
+        <a href="/referanslar/">Referanslar</a>
+        <a href="/blog/">Blog</a>
+        <a href="/iletisim/">İletişim</a>
+      </div>
+      <div class="footer-col"><h3>Adres</h3>
+        <p>{ADDRESS}</p>
+        <a href="/iletisim/">Konumu ve iletişimi gör ↗</a>
+      </div>
+    </div>
+
+    <div class="footer-mobile-cols">
+      <details><summary>Hizmetler <span>+</span></summary><div>
+        <a href="/aluminyum-kompozit-kaplama/">Kompozit cephe</a>
+        <a href="/aluminyum-dograma/">Alüminyum doğrama</a>
+        <a href="/cam-balkon-sistemleri/">Cam balkon</a>
+        <a href="/fotoselli-otomatik-kapi/">Otomatik kapı</a>
+        <a href="/hizmetler/">Tüm hizmetler</a>
+      </div></details>
+      <details><summary>Kurumsal <span>+</span></summary><div>
+        <a href="/hakkimizda/">Hakkımızda</a>
+        <a href="/referanslar/">Referanslar</a>
+        <a href="/blog/">Blog</a>
+        <a href="/iletisim/">İletişim</a>
+      </div></details>
+      <details><summary>İletişim <span>+</span></summary><div>
+        <a href="tel:{PHONE}">{DISPLAY_PHONE}</a>
+        <a href="mailto:{EMAIL}">{EMAIL}</a>
+        <p>{ADDRESS}</p>
+      </div></details>
+    </div>
+  </div>
+
+  <div class="wrap footer-cta">
+    <div><div class="eyebrow">PROJENİZİ KONUŞALIM</div><h2>Fikrinizi birlikte gerçeğe dönüştürelim.</h2><p>Fotoğraf, ölçü ve uygulama detaylarını WhatsApp üzerinden paylaşın.</p></div>
+    <a class="footer-whatsapp" href="https://wa.me/905333820705">WhatsApp’tan Başla <span>→</span></a>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <span>© 2026 Deva Alüminyum. Tüm hakları saklıdır.</span>
+    <span>Kayseri · Kocasinan</span>
+  </div>
+</footer>
 <a class="floating-whatsapp" href="https://wa.me/905333820705" target="_blank" rel="noopener" aria-label="WhatsApp ile iletişime geç">
   <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.37c-.26-.13-1.53-.75-1.77-.84-.24-.09-.41-.13-.59.13-.17.26-.68.84-.83 1.01-.15.17-.31.2-.57.07-.26-.13-1.1-.41-2.1-1.31-.78-.69-1.3-1.54-1.45-1.8-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.17.04-.33-.02-.46-.07-.13-.59-1.42-.81-1.95-.21-.51-.43-.44-.59-.45h-.5c-.17 0-.46.07-.7.33-.24.26-.92.9-.92 2.19s.94 2.54 1.07 2.71c.13.17 1.85 2.83 4.48 3.97.63.27 1.12.43 1.5.55.63.2 1.2.17 1.65.1.5-.07 1.53-.63 1.75-1.23.22-.61.22-1.13.15-1.23-.06-.11-.24-.17-.5-.3Z"/><path d="M16.03 3.2c-7.07 0-12.82 5.71-12.82 12.73 0 2.24.59 4.43 1.71 6.35L3.1 28.8l6.7-1.76a12.9 12.9 0 0 0 6.23 1.58h.01c7.07 0 12.82-5.71 12.82-12.73S23.1 3.2 16.03 3.2Zm0 23.27h-.01a10.73 10.73 0 0 1-5.46-1.49l-.39-.23-3.97 1.04 1.06-3.85-.25-.4a10.57 10.57 0 0 1-1.64-5.65c0-5.84 4.78-10.59 10.66-10.59 2.85 0 5.53 1.1 7.54 3.1a10.49 10.49 0 0 1 3.12 7.49c0 5.84-4.78 10.59-10.66 10.59Z"/></svg>
 </a>
