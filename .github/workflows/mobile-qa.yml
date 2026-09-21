@@ -1,0 +1,41 @@
+name: Deva mobile visual QA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "content/blogs.json"
+      - "scripts/build_site.py"
+      - "scripts/mobile_qa.py"
+      - ".github/workflows/mobile-qa.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mobile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright
+      - run: python -m playwright install --with-deps chromium
+      - run: python scripts/build_site.py
+      - name: Start local preview
+        run: |
+          python -m http.server 4173 --directory dist >/tmp/deva-server.log 2>&1 &
+          sleep 2
+      - name: Run mobile viewport audit
+        run: python scripts/mobile_qa.py
+      - name: Upload mobile screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deva-mobile-qa
+          path: qa/mobile-*
+          retention-days: 7
