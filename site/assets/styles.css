@@ -526,3 +526,12 @@ body:has(.cookie-banner) .back-to-top{
     line-height:1.3;
   }
 }
+
+/* Brand subtitle */
+.brand-copy{display:flex;flex-direction:column;line-height:1.05}
+.brand-copy strong{font-size:14px;font-weight:800;letter-spacing:.035em;white-space:nowrap}
+.brand-copy small{margin-top:5px;font-size:9px;font-weight:700;letter-spacing:.09em;color:var(--muted);white-space:nowrap}
+@media(max-width:700px){
+  .brand-copy strong{font-size:13px}
+  .brand-copy small{font-size:8px;letter-spacing:.07em}
+}
