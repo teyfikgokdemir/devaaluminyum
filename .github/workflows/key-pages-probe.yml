@@ -1,0 +1,45 @@
+name: Probe key legacy pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/key-pages-probe.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch key pages
+        shell: bash
+        run: |
+          set -euxo pipefail
+          mkdir -p archive/key-pages
+          : > archive/key-pages/status.csv
+          TS=20250711185606
+          declare -A PAGES
+          PAGES[referanslar]="https://devaaluminyum.com/Sayfa/72/referanslarimiz"
+          PAGES[hizmetler]="https://devaaluminyum.com/Sayfa/56/hizmetlerimiz"
+          PAGES[hakkimizda]="https://devaaluminyum.com/Hakkimizda.html"
+          PAGES[iletisim]="https://devaaluminyum.com/iletisim.html"
+          for K in referanslar hizmetler hakkimizda iletisim; do
+            SRC="https://web.archive.org/web/${TS}id_/${PAGES[$K]}"
+            CODE=$(curl -A "Mozilla/5.0" -L --connect-timeout 5 --max-time 20 -sS -o "archive/key-pages/${K}.html" -w "%{http_code}" "$SRC" || true)
+            SIZE=$(wc -c < "archive/key-pages/${K}.html" 2>/dev/null || echo 0)
+            echo "$K,$CODE,$SIZE" >> archive/key-pages/status.csv
+          done
+      - name: Commit key pages
+        run: |
+          git config user.name "deva-recovery-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add archive/key-pages/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "archive: recover key Deva legacy pages"
+          git pull --rebase
+          git push
