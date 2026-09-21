@@ -154,7 +154,7 @@ def shell(title,desc,path,body,service=None,article=None):
 <body>
 <a class="skip-link" href="#main-content">İçeriğe geç</a>
 <header class="header"><div class="wrap nav">
-<a class="brand" href="/"><span class="brand-mark"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum logo"></span><span class="brand-copy"><strong>DEVA ALÜMİNYUM</strong><small>Kayseri · Cephe Sistemleri</small></span></a>
+<a class="brand" href="/"><span class="brand-mark"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum logo"></span><span class="brand-title">DEVA ALÜMİNYUM</span></a>
 <nav class="menu"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/blog/">Blog</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a></nav>
 <details class="mobile-nav"><summary>Menü</summary><div class="mobile-nav-panel"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/blog/">Blog</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a><a href="https://wa.me/905333820705">WhatsApp</a></div></details>
 <a class="cta" href="https://wa.me/905333820705">WhatsApp</a>
@@ -162,7 +162,7 @@ def shell(title,desc,path,body,service=None,article=None):
 {body}
 <footer class="footer"><div class="wrap footer-inner"><div>Deva Alüminyum · Kayseri</div><div class="small">Alüminyum doğrama · cephe · korkuluk · cam balkon · otomatik kapı</div></div></footer>
 <a class="floating-whatsapp" href="https://wa.me/905333820705" target="_blank" rel="noopener" aria-label="WhatsApp ile iletişime geç">
-  <span class="wa-icon" aria-hidden="true">✆</span><span class="wa-label">WhatsApp</span>
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.37c-.26-.13-1.53-.75-1.77-.84-.24-.09-.41-.13-.59.13-.17.26-.68.84-.83 1.01-.15.17-.31.2-.57.07-.26-.13-1.1-.41-2.1-1.31-.78-.69-1.3-1.54-1.45-1.8-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.17.04-.33-.02-.46-.07-.13-.59-1.42-.81-1.95-.21-.51-.43-.44-.59-.45h-.5c-.17 0-.46.07-.7.33-.24.26-.92.9-.92 2.19s.94 2.54 1.07 2.71c.13.17 1.85 2.83 4.48 3.97.63.27 1.12.43 1.5.55.63.2 1.2.17 1.65.1.5-.07 1.53-.63 1.75-1.23.22-.61.22-1.13.15-1.23-.06-.11-.24-.17-.5-.3Z"/><path d="M16.03 3.2c-7.07 0-12.82 5.71-12.82 12.73 0 2.24.59 4.43 1.71 6.35L3.1 28.8l6.7-1.76a12.9 12.9 0 0 0 6.23 1.58h.01c7.07 0 12.82-5.71 12.82-12.73S23.1 3.2 16.03 3.2Zm0 23.27h-.01a10.73 10.73 0 0 1-5.46-1.49l-.39-.23-3.97 1.04 1.06-3.85-.25-.4a10.57 10.57 0 0 1-1.64-5.65c0-5.84 4.78-10.59 10.66-10.59 2.85 0 5.53 1.1 7.54 3.1a10.49 10.49 0 0 1 3.12 7.49c0 5.84-4.78 10.59-10.66 10.59Z"/></svg>
 </a>
 <button class="back-to-top" id="back-to-top" type="button" aria-label="Sayfanın başına dön" aria-hidden="true">
   <span aria-hidden="true">↑</span>
@@ -247,7 +247,7 @@ def build():
 <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Blog</div><h2>Güncel rehberler.</h2></div><p>Cam balkon, kompozit cephe, doğrama ve yapı sistemleri hakkında karar vermeyi kolaylaştıran içerikler.</p></div>
 <div class="grid">{blog_cards(BLOGS[:3])}</div><div class="actions"><a class="btn" href="/blog/">Tüm yazıları gör</a></div></div></section>
 <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Sık sorulan sorular</div><h2>Deva Alüminyum hakkında.</h2></div><p>Hizmet, bölge ve iletişim hakkında kısa yanıtlar.</p></div>
-<div class="grid">{''.join(f'<div class="card"><div class="card-body"><h3>{esc(q)}</h3><p>{esc(a)}</p></div></div>' for q,a in FAQ_ITEMS)}</div></div></section>
+<div class="faq-list">{''.join(f'<details class="faq-item"><summary>{esc(q)}<span>+</span></summary><div class="faq-answer"><p>{esc(a)}</p></div></details>' for q,a in FAQ_ITEMS)}</div></div></section>
 <section class="section"><div class="wrap meta-strip"><div class="meta-item"><strong>Konum</strong>Kayseri</div><div class="meta-item"><strong>Telefon</strong><a href="tel:{PHONE}">{DISPLAY_PHONE}</a></div><div class="meta-item"><strong>Hızlı iletişim</strong><a href="https://wa.me/905333820705">WhatsApp üzerinden yazın</a></div></div></section>
 </main>"""
     (DIST/"index.html").write_text(shell("Deva Alüminyum | Kayseri Alüminyum ve Cephe Sistemleri","Kayseri’de kompozit cephe, alüminyum doğrama, korkuluk, cam balkon, ofis bölme ve fotoselli kapı uygulamaları.","/",body),encoding="utf-8")
