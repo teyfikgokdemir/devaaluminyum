@@ -271,13 +271,13 @@ def build():
 <section class="section about-values"><div class="wrap about-value-grid">
   <article class="about-value-card">
     <div class="eyebrow">Misyonumuz</div>
-    <h2>Kaliteden ödün vermeden sürekli gelişim.</h2>
-    <p>Deva Alüminyum Kompozit Cephe Sistemleri olarak, çalıştığımız tüm alanlarda en iyi hizmeti sunmak. Bunu yaparken de müşteri memnuniyetini ön planda tutarak, etik ve ahlaki değerler ışığında, kaliteden ödün vermeden satışlarımızı arttırmak, gelişme ve iyileşme faaliyetlerini sürekli kılarak örnek bir kuruluş olmaktır.</p>
+    <h2>Her projede güvenilir, kaliteli ve sürdürülebilir çözüm üretmek.</h2>
+    <p>Deva Alüminyum olarak amacımız; hizmet verdiğimiz tüm alanlarda müşteri ihtiyaçlarını doğru anlayan, uygulama kalitesini ön planda tutan ve güven veren çözümler sunmaktır. Çalışmalarımızı etik değerlere bağlı, şeffaf ve sorumluluk sahibi bir anlayışla yürütür; kalite standardımızı sürekli geliştirerek uzun vadeli müşteri memnuniyeti oluşturmayı hedefleriz.</p>
   </article>
   <article class="about-value-card">
     <div class="eyebrow">Vizyonumuz</div>
-    <h2>Daha iyiye ve daima ileriye.</h2>
-    <p>Çalışma arkadaşlarımızın seçimi ve eğitimi ile temelleri atılmış olan firmamızı, geçmişteki başarılarımızdan esinlenerek daha iyiye ve daima ileriye taşımak; çağdaş Türkiye’mizde içinde yer aldığımız sektörde örnek ve önder bir kuruluş olarak varlığımızı sürdürmek vizyonumuzdur.</p>
+    <h2>Alüminyum ve cephe sistemlerinde güvenilir bir referans noktası olmak.</h2>
+    <p>Tecrübemizi, gelişen uygulama teknikleri ve güçlü ekip anlayışıyla birleştirerek Deva Alüminyum’u sürekli ileri taşımayı hedefliyoruz. Yeniliklere açık, işi doğru yapan ve müşterileri tarafından güvenle tercih edilen bir marka olarak; Kayseri’de ve hizmet verdiğimiz bölgelerde kalıcı değer üreten bir yapı olmayı amaçlıyoruz.</p>
   </article>
 </div></section>
 <section class="section"><div class="wrap">
