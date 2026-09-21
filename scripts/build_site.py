@@ -176,45 +176,52 @@ def shell(title,desc,path,body,service=None,article=None):
 <a class="cta" href="https://wa.me/905333820705">WhatsApp</a>
 </div></header>
 {body}
-<footer class="footer footer-premium">
-  <div class="footer-marquee" aria-hidden="true"><div>DEVA ALÜMİNYUM · CEPHE SİSTEMLERİ · DEVA ALÜMİNYUM · CEPHE SİSTEMLERİ · DEVA ALÜMİNYUM · CEPHE SİSTEMLERİ · </div></div>
-  <div class="wrap footer-main">
-    <div class="footer-brand-block">
-      <a class="footer-brand" href="/">
-        <span class="footer-logo"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum"></span>
+<footer class="footer footer-v2">
+  <div class="footer-topline"></div>
+  <div class="wrap footer-v2-main">
+    <div class="footer-v2-brand">
+      <a class="footer-v2-logo" href="/">
+        <span class="footer-logo-box"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum"></span>
         <span><strong>DEVA ALÜMİNYUM</strong><small>KAYSERİ · CEPHE SİSTEMLERİ</small></span>
       </a>
-      <p>Alüminyum, cephe ve yapı sistemlerinde ölçüye ve projeye uygun uygulama çözümleri.</p>
-      <a class="footer-contact-link" href="tel:{PHONE}">{DISPLAY_PHONE}</a>
-      <a class="footer-contact-link" href="mailto:{EMAIL}">{EMAIL}</a>
+      <h2>Yapının çizgisini alüminyumla tamamlıyoruz.</h2>
+      <p>Kompozit cephe, alüminyum doğrama, korkuluk, cam balkon, ofis bölme ve otomatik kapı uygulamalarında çözüm ortağınız.</p>
+      <div class="footer-v2-contact">
+        <a href="tel:{PHONE}">{DISPLAY_PHONE}</a>
+        <a href="mailto:{EMAIL}">{EMAIL}</a>
+      </div>
     </div>
 
-    <div class="footer-desktop-cols">
-      <div class="footer-col"><h3>Hizmetler</h3>
-        <a href="/aluminyum-kompozit-kaplama/">Kompozit cephe</a>
-        <a href="/aluminyum-dograma/">Alüminyum doğrama</a>
-        <a href="/cam-balkon-sistemleri/">Cam balkon</a>
-        <a href="/fotoselli-otomatik-kapi/">Otomatik kapı</a>
+    <div class="footer-v2-nav">
+      <div>
+        <h3>Hizmetler</h3>
+        <a href="/aluminyum-kompozit-kaplama/">Kompozit Cephe</a>
+        <a href="/aluminyum-dograma/">Alüminyum Doğrama</a>
+        <a href="/cam-balkon-sistemleri/">Cam Balkon</a>
+        <a href="/fotoselli-otomatik-kapi/">Otomatik Kapı</a>
+        <a href="/hizmetler/">Tüm Hizmetler</a>
       </div>
-      <div class="footer-col"><h3>Kurumsal</h3>
+      <div>
+        <h3>Kurumsal</h3>
         <a href="/hakkimizda/">Hakkımızda</a>
         <a href="/referanslar/">Referanslar</a>
         <a href="/blog/">Blog</a>
         <a href="/iletisim/">İletişim</a>
       </div>
-      <div class="footer-col"><h3>Adres</h3>
+      <div>
+        <h3>Konum</h3>
         <p>{ADDRESS}</p>
-        <a href="/iletisim/">Konumu ve iletişimi gör ↗</a>
+        <a href="/iletisim/">Haritada Gör ↗</a>
       </div>
     </div>
 
-    <div class="footer-mobile-cols">
+    <div class="footer-v2-mobile">
       <details><summary>Hizmetler <span>+</span></summary><div>
-        <a href="/aluminyum-kompozit-kaplama/">Kompozit cephe</a>
-        <a href="/aluminyum-dograma/">Alüminyum doğrama</a>
-        <a href="/cam-balkon-sistemleri/">Cam balkon</a>
-        <a href="/fotoselli-otomatik-kapi/">Otomatik kapı</a>
-        <a href="/hizmetler/">Tüm hizmetler</a>
+        <a href="/aluminyum-kompozit-kaplama/">Kompozit Cephe</a>
+        <a href="/aluminyum-dograma/">Alüminyum Doğrama</a>
+        <a href="/cam-balkon-sistemleri/">Cam Balkon</a>
+        <a href="/fotoselli-otomatik-kapi/">Otomatik Kapı</a>
+        <a href="/hizmetler/">Tüm Hizmetler</a>
       </div></details>
       <details><summary>Kurumsal <span>+</span></summary><div>
         <a href="/hakkimizda/">Hakkımızda</a>
@@ -230,13 +237,13 @@ def shell(title,desc,path,body,service=None,article=None):
     </div>
   </div>
 
-  <div class="wrap footer-cta">
-    <div><div class="eyebrow">PROJENİZİ KONUŞALIM</div><h2>Fikrinizi birlikte gerçeğe dönüştürelim.</h2><p>Fotoğraf, ölçü ve uygulama detaylarını WhatsApp üzerinden paylaşın.</p></div>
-    <a class="footer-whatsapp" href="https://wa.me/905333820705">WhatsApp’tan Başla <span>→</span></a>
+  <div class="wrap footer-v2-cta">
+    <div><span>PROJENİZİ KONUŞALIM</span><strong>Fotoğraf ve ölçüyü gönderin, birlikte değerlendirelim.</strong></div>
+    <a href="https://wa.me/905333820705">WhatsApp <b>→</b></a>
   </div>
 
-  <div class="wrap footer-bottom">
-    <span>© 2026 Deva Alüminyum. Tüm hakları saklıdır.</span>
+  <div class="wrap footer-v2-bottom">
+    <span>© 2026 Deva Alüminyum</span>
     <span>Kayseri · Kocasinan</span>
   </div>
 </footer>
