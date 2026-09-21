@@ -255,7 +255,38 @@ def build():
     services_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Hizmetler</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Hizmetler</div><h1>Alüminyum ve cephe uygulamaları</h1><p class="lead">Deva Alüminyum’un alüminyum, cephe ve yapı sistemleri hizmetleri.</p></div></section><section class="section"><div class="wrap"><div class="grid">{service_cards()}</div></div></section></main>"""
     write_route("hizmetler",shell("Hizmetler | Deva Alüminyum","Deva Alüminyum’un Kayseri’de sunduğu alüminyum ve cephe uygulamaları.","/hizmetler/",services_body))
 
-    about_body="""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Hakkımızda</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Deva Alüminyum</div><h1>Kayseri’de alüminyum ve cephe sistemleri.</h1></div></section><section class="section"><div class="wrap prose"><p>Deva Alüminyum Kompozit Cephe Sistemleri; alüminyum kompozit kaplama, bina giriş kompozit kaplama, alüminyum doğrama, silikon cephe, korkuluk sistemleri, bina giriş kapıları, ofis bölmeleri, fotoselli otomatik kapılar ve cam balkon uygulamalarıyla hizmet verir.</p><p>Müşteri memnuniyeti, dürüstlük, kalite ve sürekli gelişim Deva Alüminyum’un temel çalışma yaklaşımını oluşturur.</p></div></section></main>"""
+    about_body="""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Hakkımızda</div>
+<section class="page-hero about-hero"><div class="wrap"><div class="eyebrow">Deva Alüminyum</div><h1>Alüminyum ve cephe sistemlerinde güvenilir uygulama.</h1><p class="lead">Müşteri memnuniyetini, kaliteyi ve sürekli gelişimi çalışma anlayışının merkezine alan Deva Alüminyum.</p></div></section>
+<section class="section"><div class="wrap about-layout">
+  <div class="about-intro">
+    <div class="eyebrow">Hakkımızda</div>
+    <h2>Deva Alüminyum Kompozit Cephe Sistemleri</h2>
+  </div>
+  <div class="about-copy">
+    <p>Deva Alüminyum Kompozit Cephe Sistemleri firması olarak; Alüminyum Kompozit Kaplama, Bina Giriş Kompozit Kaplama, Fabrika Yönetim Binası Kompozit Kaplama, Alüminyum Doğrama, Silikon Cephe Kaplama, Alüminyum Korkulukları, Merdiven Korkulukları, Balkon Korkulukları, Fransız Balkon Korkulukları, Bina Giriş Kapısı, Alüminyum Ofis Bölmeleri ve Fotoselli Otomatik Kapı Sistemleri sektörleri içerisinde sürekli kendimizi yenileyerek müşterilerimize her zaman daha kaliteli hizmet verme çabası içinde olup müşteri memnuniyetini önemsemekteyiz.</p>
+    <p>Deva Alüminyum Kompozit Cephe Sistemleri olarak öncül amacımız, severek ve büyük bir heyecanla yaptığımız işimiz ile müşterilerimizin ihtiyaçlarına en iyi şekilde cevap verip aynı zamanda müşterilerimizin memnuniyetini sağlamaktır.</p>
+    <p>Sektöründe lider bir firma olmayı benimseyen firmamız; firmalar ve müşterilerine yenilikçi, dürüst ve kaliteli hizmet vermeyi ilke edinmiştir. Firmamızın başarılı olmasında en büyük pay siz değerli müşterilerimize aittir.</p>
+  </div>
+</div></section>
+<section class="section about-values"><div class="wrap about-value-grid">
+  <article class="about-value-card">
+    <div class="eyebrow">Misyonumuz</div>
+    <h2>Kaliteden ödün vermeden sürekli gelişim.</h2>
+    <p>Deva Alüminyum Kompozit Cephe Sistemleri olarak, çalıştığımız tüm alanlarda en iyi hizmeti sunmak. Bunu yaparken de müşteri memnuniyetini ön planda tutarak, etik ve ahlaki değerler ışığında, kaliteden ödün vermeden satışlarımızı arttırmak, gelişme ve iyileşme faaliyetlerini sürekli kılarak örnek bir kuruluş olmaktır.</p>
+  </article>
+  <article class="about-value-card">
+    <div class="eyebrow">Vizyonumuz</div>
+    <h2>Daha iyiye ve daima ileriye.</h2>
+    <p>Çalışma arkadaşlarımızın seçimi ve eğitimi ile temelleri atılmış olan firmamızı, geçmişteki başarılarımızdan esinlenerek daha iyiye ve daima ileriye taşımak; çağdaş Türkiye’mizde içinde yer aldığımız sektörde örnek ve önder bir kuruluş olarak varlığımızı sürdürmek vizyonumuzdur.</p>
+  </article>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Faaliyet alanlarımız</div><h2>Uzmanlık alanları.</h2></div><p>Alüminyum ve cephe sistemlerinde farklı yapı tiplerine yönelik uygulamalar.</p></div>
+  <div class="about-service-list">
+    <span>Alüminyum Kompozit Kaplama</span><span>Bina Giriş Kompozit Kaplama</span><span>Fabrika Yönetim Binası Kompozit Kaplama</span><span>Alüminyum Doğrama</span><span>Silikon Cephe Kaplama</span><span>Alüminyum Korkulukları</span><span>Merdiven Korkulukları</span><span>Balkon Korkulukları</span><span>Fransız Balkon Korkulukları</span><span>Bina Giriş Kapısı</span><span>Alüminyum Ofis Bölmeleri</span><span>Fotoselli Otomatik Kapı Sistemleri</span>
+  </div>
+</div></section>
+</main>"""
     write_route("hakkimizda",shell("Hakkımızda | Deva Alüminyum","Deva Alüminyum’un Kayseri’deki alüminyum ve cephe sistemleri faaliyetleri hakkında.","/hakkimizda/",about_body))
 
     gallery=''.join(f'<a href="/assets/recovered/resimler/{x}" target="_blank"><img loading="lazy" src="/assets/recovered/resimler/{x}" alt="Deva Alüminyum referans uygulaması {i:02d}"></a>' for i,x in enumerate(refs,1))
