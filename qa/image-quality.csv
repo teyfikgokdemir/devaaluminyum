@@ -1,9 +1,5 @@
 path,width,height,megapixels,bytes,grade
 dist/assets/recovered/Tema/logo.png,258,157,0.041,6029,E
-dist/assets/recovered/resimler/0-214725407200-639245830c396b4594c4edb07b08e22da.jpg,150,150,0.022,5583,E
-dist/assets/recovered/resimler/0-433146404453-45c48cce2e2d7fbdea1afc51c7c6ad26a.jpg,150,150,0.022,4533,E
-dist/assets/recovered/resimler/0-446567936662-c4ca4238a0b923820dcc509a6f75849ba.jpg,150,150,0.022,4534,E
-dist/assets/recovered/resimler/0-511705664519-f28875dc837fbf7ae4776e5948af7a65a.jpg,150,150,0.022,5472,E
 dist/assets/recovered/resimler/0-620694757554-37693cfc748049e45d87b8c7d8b9aacd.jpg,720,960,0.691,67898,D
 dist/assets/recovered/resimler/0-620694757554-3c59dc048e8850243be8079a5c74d079.jpg,960,540,0.518,71074,C
 dist/assets/recovered/resimler/0-620694757554-b6d767d2f8ed5d21a44b0e5886680cb9.jpg,1280,640,0.819,83018,C
@@ -27,10 +23,6 @@ dist/assets/recovered/resimler/0-761997625541-aab3238922bcc25a6f606eb525ffdc56.j
 dist/assets/recovered/resimler/0-761997625541-c20ad4d76fe97759aa27a0c99bff6710.jpg,720,960,0.691,67898,D
 dist/assets/recovered/resimler/0-761997625541-c51ce410c124a10e0db5e4b97fc2af39.jpg,1280,640,0.819,105619,C
 dist/assets/recovered/resimler/0-761997625541-c74d97b01eae257e44aa9d5bade97baf.jpg,960,540,0.518,64082,C
-dist/assets/recovered/resimler/0-770471526169-1679091c5a880faf6fb5e6087eb1b2dca.jpg,150,150,0.022,5097,E
-dist/assets/recovered/resimler/0-802471866709-0eaab519d7112be59f099bf8e4c33903a.jpg,150,150,0.022,5328,E
-dist/assets/recovered/resimler/0-913389889372-76b1a56588660586c5835c37378ad644a.jpg,150,150,0.022,4781,E
-dist/assets/recovered/resimler/0-992801538758-c9f0f895fb98ab9159f51fd0297e236da.jpeg,150,150,0.022,5556,E
 dist/assets/recovered/resimler/aaaaaa2614c0c06ceda22c96e9b6de0893de7f.203318.jpg,1920,1080,2.074,145766,A
 dist/assets/recovered/resimler/aaaaaa6c7857455dcedbfa96584abd609a9dde.68d2f5.jpg,1920,1080,2.074,145966,A
 dist/assets/recovered/resimler/aaaaaaa8231de42756dcfe6afbe96dc1b0a2b2.e20428.jpg,1920,1080,2.074,112030,A
