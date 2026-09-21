@@ -5,14 +5,29 @@
   }
   ready(function(){
     const banner=document.getElementById("cookie-banner");
-    const ok=document.getElementById("cookie-ok");
+    const accept=document.getElementById("cookie-accept");
+    const reject=document.getElementById("cookie-reject");
     try{
-      if(localStorage.getItem("deva_cookie_ok")==="1" && banner) banner.remove();
-      if(ok) ok.addEventListener("click",function(){
-        localStorage.setItem("deva_cookie_ok","1");
+      const consent=localStorage.getItem("deva_cookie_consent");
+      if(consent && banner) banner.remove();
+      if(accept) accept.addEventListener("click",function(){
+        localStorage.setItem("deva_cookie_consent","accepted");
+        if(banner) banner.remove();
+      });
+      if(reject) reject.addEventListener("click",function(){
+        localStorage.setItem("deva_cookie_consent","rejected");
         if(banner) banner.remove();
       });
     }catch(e){}
+
+    const interactiveCards=document.querySelectorAll(".service-card,.blog-card,.card");
+    interactiveCards.forEach(function(card){
+      card.addEventListener("pointermove",function(e){
+        const r=card.getBoundingClientRect();
+        card.style.setProperty("--mx",(e.clientX-r.left)+"px");
+        card.style.setProperty("--my",(e.clientY-r.top)+"px");
+      });
+    });
 
     const items=document.querySelectorAll(".card,.gallery a,.section-head,.meta-strip,.article-section");
     if("IntersectionObserver" in window){
