@@ -1,0 +1,33 @@
+name: Targeted Deva recovery
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/targeted-recovery.yml"
+      - "scripts/targeted_recovery.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests beautifulsoup4
+      - run: python scripts/targeted_recovery.py
+      - name: Commit recovered files
+        run: |
+          git config user.name "deva-recovery-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git pull --rebase
+          git add archive/targeted archive/inventory/targeted_*.csv archive/inventory/targeted_summary.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "archive: recover Deva service reference and media assets"
+          git push
