@@ -1,0 +1,16 @@
+{
+  "20250124062100": {
+    "pages_recovered": 52,
+    "images_recovered": 7,
+    "pdf_recovered": 0,
+    "assets_recovered": 7,
+    "failed": 659
+  },
+  "20250711185606": {
+    "pages_recovered": 0,
+    "images_recovered": 0,
+    "pdf_recovered": 0,
+    "assets_recovered": 0,
+    "failed": 1
+  }
+}
