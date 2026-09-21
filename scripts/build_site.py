@@ -52,6 +52,22 @@ refs=[
 "0-761997625541-c74d97b01eae257e44aa9d5bade97baf.jpg",
 ]
 
+SERVICE_IMAGES={
+"aluminyum-kompozit-kaplama":("ref","0-648675657737-d3d9446802a44259755d38e6d163e820.jpg"),
+"bina-giris-kompozit-kaplama":("ref","0-648675657737-45c48cce2e2d7fbdea1afc51c7c6ad26.jpg"),
+"fabrika-yonetim-binasi-kompozit-kaplama":("ref","0-761997625541-98f13708210194c475687be6106a3b84.jpg"),
+"aluminyum-dograma":("ref","0-648675657737-c9f0f895fb98ab9159f51fd0297e236d.jpg"),
+"silikon-cephe-kaplama":("ref","0-648675657737-c4ca4238a0b923820dcc509a6f75849b.jpg"),
+"fransiz-balkon-korkuluklari":("thumb","0-214725407200-639245830c396b4594c4edb07b08e22da.jpg"),
+"balkon-korkuluklari":("ref","0-648675657737-e4da3b7fbbce2345d7772b0674a318d5.jpg"),
+"merdiven-korkuluklari":("ref","0-648675657737-c81e728d9d4c2f636f067f89cc14862c.jpg"),
+"bina-giris-kapilari":("thumb","0-913389889372-76b1a56588660586c5835c37378ad644a.jpg"),
+"aluminyum-ofis-bolme":("thumb","0-802471866709-0eaab519d7112be59f099bf8e4c33903a.jpg"),
+"fotoselli-otomatik-kapi":("thumb","0-511705664519-f28875dc837fbf7ae4776e5948af7a65a.jpg"),
+"cam-balkon-sistemleri":("ref","0-648675657737-1679091c5a880faf6fb5e6087eb1b2dc.jpg"),
+}
+
+
 hero="aaaaaa6c7857455dcedbfa96584abd609a9dde.68d2f5.jpg"
 
 FAQ_ITEMS=[
@@ -188,6 +204,16 @@ def service_cards():
       out.append(f'<a class="card service-card" href="/{slug}/"><div class="card-body"><div class="service-top service-top-clean"><span></span><span class="service-arrow" aria-hidden="true">↗</span></div><h3>{esc(name)}</h3><p>{esc(desc)}</p><span class="service-link">Detayları incele</span></div></a>')
     return "".join(out)
 
+def service_showcase():
+    out=[]
+    for slug,name,desc,_id in services:
+      img=f"/assets/services/{slug}.jpg"
+      out.append(f'''<a class="service-visual-card" href="/{slug}/">
+        <div class="service-visual-media"><img loading="lazy" src="{img}" alt="{esc(name)}"></div>
+        <div class="service-visual-copy"><div><h3>{esc(name)}</h3><p>{esc(desc)}</p></div><span>Detayları incele ↗</span></div>
+      </a>''')
+    return "".join(out)
+
 def blog_cards(items=None):
     items=items or BLOGS
     out=[]
@@ -213,6 +239,17 @@ def build():
         shutil.copy2(src,recovered_out/"resimler"/name)
     for src in sorted((recovered/"resimler").glob("aaaaaa*.jpg")) if (recovered/"resimler").exists() else []:
       shutil.copy2(src,recovered_out/"resimler"/src.name)
+    services_out=DIST/"assets"/"services"
+    services_out.mkdir(parents=True,exist_ok=True)
+    service_thumb_root=ROOT/"archive"/"recovered-root-assets"/"hizmetler"/"resimler"
+    for slug,(kind,name) in SERVICE_IMAGES.items():
+      if kind=="ref":
+        src=recovered/"resimler"/name
+      else:
+        src=service_thumb_root/name
+      if src.exists():
+        shutil.copy2(src,services_out/(slug+".jpg"))
+
 
     body=f"""
 <main id="main-content">
@@ -252,7 +289,10 @@ def build():
 </main>"""
     (DIST/"index.html").write_text(shell("Deva Alüminyum | Kayseri Alüminyum ve Cephe Sistemleri","Kayseri’de kompozit cephe, alüminyum doğrama, korkuluk, cam balkon, ofis bölme ve fotoselli kapı uygulamaları.","/",body),encoding="utf-8")
 
-    services_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Hizmetler</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Hizmetler</div><h1>Alüminyum ve cephe uygulamaları</h1><p class="lead">Deva Alüminyum’un alüminyum, cephe ve yapı sistemleri hizmetleri.</p></div></section><section class="section"><div class="wrap"><div class="grid">{service_cards()}</div></div></section></main>"""
+    services_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Hizmetler</div>
+<section class="page-hero"><div class="wrap"><div class="eyebrow">Hizmetlerimiz</div><h1>Alüminyum ve cephe uygulamaları</h1><p class="lead">Yılların vermiş olduğu tecrübe ile, ilkemizi “Önce Müşteri Memnuniyeti” olarak belirledik. Kendi imalatımız olan ürünlerde müşterilerimizin zevki ve ihtiyacı doğrultusunda kişiye özel renk ve ölçü seçenekleri sunuyoruz.</p></div></section>
+<section class="service-manifesto"><div class="wrap"><div class="manifesto-line"><span>Siz hayal edin.</span><strong>Biz gerçeğe dönüştürelim.</strong></div></div></section>
+<section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Uygulama alanları</div><h2>Her hizmete uygun çözüm.</h2></div><p>Deva Alüminyum’un alüminyum, cephe, korkuluk, kapı ve balkon uygulamaları.</p></div><div class="service-visual-grid">{service_showcase()}</div></div></section></main>"""
     write_route("hizmetler",shell("Hizmetler | Deva Alüminyum","Deva Alüminyum’un Kayseri’de sunduğu alüminyum ve cephe uygulamaları.","/hizmetler/",services_body))
 
     about_body="""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Hakkımızda</div>
