@@ -1495,3 +1495,11 @@ body{
   color:#FFFFFF !important;
   opacity:.82;
 }
+
+/* Header navigation uppercase */
+.menu a,
+.mobile-nav-panel a{
+  text-transform:uppercase;
+  letter-spacing:.07em;
+  font-weight:650;
+}
