@@ -553,3 +553,86 @@ body:has(.cookie-banner) .back-to-top{
   .brand-copy strong{font-size:12px}
   .brand-copy small{font-size:7.5px;letter-spacing:.055em}
 }
+
+/* Contact services panel */
+.contact-services{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+.contact-services-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:24px;
+}
+.contact-services-head h3{
+  margin:6px 0 0;
+  font-size:30px;
+}
+.contact-services-head p{
+  max-width:310px;
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.55;
+}
+.contact-service-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+}
+.contact-service-grid a{
+  min-height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:14px 16px;
+  border:1px solid rgba(255,255,255,.085);
+  border-radius:13px;
+  background:rgba(255,255,255,.022);
+  transition:transform .22s ease,border-color .22s ease,background .22s ease;
+}
+.contact-service-grid a span{
+  font-size:13px;
+  font-weight:650;
+  line-height:1.25;
+}
+.contact-service-grid a b{
+  font-size:14px;
+  color:var(--accent);
+  font-weight:500;
+  opacity:.8;
+}
+.contact-service-grid a:hover{
+  transform:translateY(-2px);
+  border-color:rgba(195,160,109,.32);
+  background:rgba(195,160,109,.055);
+}
+.contact-services-cta{
+  margin-top:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+}
+.contact-services-cta span{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+  max-width:330px;
+}
+@media(max-width:1000px){
+  .contact-services-head{display:block}
+  .contact-services-head p{margin-top:10px;max-width:none}
+}
+@media(max-width:700px){
+  .contact-services{gap:18px}
+  .contact-services-head h3{font-size:25px}
+  .contact-service-grid{grid-template-columns:1fr}
+  .contact-service-grid a{min-height:52px;padding:12px 14px}
+  .contact-services-cta{align-items:flex-start;flex-direction:column}
+}
