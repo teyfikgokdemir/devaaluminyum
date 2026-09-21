@@ -358,7 +358,7 @@ def build():
 <div class="grid">{blog_cards(BLOGS[:3])}</div><div class="actions"><a class="btn" href="/blog/">Tüm yazıları gör</a></div></div></section>
 <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Sık sorulan sorular</div><h2>Deva Alüminyum hakkında.</h2></div><p>Hizmet, bölge ve iletişim hakkında kısa yanıtlar.</p></div>
 <div class="faq-list">{''.join(f'<details class="faq-item"><summary>{esc(q)}<span>+</span></summary><div class="faq-answer"><p>{esc(a)}</p></div></details>' for q,a in FAQ_ITEMS)}</div></div></section>
-<section class="section"><div class="wrap meta-strip"><div class="meta-item"><strong>Konum</strong>Kayseri</div><div class="meta-item"><strong>Telefon</strong><a href="tel:{PHONE}">{DISPLAY_PHONE}</a></div><div class="meta-item"><strong>Hızlı iletişim</strong><a href="https://wa.me/905333820705">WhatsApp</a></div></div></section>
+<section class="section home-meta-section"><div class="wrap meta-strip"><div class="meta-item"><strong>Konum</strong>Kayseri</div><div class="meta-item"><strong>Telefon</strong><a href="tel:{PHONE}">{DISPLAY_PHONE}</a></div><div class="meta-item"><strong>Hızlı iletişim</strong><a href="https://wa.me/905333820705">WhatsApp</a></div></div></section>
 </main>"""
     (DIST/"index.html").write_text(shell("Deva Alüminyum | Kayseri Alüminyum ve Cephe Sistemleri","Kayseri’de kompozit cephe, alüminyum doğrama, korkuluk, cam balkon, ofis bölme ve fotoselli kapı uygulamaları.","/",body),encoding="utf-8")
 
