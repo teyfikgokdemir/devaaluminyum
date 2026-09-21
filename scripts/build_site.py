@@ -154,7 +154,7 @@ def shell(title,desc,path,body,service=None,article=None):
 <body>
 <a class="skip-link" href="#main-content">İçeriğe geç</a>
 <header class="header"><div class="wrap nav">
-<a class="brand" href="/"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum logo"><span>DEVA ALÜMİNYUM</span></a>
+<a class="brand" href="/"><span class="brand-mark"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum logo"></span><span class="brand-copy"><strong>DEVA ALÜMİNYUM</strong><small>Kayseri · Cephe Sistemleri</small></span></a>
 <nav class="menu"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/blog/">Blog</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a></nav>
 <details class="mobile-nav"><summary>Menü</summary><div class="mobile-nav-panel"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/blog/">Blog</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a><a href="https://wa.me/905333820705">WhatsApp</a></div></details>
 <a class="cta" href="https://wa.me/905333820705">WhatsApp</a>
@@ -162,8 +162,11 @@ def shell(title,desc,path,body,service=None,article=None):
 {body}
 <footer class="footer"><div class="wrap footer-inner"><div>Deva Alüminyum · Kayseri</div><div class="small">Alüminyum doğrama · cephe · korkuluk · cam balkon · otomatik kapı</div></div></footer>
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Çerez bildirimi">
-  <span>Bu site deneyimi iyileştirmek ve temel analizler için çerezleri kullanabilir.</span>
-  <button type="button" id="cookie-ok">Tamam</button>
+  <div class="cookie-copy"><span class="cookie-icon">◌</span><span>Deneyimi iyileştirmek ve temel analizler için çerezleri kullanıyoruz.</span></div>
+  <div class="cookie-actions">
+    <button type="button" class="cookie-reject" id="cookie-reject">Reddet</button>
+    <button type="button" class="cookie-accept" id="cookie-accept">Kabul et</button>
+  </div>
 </div>
 <script src="/assets/site.js" defer></script>
 </body></html>"""
@@ -212,6 +215,25 @@ def build():
 <h1>Yapının çizgisini alüminyumla tamamlıyoruz.</h1>
 <p class="lead">Deva Alüminyum; kompozit cephe, alüminyum doğrama, korkuluk, cam balkon, ofis bölme ve otomatik kapı uygulamalarında Kayseri’de hizmet verir.</p>
 <div class="actions"><a class="btn primary" href="/hizmetler/">Hizmetleri İncele</a><a class="btn" href="/referanslar/">Uygulamaları Gör</a></div></div></section>
+<section class="work-ticker" aria-label="Uygulama alanları">
+  <div class="ticker-track">
+    <span>Alüminyum Kompozit Kaplama</span><i>•</i>
+    <span>Alüminyum Doğrama</span><i>•</i>
+    <span>Silikon Cephe</span><i>•</i>
+    <span>Cam Balkon</span><i>•</i>
+    <span>Balkon Korkulukları</span><i>•</i>
+    <span>Fransız Balkon Korkulukları</span><i>•</i>
+    <span>Fotoselli Otomatik Kapı</span><i>•</i>
+    <span>Ofis Bölme Sistemleri</span><i>•</i>
+    <span>Bina Giriş Kapıları</span><i>•</i>
+    <span>Alüminyum Kompozit Kaplama</span><i>•</i>
+    <span>Alüminyum Doğrama</span><i>•</i>
+    <span>Silikon Cephe</span><i>•</i>
+    <span>Cam Balkon</span><i>•</i>
+    <span>Balkon Korkulukları</span><i>•</i>
+    <span>Fotoselli Otomatik Kapı</span><i>•</i>
+  </div>
+</section>
 <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Hizmetler</div><h2>Tek yapı, farklı alüminyum çözümleri.</h2></div><p>Projeye ve kullanım alanına göre planlanan alüminyum ve cephe çözümleri.</p></div>
 <div class="grid">{service_cards()}</div></div></section>
 <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Seçili uygulamalar</div><h2>Gerçek uygulama görselleri.</h2></div><p>Farklı cephe, doğrama ve mimari uygulamalardan seçili çalışmalar.</p></div>
