@@ -2273,3 +2273,16 @@ body{
     padding-top:38px;
   }
 }
+
+/* Final inner-page overflow guard */
+.page-hero h1{
+  white-space:normal;
+  overflow-wrap:anywhere;
+}
+.services-hero h1{
+  white-space:nowrap;
+  overflow-wrap:normal;
+}
+@media(max-width:980px){
+  .services-hero h1{white-space:normal}
+}
