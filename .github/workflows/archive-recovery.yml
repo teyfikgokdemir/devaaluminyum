@@ -1,0 +1,36 @@
+name: Recover Wayback archive
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/archive-recovery.yml"
+      - "scripts/archive_recovery.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Recover archived site
+        run: python scripts/archive_recovery.py
+      - name: Commit recovered archive
+        run: |
+          git config user.name "deva-recovery-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add archive/
+          if git diff --cached --quiet; then
+            echo "No recovered changes"
+            exit 0
+          fi
+          git commit -m "archive: recover devaaluminyum.com from Wayback"
+          git push
