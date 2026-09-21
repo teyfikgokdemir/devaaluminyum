@@ -217,6 +217,19 @@ def build():
     sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{DOMAIN}{u}</loc></url>\n' for u in urls)+'</urlset>\n'
     (DIST/"sitemap.xml").write_text(sitemap,encoding="utf-8")
     (DIST/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n",encoding="utf-8")
+    (DIST/"_headers").write_text("""/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Cross-Origin-Opener-Policy: same-origin
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+""",encoding="utf-8")
     (DIST/"404.html").write_text(shell("Sayfa bulunamadı | Deva Alüminyum","Aradığınız sayfa bulunamadı.","/404",'<main id="main-content"><section class="page-hero"><div class="wrap"><h1>Sayfa bulunamadı</h1><p class="lead"><a href="/">Anasayfaya dönün</a></p></div></section></main>'),encoding="utf-8")
 
 if __name__=="__main__":
