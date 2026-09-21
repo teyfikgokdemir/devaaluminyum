@@ -54,6 +54,13 @@ refs=[
 
 hero="aaaaaa6c7857455dcedbfa96584abd609a9dde.68d2f5.jpg"
 
+FAQ_ITEMS=[
+("Deva Alüminyum hangi hizmetleri veriyor?","Kompozit cephe kaplama, alüminyum doğrama, silikon cephe, balkon ve merdiven korkulukları, bina giriş kapıları, alüminyum ofis bölmeleri, fotoselli otomatik kapı ve cam balkon uygulamaları."),
+("Deva Alüminyum hangi bölgede hizmet veriyor?","Deva Alüminyum'un arşivlenmiş kurumsal kayıtları Kayseri ve Kocasinan merkezli hizmet verdiğini gösteriyor."),
+("Teklif almak için nasıl iletişime geçebilirim?","Telefon veya WhatsApp üzerinden proje, ölçü ve uygulama bilgilerini paylaşarak iletişime geçebilirsiniz."),
+("Eski Deva Alüminyum referansları yeni sitede yer alacak mı?","Evet. Eski siteden kurtarılan gerçek referans görselleri yeni sitede korunuyor; arşivde bulunmayan müşteri isimleri uydurulmuyor.")
+]
+
 def esc(s): return html.escape(s,quote=True)
 
 def schema(page_name, page_url, service=None):
@@ -69,6 +76,12 @@ def schema(page_name, page_url, service=None):
       "sameAs":["https://www.facebook.com/murat.peskirsoy.9"]
     }
     data=[org]
+    if page_url==DOMAIN+"/":
+      data.append({
+        "@context":"https://schema.org",
+        "@type":"FAQPage",
+        "mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in FAQ_ITEMS]
+      })
     if service:
       data.append({
         "@context":"https://schema.org",
@@ -139,6 +152,8 @@ def build():
 <div class="grid">{service_cards()}</div></div></section>
 <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Arşivden kurtarılan çalışmalar</div><h2>Gerçek uygulama görselleri.</h2></div><p>Eski Referanslarımız sayfasından kurtarılan fotoğraflar yeni siteye taşındı. Arşivde müşteri isimleri bulunmadığı için isim uydurulmadı.</p></div>
 <div class="gallery">{''.join(f'<a href="/referanslar/"><img loading="lazy" src="/assets/recovered/resimler/{x}" alt="Deva Alüminyum uygulama referansı"></a>' for x in refs[:8])}</div></div></section>
+<section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Sık sorulan sorular</div><h2>Deva Alüminyum hakkında.</h2></div><p>Hizmet, bölge ve iletişim hakkında kısa yanıtlar.</p></div>
+<div class="grid">{''.join(f'<div class="card"><div class="card-body"><h3>{esc(q)}</h3><p>{esc(a)}</p></div></div>' for q,a in FAQ_ITEMS)}</div></div></section>
 <section class="section"><div class="wrap meta-strip"><div class="meta-item"><strong>Konum</strong>Kayseri</div><div class="meta-item"><strong>Telefon</strong><a href="tel:{PHONE}">{DISPLAY_PHONE}</a></div><div class="meta-item"><strong>Hızlı iletişim</strong><a href="https://wa.me/905333820705">WhatsApp üzerinden yazın</a></div></div></section>
 </main>"""
     (DIST/"index.html").write_text(shell("Deva Alüminyum | Kayseri Alüminyum ve Cephe Sistemleri","Kayseri’de kompozit cephe, alüminyum doğrama, korkuluk, cam balkon, ofis bölme ve fotoselli kapı uygulamaları.","/",body),encoding="utf-8")
@@ -157,7 +172,7 @@ def build():
     write_route("iletisim",shell("İletişim | Deva Alüminyum","Deva Alüminyum Kayseri telefon ve WhatsApp iletişim bilgileri.","/iletisim/",contact_body))
 
     for slug,name,desc,_id in services:
-      body=f"""<main><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / <a href="/hizmetler/">Hizmetler</a> / {esc(name)}</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Kayseri · Deva Alüminyum</div><h1>{esc(name)}</h1><p class="lead">{esc(desc)}</p><div class="actions"><a class="btn primary" href="https://wa.me/905333820705">Teklif ve bilgi alın</a><a class="btn" href="/referanslar/">Referansları görün</a></div></div></section><section class="section"><div class="wrap prose"><h2>Uygulama hakkında</h2><p>{esc(desc)} Deva Alüminyum’un eski kurumsal sitesinde bu hizmet alanı ayrı bir sayfa olarak yer almaktaydı; yeni sitede aynı hizmet ilişkisi korunarak daha temiz ve erişilebilir bir yapıya taşınmıştır.</p></div></section></main>"""
+      body=f"""<main><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / <a href="/hizmetler/">Hizmetler</a> / {esc(name)}</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Kayseri · Deva Alüminyum</div><h1>{esc(name)}</h1><p class="lead">{esc(desc)}</p><div class="actions"><a class="btn primary" href="https://wa.me/905333820705">Teklif ve bilgi alın</a><a class="btn" href="/referanslar/">Referansları görün</a></div></div></section><section class="section"><div class="wrap prose"><h2>Uygulama hakkında</h2><p>{esc(desc)} Uygulama öncesinde ölçü, kullanım amacı, mevcut yapı ve mimari detaylar değerlendirilir. Malzeme ve montaj yaklaşımı proje koşullarına göre belirlenir.</p><h2>Planlama süreci</h2><p>Keşif ve ölçülendirme sonrasında uygulama alanına uygun detaylar netleştirilir. Amaç; estetik görünüm, kullanım güvenliği, bakım kolaylığı ve yapıyla uyum arasında dengeli bir çözüm oluşturmaktır.</p><h2>Teklif için gerekenler</h2><p>Uygulama yapılacak alanın fotoğrafları, yaklaşık ölçüleri ve varsa proje çizimleri ilk değerlendirme için paylaşılabilir. Nihai ölçüler uygulama öncesinde teyit edilir.</p><p class="small">Bu hizmet, Deva Alüminyum’un eski kurumsal sitesinde ayrı bir hizmet sayfası olarak yer almaktaydı; yeni sürümde eski anahtar kelime tekrarları temizlenerek hizmet ilişkisi korunmuştur.</p></div></section></main>"""
       write_route(slug,shell(f"{name} | Deva Alüminyum Kayseri",desc,f"/{slug}/",body,name))
 
     redirects=[
