@@ -22,8 +22,6 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests warcio
-      - name: Recover Wayback archive
-        run: python scripts/archive_recovery.py
       - name: Recover Common Crawl archive
         run: python scripts/commoncrawl_recovery.py
       - name: Commit recovered archive
