@@ -361,7 +361,14 @@ def build():
 
     services_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Hizmetler</div>
 <section class="page-hero"><div class="wrap"><div class="eyebrow">Hizmetlerimiz</div><h1>Alüminyum ve cephe uygulamaları</h1><p class="lead">Yılların vermiş olduğu tecrübe ile, ilkemizi “Önce Müşteri Memnuniyeti” olarak belirledik. Kendi imalatımız olan ürünlerde müşterilerimizin zevki ve ihtiyacı doğrultusunda kişiye özel renk ve ölçü seçenekleri sunuyoruz.</p></div></section>
-<section class="service-manifesto"><div class="wrap"><div class="manifesto-line"><span>Siz hayal edin.</span><strong>Biz gerçeğe dönüştürelim.</strong></div></div></section>
+<section class="service-manifesto service-manifesto-ticker" aria-label="Deva Alüminyum sloganı">
+  <div class="manifesto-track">
+    <span>SİZ HAYAL EDİN</span><i>·</i><strong>BİZ GERÇEĞE DÖNÜŞTÜRELİM</strong><i>·</i>
+    <span>SİZ HAYAL EDİN</span><i>·</i><strong>BİZ GERÇEĞE DÖNÜŞTÜRELİM</strong><i>·</i>
+    <span>SİZ HAYAL EDİN</span><i>·</i><strong>BİZ GERÇEĞE DÖNÜŞTÜRELİM</strong><i>·</i>
+    <span>SİZ HAYAL EDİN</span><i>·</i><strong>BİZ GERÇEĞE DÖNÜŞTÜRELİM</strong><i>·</i>
+  </div>
+</section>
 <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Uygulama alanları</div><h2>Her hizmete uygun çözüm.</h2></div><p>Deva Alüminyum’un alüminyum, cephe, korkuluk, kapı ve balkon uygulamaları.</p></div><div class="service-visual-grid">{service_showcase()}</div></div></section></main>"""
     write_route("hizmetler",shell("Hizmetler | Deva Alüminyum","Deva Alüminyum’un Kayseri’de sunduğu alüminyum ve cephe uygulamaları.","/hizmetler/",services_body))
 
