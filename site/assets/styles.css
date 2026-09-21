@@ -697,3 +697,87 @@ body:has(.cookie-banner) .back-to-top{
     border-radius:14px;
   }
 }
+
+/* Visual services page */
+.service-manifesto{
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(90deg,rgba(195,160,109,.055),rgba(255,255,255,.01));
+}
+.manifesto-line{
+  min-height:110px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  font-size:clamp(24px,3.4vw,44px);
+  letter-spacing:-.035em;
+}
+.manifesto-line span{color:var(--muted)}
+.manifesto-line strong{color:var(--text)}
+.service-visual-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+.service-visual-card{
+  display:grid;
+  grid-template-columns:180px minmax(0,1fr);
+  min-height:190px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:linear-gradient(145deg,rgba(20,25,28,.98),rgba(14,18,20,.98));
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.service-visual-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(195,160,109,.32);
+  box-shadow:0 20px 48px rgba(0,0,0,.24);
+}
+.service-visual-media{
+  overflow:hidden;
+  background:#101416;
+}
+.service-visual-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .4s ease,filter .4s ease;
+}
+.service-visual-card:hover .service-visual-media img{
+  transform:scale(1.045);
+  filter:brightness(1.05);
+}
+.service-visual-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:20px;
+  padding:24px;
+}
+.service-visual-copy h3{
+  margin:0 0 10px;
+  font-size:24px;
+}
+.service-visual-copy p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.6;
+}
+.service-visual-copy>span{
+  color:var(--accent);
+  font-size:12px;
+  font-weight:700;
+}
+@media(max-width:900px){
+  .service-visual-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .manifesto-line{display:block;padding:24px 0}
+  .manifesto-line strong{display:block;margin-top:4px}
+  .service-visual-card{grid-template-columns:112px minmax(0,1fr);min-height:160px}
+  .service-visual-copy{padding:18px}
+  .service-visual-copy h3{font-size:20px}
+  .service-visual-copy p{font-size:12.5px}
+}
