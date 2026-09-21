@@ -1,0 +1,11 @@
+{
+  "name": "devaaluminyum",
+  "private": true,
+  "scripts": {
+    "build": "python3 scripts/build_site.py",
+    "deploy": "npm run build && test -f dist/index.html && npx wrangler deploy --config wrangler.jsonc"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
