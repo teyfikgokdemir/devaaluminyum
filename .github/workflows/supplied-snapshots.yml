@@ -1,0 +1,33 @@
+name: Recover supplied Deva snapshots
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/supplied-snapshots.yml"
+      - "scripts/supplied_snapshots_recovery.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests beautifulsoup4
+      - run: python scripts/supplied_snapshots_recovery.py
+      - name: Commit recovered supplied snapshots
+        run: |
+          git config user.name "deva-recovery-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add archive/supplied-snapshots archive/inventory/supplied_snapshot_*
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "archive: recover user-supplied Deva snapshots"
+          git pull --rebase
+          git push
