@@ -1,0 +1,39 @@
+name: Probe exact Wayback roots
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/wayback-root-probe.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch exact root snapshots
+        shell: bash
+        run: |
+          set -euxo pipefail
+          mkdir -p archive/probe
+          : > archive/probe/status.csv
+          for TS in 20250124062100 20250711185606; do
+            URL="https://web.archive.org/web/${TS}id_/https://devaaluminyum.com/"
+            CODE=$(curl -A "Mozilla/5.0" -L --connect-timeout 5 --max-time 20 -sS -o "archive/probe/${TS}.html" -w "%{http_code}" "$URL" || true)
+            SIZE=$(wc -c < "archive/probe/${TS}.html" 2>/dev/null || echo 0)
+            echo "$TS,$CODE,$SIZE" >> archive/probe/status.csv
+          done
+          head -c 300 archive/probe/20250124062100.html || true
+      - name: Commit probe
+        run: |
+          git config user.name "deva-recovery-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add archive/probe/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "archive: probe exact Wayback roots"
+          git push
