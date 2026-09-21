@@ -1472,3 +1472,26 @@ body{
   .brand-new{width:150px;min-width:150px}
   .footer-v2-logo-new{width:225px}
 }
+
+/* Transparent logo fix + white footer ticker */
+.brand-new img,
+.footer-v2-logo-new img{
+  background:transparent !important;
+  border-radius:0 !important;
+  padding:0 !important;
+  object-fit:contain !important;
+}
+.brand-new{
+  background:transparent !important;
+  border-radius:0 !important;
+  overflow:visible !important;
+}
+.footer-v2-logo-new{
+  background:transparent !important;
+  border-radius:0 !important;
+  overflow:visible !important;
+}
+.footer-marquee-v2>div{
+  color:#FFFFFF !important;
+  opacity:.82;
+}
