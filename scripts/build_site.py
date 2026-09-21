@@ -363,7 +363,7 @@ def build():
     (DIST/"index.html").write_text(shell("Deva Alüminyum | Kayseri Alüminyum ve Cephe Sistemleri","Kayseri’de kompozit cephe, alüminyum doğrama, korkuluk, cam balkon, ofis bölme ve fotoselli kapı uygulamaları.","/",body),encoding="utf-8")
 
     services_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Hizmetler</div>
-<section class="page-hero"><div class="wrap"><div class="eyebrow">Hizmetlerimiz</div><h1>Alüminyum ve cephe uygulamaları</h1><p class="lead">Yılların vermiş olduğu tecrübe ile, ilkemizi “Önce Müşteri Memnuniyeti” olarak belirledik. Kendi imalatımız olan ürünlerde müşterilerimizin zevki ve ihtiyacı doğrultusunda kişiye özel renk ve ölçü seçenekleri sunuyoruz.</p></div></section>
+<section class="page-hero services-hero"><div class="wrap"><div class="eyebrow">Hizmetlerimiz</div><h1>Alüminyum ve cephe uygulamaları</h1><p class="lead">Yılların vermiş olduğu tecrübe ile, ilkemizi “Önce Müşteri Memnuniyeti” olarak belirledik. Kendi imalatımız olan ürünlerde müşterilerimizin zevki ve ihtiyacı doğrultusunda kişiye özel renk ve ölçü seçenekleri sunuyoruz.</p></div></section>
 <section class="service-manifesto service-manifesto-ticker" aria-label="Deva Alüminyum sloganı">
   <div class="manifesto-track">
     <span>SİZ HAYAL EDİN</span><i>·</i><strong>BİZ GERÇEĞE DÖNÜŞTÜRELİM</strong><i>·</i>
