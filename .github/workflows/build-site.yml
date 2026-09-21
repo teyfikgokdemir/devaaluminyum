@@ -1,0 +1,46 @@
+name: Build Deva site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "scripts/build_site.py"
+      - ".github/workflows/build-site.yml"
+      - "archive/known-assets/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build static site
+        run: python scripts/build_site.py
+      - name: Validate critical output
+        run: |
+          test -f dist/index.html
+          test -f dist/hizmetler/index.html
+          test -f dist/referanslar/index.html
+          test -f dist/hakkimizda/index.html
+          test -f dist/iletisim/index.html
+          test -f dist/sitemap.xml
+          test -f dist/robots.txt
+          test -f dist/_redirects
+          test -f dist/assets/recovered/Tema/logo.png
+          test "$(find dist -name index.html | wc -l)" -ge 17
+          grep -q "devaaluminyum.com.tr" dist/sitemap.xml
+          grep -q "/Sayfa/72/referanslarimiz /referanslar/ 301" dist/_redirects
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: deva-site-preview
+          path: dist
+          retention-days: 7
