@@ -12,9 +12,9 @@ INV=Path("archive/inventory")
 OUT.mkdir(parents=True,exist_ok=True); INV.mkdir(parents=True,exist_ok=True)
 S=requests.Session()
 S.headers.update({"User-Agent":"Mozilla/5.0 DevaAluminyum-Recovery/1.0"})
-TIMEOUT=25
-MAX_PAGES=180
-MAX_ASSETS=1200
+TIMEOUT=8
+MAX_PAGES=30
+MAX_ASSETS=300
 MAX_FILE=30*1024*1024
 
 def replay(ts,url):
