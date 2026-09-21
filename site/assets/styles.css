@@ -2246,3 +2246,30 @@ body{
     animation-duration:40s !important;
   }
 }
+
+/* Mobile-only hero top-gap correction — desktop untouched */
+@media(max-width:820px){
+  .hero{
+    min-height:560px;
+    align-items:start;
+  }
+  .hero .hero-copy{
+    width:min(100% - 28px,520px);
+    max-width:520px;
+    margin:0 auto;
+    padding:46px 0 44px;
+    text-align:center;
+  }
+  .hero .hero-copy .eyebrow{
+    margin-top:0;
+    margin-bottom:10px;
+  }
+}
+@media(max-width:480px){
+  .hero{
+    min-height:540px;
+  }
+  .hero .hero-copy{
+    padding-top:38px;
+  }
+}
