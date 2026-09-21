@@ -154,7 +154,7 @@ def shell(title,desc,path,body,service=None,article=None):
 <body>
 <a class="skip-link" href="#main-content">İçeriğe geç</a>
 <header class="header"><div class="wrap nav">
-<a class="brand" href="/"><span class="brand-mark"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum logo"></span><span class="brand-title">DEVA ALÜMİNYUM</span></a>
+<a class="brand" href="/"><span class="brand-mark"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum logo"></span><span class="brand-copy"><strong>DEVA ALÜMİNYUM</strong><small>KAYSERİ · CEPHE SİSTEMLERİ</small></span></a>
 <nav class="menu"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/blog/">Blog</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a></nav>
 <details class="mobile-nav"><summary>Menü</summary><div class="mobile-nav-panel"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/blog/">Blog</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a><a href="https://wa.me/905333820705">WhatsApp</a></div></details>
 <a class="cta" href="https://wa.me/905333820705">WhatsApp</a>
