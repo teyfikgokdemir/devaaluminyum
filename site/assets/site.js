@@ -29,6 +29,28 @@
       });
     });
 
+    const backToTop=document.getElementById("back-to-top");
+    let scrollTimer=null;
+    function updateScrollControl(){
+      if(!backToTop) return;
+      if(window.scrollY>320){
+        backToTop.classList.add("is-active");
+        backToTop.setAttribute("aria-hidden","false");
+        clearTimeout(scrollTimer);
+        scrollTimer=setTimeout(function(){
+          backToTop.classList.remove("is-active");
+          backToTop.setAttribute("aria-hidden","true");
+        },850);
+      }else{
+        backToTop.classList.remove("is-active");
+        backToTop.setAttribute("aria-hidden","true");
+      }
+    }
+    window.addEventListener("scroll",updateScrollControl,{passive:true});
+    if(backToTop) backToTop.addEventListener("click",function(){
+      window.scrollTo({top:0,behavior:"smooth"});
+    });
+
     const items=document.querySelectorAll(".card,.gallery a,.section-head,.meta-strip,.article-section");
     if("IntersectionObserver" in window){
       const io=new IntersectionObserver(function(entries){
