@@ -1,4 +1,4 @@
-name: Recover Wayback archive
+name: Recover web archives
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/archive-recovery.yml"
       - "scripts/archive_recovery.py"
+      - "scripts/commoncrawl_recovery.py"
   workflow_dispatch:
 
 permissions:
@@ -14,15 +15,17 @@ permissions:
 jobs:
   recover:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests
-      - name: Recover archived site
+      - run: pip install requests warcio
+      - name: Recover Wayback archive
         run: python scripts/archive_recovery.py
+      - name: Recover Common Crawl archive
+        run: python scripts/commoncrawl_recovery.py
       - name: Commit recovered archive
         run: |
           git config user.name "deva-recovery-bot"
@@ -32,5 +35,5 @@ jobs:
             echo "No recovered changes"
             exit 0
           fi
-          git commit -m "archive: recover devaaluminyum.com from Wayback"
+          git commit -m "archive: recover devaaluminyum.com web history"
           git push
