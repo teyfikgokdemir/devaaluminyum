@@ -13,7 +13,7 @@ INV.mkdir(parents=True,exist_ok=True)
 REC.mkdir(parents=True,exist_ok=True)
 S=requests.Session()
 S.headers.update({"User-Agent":"DevaAluminyum-Recovery/1.0"})
-TIMEOUT=10
+TIMEOUT=7
 MAX_FILE=25*1024*1024
 MAX_TOTAL=430*1024*1024
 
@@ -45,7 +45,7 @@ def indexes():
 def query_index(api):
     params={"url":DOMAIN,"matchType":"domain","output":"json","filter":"status:200"}
     last=None
-    for attempt in range(4):
+    for attempt in range(2):
         try:
             r=S.get(api,params=params,timeout=TIMEOUT)
             if r.status_code==404: return []
@@ -98,7 +98,7 @@ for item in idx:
 
 probe=[]
 for year in sorted(year_groups.keys(), reverse=True):
-    probe.extend(year_groups[year][:2])
+    probe.extend(year_groups[year][:1])
 
 hit_years=set()
 seen_ids=set()
