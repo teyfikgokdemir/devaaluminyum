@@ -161,6 +161,12 @@ def shell(title,desc,path,body,service=None,article=None):
 </div></header>
 {body}
 <footer class="footer"><div class="wrap footer-inner"><div>Deva Alüminyum · Kayseri</div><div class="small">Alüminyum doğrama · cephe · korkuluk · cam balkon · otomatik kapı</div></div></footer>
+<a class="floating-whatsapp" href="https://wa.me/905333820705" target="_blank" rel="noopener" aria-label="WhatsApp ile iletişime geç">
+  <span class="wa-icon" aria-hidden="true">✆</span><span class="wa-label">WhatsApp</span>
+</a>
+<button class="back-to-top" id="back-to-top" type="button" aria-label="Sayfanın başına dön" aria-hidden="true">
+  <span aria-hidden="true">↑</span>
+</button>
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Çerez bildirimi">
   <div class="cookie-copy"><span class="cookie-icon">◌</span><span>Deneyimi iyileştirmek ve temel analizler için çerezleri kullanıyoruz.</span></div>
   <div class="cookie-actions">
