@@ -272,7 +272,7 @@ def build():
     urls=["/","/hizmetler/","/referanslar/","/blog/","/hakkimizda/","/iletisim/"]+[f"/{s[0]}/" for s in services]+[f"/blog/{b['slug']}/" for b in BLOGS]
     sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{DOMAIN}{u}</loc></url>\n' for u in urls)+'</urlset>\n'
     (DIST/"sitemap.xml").write_text(sitemap,encoding="utf-8")
-        feed_items="".join(f'<item><title>{esc(b["title"])}</title><link>{DOMAIN}/blog/{b["slug"]}/</link><guid>{DOMAIN}/blog/{b["slug"]}/</guid><description>{esc(b["description"])}</description><pubDate>Mon, 21 Sep 2026 09:00:00 +0300</pubDate></item>' for b in BLOGS)
+    feed_items="".join(f'<item><title>{esc(b["title"])}</title><link>{DOMAIN}/blog/{b["slug"]}/</link><guid>{DOMAIN}/blog/{b["slug"]}/</guid><description>{esc(b["description"])}</description><pubDate>Mon, 21 Sep 2026 09:00:00 +0300</pubDate></item>' for b in BLOGS)
     (DIST/"feed.xml").write_text('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Deva Alüminyum Blog</title><link>'+DOMAIN+'/blog/</link><description>Alüminyum ve cephe sistemleri rehberi</description>'+feed_items+'</channel></rss>',encoding="utf-8")
     llms=["# Deva Alüminyum","","> Kayseri merkezli alüminyum ve cephe sistemleri uygulama firması.","","## Hizmetler"]+[f"- [{name}]({DOMAIN}/{slug}/): {desc}" for slug,name,desc,_ in services]+["","## Rehberler"]+[f"- [{b['title']}]({DOMAIN}/blog/{b['slug']}/): {b['description']}" for b in BLOGS]+["","## İletişim",f"- Telefon: {DISPLAY_PHONE}",f"- E-posta: {EMAIL}",f"- Adres: {ADDRESS}"]
     (DIST/"llms.txt").write_text("\n".join(llms)+"\n",encoding="utf-8")
