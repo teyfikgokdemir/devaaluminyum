@@ -13,7 +13,7 @@ INV.mkdir(parents=True,exist_ok=True)
 REC.mkdir(parents=True,exist_ok=True)
 S=requests.Session()
 S.headers.update({"User-Agent":"DevaAluminyum-Recovery/1.0"})
-TIMEOUT=15
+TIMEOUT=10
 MAX_FILE=25*1024*1024
 MAX_TOTAL=430*1024*1024
 
@@ -77,7 +77,7 @@ def recover(entry, used):
 idx=indexes()
 all_entries={}
 index_hits=[]
-for i,item in enumerate(idx[:36]):
+for i,item in enumerate(idx[:8]):
     api=item.get("cdx-api")
     if not api: continue
     try:
