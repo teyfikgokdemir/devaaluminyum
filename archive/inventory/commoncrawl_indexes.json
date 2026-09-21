@@ -1,0 +1,41 @@
+[
+  {
+    "index": "CC-MAIN-2026-39",
+    "count": 0
+  },
+  {
+    "index": "CC-MAIN-2026-34",
+    "count": -1,
+    "error": "HTTPError"
+  },
+  {
+    "index": "CC-MAIN-2026-30",
+    "count": -1,
+    "error": "HTTPError"
+  },
+  {
+    "index": "CC-MAIN-2026-25",
+    "count": -1,
+    "error": "HTTPError"
+  },
+  {
+    "index": "CC-MAIN-2026-21",
+    "count": -1,
+    "error": "HTTPError"
+  },
+  {
+    "index": "CC-MAIN-2026-17",
+    "count": -1,
+    "error": "HTTPError"
+  },
+  {
+    "index": "CC-MAIN-2026-12",
+    "count": -1,
+    "error": "HTTPError"
+  },
+  {
+    "index": "CC-MAIN-2026-08",
+    "count": -1,
+    "error": "HTTPError"
+  }
+]
