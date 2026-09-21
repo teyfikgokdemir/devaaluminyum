@@ -61,9 +61,12 @@ FAQ_ITEMS=[
 ("Eski Deva Alüminyum referansları yeni sitede yer alacak mı?","Evet. Eski siteden kurtarılan gerçek referans görselleri yeni sitede korunuyor; arşivde bulunmayan müşteri isimleri uydurulmuyor.")
 ]
 
+BLOGS_PATH=ROOT/"content"/"blogs.json"
+BLOGS=json.loads(BLOGS_PATH.read_text(encoding="utf-8")) if BLOGS_PATH.exists() else []
+
 def esc(s): return html.escape(s,quote=True)
 
-def schema(page_name, page_url, service=None):
+def schema(page_name, page_url, service=None, article=None):
     org={
       "@context":"https://schema.org",
       "@type":"LocalBusiness",
@@ -110,9 +113,23 @@ def schema(page_name, page_url, service=None):
         "areaServed":{"@type":"City","name":"Kayseri"},
         "url":page_url
       })
-    return '<script type="application/ld+json">'+json.dumps(data,ensure_ascii=False,separators=(",",":"))+'</script>'
+    if article:
+      data.append({
+        "@context":"https://schema.org",
+        "@type":"Article",
+        "headline":article["title"],
+        "description":article["description"],
+        "datePublished":"2026-09-21",
+        "dateModified":"2026-09-21",
+        "inLanguage":"tr-TR",
+        "author":{"@type":"Organization","name":"Deva Alüminyum"},
+        "publisher":{"@type":"Organization","name":"Deva Alüminyum","url":DOMAIN},
+        "mainEntityOfPage":page_url,
+        "image":DOMAIN+"/assets/recovered/resimler/"+hero
+      })
+    return '<script type="application/ld+json">'+json.dumps(data,ensure_ascii=False,separators=(",",":"))+'</script>
 
-def shell(title,desc,path,body,service=None):
+def shell(title,desc,path,body,service=None,article=None):
     canonical=DOMAIN+path
     return f"""<!doctype html>
 <html lang="tr">
@@ -132,14 +149,14 @@ def shell(title,desc,path,body,service=None):
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/assets/recovered/Tema/logo.png">
 <link rel="stylesheet" href="/assets/styles.css">
-{schema(title,canonical,service)}
+{schema(title,canonical,service,article)}
 </head>
 <body>
 <a class="skip-link" href="#main-content">İçeriğe geç</a>
 <header class="header"><div class="wrap nav">
 <a class="brand" href="/"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum logo"><span>DEVA ALÜMİNYUM</span></a>
-<nav class="menu"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a></nav>
-<details class="mobile-nav"><summary>Menü</summary><div class="mobile-nav-panel"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a><a href="https://wa.me/905333820705">WhatsApp</a></div></details>
+<nav class="menu"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/blog/">Blog</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a></nav>
+<details class="mobile-nav"><summary>Menü</summary><div class="mobile-nav-panel"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/blog/">Blog</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a><a href="https://wa.me/905333820705">WhatsApp</a></div></details>
 <a class="cta" href="https://wa.me/905333820705">WhatsApp</a>
 </div></header>
 {body}
@@ -155,6 +172,13 @@ def service_cards():
     out=[]
     for i,(slug,name,desc,_id) in enumerate(services,1):
       out.append(f'<a class="card service-card" href="/{slug}/"><div class="card-body"><div class="num">{i:02d}</div><h3>{esc(name)}</h3><p>{esc(desc)}</p></div></a>')
+    return "".join(out)
+
+def blog_cards(items=None):
+    items=items or BLOGS
+    out=[]
+    for b in items:
+      out.append(f'<a class="card blog-card" href="/blog/{b["slug"]}/"><div class="card-body"><div class="eyebrow">Rehber · 2026</div><h3>{esc(b["title"])}</h3><p>{esc(b["description"])}</p><span class="read-more">Yazıyı oku →</span></div></a>')
     return "".join(out)
 
 def build():
@@ -187,6 +211,8 @@ def build():
 <div class="grid">{service_cards()}</div></div></section>
 <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Arşivden kurtarılan çalışmalar</div><h2>Gerçek uygulama görselleri.</h2></div><p>Eski Referanslarımız sayfasından kurtarılan fotoğraflar yeni siteye taşındı. Arşivde müşteri isimleri bulunmadığı için isim uydurulmadı.</p></div>
 <div class="gallery">{''.join(f'<a href="/referanslar/"><img loading="lazy" src="/assets/recovered/resimler/{x}" alt="Deva Alüminyum uygulama referansı"></a>' for x in refs[:8])}</div></div></section>
+<section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Blog</div><h2>Güncel rehberler.</h2></div><p>Cam balkon, kompozit cephe, doğrama ve yapı sistemleri hakkında karar vermeyi kolaylaştıran içerikler.</p></div>
+<div class="grid">{blog_cards(BLOGS[:3])}</div><div class="actions"><a class="btn" href="/blog/">Tüm yazıları gör</a></div></div></section>
 <section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Sık sorulan sorular</div><h2>Deva Alüminyum hakkında.</h2></div><p>Hizmet, bölge ve iletişim hakkında kısa yanıtlar.</p></div>
 <div class="grid">{''.join(f'<div class="card"><div class="card-body"><h3>{esc(q)}</h3><p>{esc(a)}</p></div></div>' for q,a in FAQ_ITEMS)}</div></div></section>
 <section class="section"><div class="wrap meta-strip"><div class="meta-item"><strong>Konum</strong>Kayseri</div><div class="meta-item"><strong>Telefon</strong><a href="tel:{PHONE}">{DISPLAY_PHONE}</a></div><div class="meta-item"><strong>Hızlı iletişim</strong><a href="https://wa.me/905333820705">WhatsApp üzerinden yazın</a></div></div></section>
@@ -210,6 +236,17 @@ def build():
       body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / <a href="/hizmetler/">Hizmetler</a> / {esc(name)}</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Kayseri · Deva Alüminyum</div><h1>{esc(name)}</h1><p class="lead">{esc(desc)}</p><div class="actions"><a class="btn primary" href="https://wa.me/905333820705">Teklif ve bilgi alın</a><a class="btn" href="/referanslar/">Referansları görün</a></div></div></section><section class="section"><div class="wrap prose"><h2>Uygulama hakkında</h2><p>{esc(desc)} Uygulama öncesinde ölçü, kullanım amacı, mevcut yapı ve mimari detaylar değerlendirilir. Malzeme ve montaj yaklaşımı proje koşullarına göre belirlenir.</p><h2>Planlama süreci</h2><p>Keşif ve ölçülendirme sonrasında uygulama alanına uygun detaylar netleştirilir. Amaç; estetik görünüm, kullanım güvenliği, bakım kolaylığı ve yapıyla uyum arasında dengeli bir çözüm oluşturmaktır.</p><h2>Teklif için gerekenler</h2><p>Uygulama yapılacak alanın fotoğrafları, yaklaşık ölçüleri ve varsa proje çizimleri ilk değerlendirme için paylaşılabilir. Nihai ölçüler uygulama öncesinde teyit edilir.</p><p class="small">Bu hizmet, Deva Alüminyum’un eski kurumsal sitesinde ayrı bir hizmet sayfası olarak yer almaktaydı; yeni sürümde eski anahtar kelime tekrarları temizlenerek hizmet ilişkisi korunmuştur.</p></div></section></main>"""
       write_route(slug,shell(f"{name} | Deva Alüminyum Kayseri",desc,f"/{slug}/",body,name))
 
+    blog_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Blog</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Deva Rehber</div><h1>Alüminyum ve cephe sistemleri rehberi.</h1><p class="lead">Kayseri'de yapı, yenileme ve uygulama kararı verirken en çok araştırılan konuları teknik ve anlaşılır biçimde ele alıyoruz.</p></div></section><section class="section"><div class="wrap"><div class="grid">{blog_cards()}</div></div></section></main>"""
+    write_route("blog",shell("Blog | Deva Alüminyum","Cam balkon, kompozit cephe, alüminyum doğrama, korkuluk, ofis bölme ve otomatik kapı rehberleri.","/blog/",blog_body))
+
+    service_names={s[0]:s[1] for s in services}
+    for b in BLOGS:
+      sections="".join(f'<section class="article-section"><h2>{esc(h)}</h2><p>{esc(p)}</p></section>' for h,p in b["sections"])
+      svc=b.get("service")
+      svc_name=service_names.get(svc,"İlgili hizmet")
+      article_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / <a href="/blog/">Blog</a> / {esc(b["title"])}</div><article class="article"><header class="page-hero"><div class="wrap"><div class="eyebrow">Deva Rehber · 21 Eylül 2026</div><h1>{esc(b["title"])}</h1><p class="lead">{esc(b["description"])}</p></div></header><div class="section"><div class="wrap article-layout"><div class="prose article-prose">{sections}<div class="article-cta"><h2>Projeniz için uygulama değerlendirmesi</h2><p>Fotoğraf, yaklaşık ölçü ve kullanım beklentinizi paylaşarak ilk değerlendirme için iletişime geçebilirsiniz.</p><div class="actions"><a class="btn primary" href="https://wa.me/905333820705">WhatsApp'tan yazın</a><a class="btn" href="/{svc}/">{esc(svc_name)}</a></div></div></div></div></div></article></main>"""
+      write_route("blog/"+b["slug"],shell(b["title"]+" | Deva Alüminyum",b["description"],"/blog/"+b["slug"]+"/",article_body,article=b))
+
     redirects=[
       ("/Hakkimizda.html","/hakkimizda/"),
       ("/Sayfa/56/hizmetlerimiz","/hizmetler/"),
@@ -232,9 +269,13 @@ def build():
       ]
     (DIST/"_redirects").write_text("\n".join(f"{a} {b} 301" for a,b in redirects)+"\n",encoding="utf-8")
 
-    urls=["/","/hizmetler/","/referanslar/","/hakkimizda/","/iletisim/"]+[f"/{s[0]}/" for s in services]
+    urls=["/","/hizmetler/","/referanslar/","/blog/","/hakkimizda/","/iletisim/"]+[f"/{s[0]}/" for s in services]+[f"/blog/{b[\"slug\"]}/" for b in BLOGS]
     sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{DOMAIN}{u}</loc></url>\n' for u in urls)+'</urlset>\n'
     (DIST/"sitemap.xml").write_text(sitemap,encoding="utf-8")
+        feed_items="".join(f'<item><title>{esc(b["title"])}</title><link>{DOMAIN}/blog/{b["slug"]}/</link><guid>{DOMAIN}/blog/{b["slug"]}/</guid><description>{esc(b["description"])}</description><pubDate>Mon, 21 Sep 2026 09:00:00 +0300</pubDate></item>' for b in BLOGS)
+    (DIST/"feed.xml").write_text('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Deva Alüminyum Blog</title><link>'+DOMAIN+'/blog/</link><description>Alüminyum ve cephe sistemleri rehberi</description>'+feed_items+'</channel></rss>',encoding="utf-8")
+    llms=["# Deva Alüminyum","","> Kayseri merkezli alüminyum ve cephe sistemleri uygulama firması.","","## Hizmetler"]+[f"- [{name}]({DOMAIN}/{slug}/): {desc}" for slug,name,desc,_ in services]+["","## Rehberler"]+[f"- [{b['title']}]({DOMAIN}/blog/{b['slug']}/): {b['description']}" for b in BLOGS]+["","## İletişim",f"- Telefon: {DISPLAY_PHONE}",f"- E-posta: {EMAIL}",f"- Adres: {ADDRESS}"]
+    (DIST/"llms.txt").write_text("\n".join(llms)+"\n",encoding="utf-8")
     (DIST/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n",encoding="utf-8")
     (DIST/"_headers").write_text("""/*
   X-Content-Type-Options: nosniff
