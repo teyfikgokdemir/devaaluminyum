@@ -8,6 +8,8 @@ DIST=ROOT/"dist"
 DOMAIN="https://devaaluminyum.com.tr"
 PHONE="+905333820705"
 DISPLAY_PHONE="0 533 382 07 05"
+EMAIL="murat.kozza@gmail.com"
+ADDRESS="Eski Sanayi Mahallesi 6025. Sokak No: 5/B Kocasinan / Kayseri"
 
 services=[
 ("aluminyum-kompozit-kaplama","Alüminyum Kompozit Kaplama","Kayseri’de bina cepheleri ve giriş alanları için alüminyum kompozit kaplama uygulamaları.",153),
@@ -57,10 +59,12 @@ def esc(s): return html.escape(s,quote=True)
 def schema(page_name, page_url, service=None):
     org={
       "@context":"https://schema.org",
-      "@type":"Organization",
+      "@type":"LocalBusiness",
       "name":"Deva Alüminyum",
       "url":DOMAIN,
       "telephone":PHONE,
+      "email":EMAIL,
+      "address":{"@type":"PostalAddress","streetAddress":"Eski Sanayi Mahallesi 6025. Sokak No: 5/B","addressLocality":"Kocasinan","addressRegion":"Kayseri","addressCountry":"TR"},
       "areaServed":{"@type":"City","name":"Kayseri"},
       "sameAs":["https://www.facebook.com/murat.peskirsoy.9"]
     }
@@ -148,7 +152,7 @@ def build():
     refs_body=f"""<main><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Referanslar</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Arşivden kurtarıldı</div><h1>Referans uygulamalarımız</h1><p class="lead">Eski Deva Alüminyum Referanslarımız sayfasından kurtarılan 23 tam boy çalışma fotoğrafı.</p></div></section><section class="section"><div class="wrap"><div class="gallery">{gallery}</div></div></section></main>"""
     write_route("referanslar",shell("Referanslar | Deva Alüminyum","Deva Alüminyum’un eski sitesinden kurtarılan gerçek uygulama ve referans fotoğrafları.","/referanslar/",refs_body))
 
-    contact_body=f"""<main><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / İletişim</div><section class="page-hero"><div class="wrap"><div class="eyebrow">İletişim</div><h1>Projenizi konuşalım.</h1></div></section><section class="section"><div class="wrap contact-box"><div class="contact-panel"><h2>Deva Alüminyum</h2><p class="lead">Kayseri</p><p><strong>Telefon</strong><br><a href="tel:{PHONE}">{DISPLAY_PHONE}</a></p><p><strong>WhatsApp</strong><br><a href="https://wa.me/905333820705">Mesaj gönder</a></p></div><div class="contact-panel"><h3>Hizmet alanları</h3><p>Kompozit cephe, alüminyum doğrama, silikon cephe, korkuluk sistemleri, bina giriş kapıları, ofis bölmeleri, fotoselli kapılar ve cam balkon.</p><p class="small">Sokak adresi, yayın öncesi güncel işletme kaydıyla son kez doğrulanacaktır.</p></div></div></section></main>"""
+    contact_body=f"""<main><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / İletişim</div><section class="page-hero"><div class="wrap"><div class="eyebrow">İletişim</div><h1>Projenizi konuşalım.</h1></div></section><section class="section"><div class="wrap contact-box"><div class="contact-panel"><h2>Deva Alüminyum</h2><p class="lead">Kayseri</p><p><strong>Telefon</strong><br><a href="tel:{PHONE}">{DISPLAY_PHONE}</a></p><p><strong>WhatsApp</strong><br><a href="https://wa.me/905333820705">Mesaj gönder</a></p><p><strong>E-posta</strong><br><a href="mailto:{EMAIL}">{EMAIL}</a></p><p><strong>Adres</strong><br>{ADDRESS}</p><p class="small">Bu iletişim bilgileri 11 Temmuz 2025 arşivinde doğrulandı; final yayından önce güncelliği tekrar teyit edilecektir.</p></div><div class="contact-panel"><h3>Hizmet alanları</h3><p>Kompozit cephe, alüminyum doğrama, silikon cephe, korkuluk sistemleri, bina giriş kapıları, ofis bölmeleri, fotoselli kapılar ve cam balkon.</p><p class="small">Sokak adresi, yayın öncesi güncel işletme kaydıyla son kez doğrulanacaktır.</p></div></div></section></main>"""
     write_route("iletisim",shell("İletişim | Deva Alüminyum","Deva Alüminyum Kayseri telefon ve WhatsApp iletişim bilgileri.","/iletisim/",contact_body))
 
     for slug,name,desc,_id in services:
