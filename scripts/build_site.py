@@ -163,14 +163,14 @@ def shell(title,desc,path,body,service=None,article=None):
 <meta property="og:url" content="{esc(canonical)}">
 <meta property="og:image" content="{DOMAIN}/assets/recovered/resimler/{hero}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/png" href="/assets/recovered/Tema/logo.png">
+<link rel="icon" type="image/svg+xml" href="/assets/deva-mark.svg">
 <link rel="stylesheet" href="/assets/styles.css">
 {schema(title,canonical,service,article)}
 </head>
 <body>
 <a class="skip-link" href="#main-content">İçeriğe geç</a>
 <header class="header"><div class="wrap nav">
-<a class="brand" href="/"><span class="brand-mark"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum logo"></span><span class="brand-copy"><strong>DEVA ALÜMİNYUM</strong><small>KAYSERİ · CEPHE SİSTEMLERİ</small></span></a>
+<a class="brand brand-new" href="/"><img src="/assets/deva-logo.svg" alt="Deva Alüminyum"></a>
 <nav class="menu"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/blog/">Blog</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a></nav>
 <details class="mobile-nav"><summary>Menü</summary><div class="mobile-nav-panel"><a href="/hizmetler/">Hizmetler</a><a href="/referanslar/">Referanslar</a><a href="/blog/">Blog</a><a href="/hakkimizda/">Hakkımızda</a><a href="/iletisim/">İletişim</a><a href="https://wa.me/905333820705">WhatsApp</a></div></details>
 <a class="cta" href="https://wa.me/905333820705">WhatsApp</a>
@@ -178,12 +178,12 @@ def shell(title,desc,path,body,service=None,article=None):
 {body}
 <footer class="footer footer-v2">
   <div class="footer-topline"></div>
+  <div class="footer-marquee-v2" aria-hidden="true">
+    <div>DEVA ALÜMİNYUM · KOMPOZİT CEPHE · ALÜMİNYUM DOĞRAMA · CAM BALKON · KORKULUK SİSTEMLERİ · OTOMATİK KAPI · DEVA ALÜMİNYUM · KOMPOZİT CEPHE · ALÜMİNYUM DOĞRAMA · CAM BALKON · KORKULUK SİSTEMLERİ · OTOMATİK KAPI ·</div>
+  </div>
   <div class="wrap footer-v2-main">
     <div class="footer-v2-brand">
-      <a class="footer-v2-logo" href="/">
-        <span class="footer-logo-box"><img src="/assets/recovered/Tema/logo.png" alt="Deva Alüminyum"></span>
-        <span><strong>DEVA ALÜMİNYUM</strong><small>KAYSERİ · CEPHE SİSTEMLERİ</small></span>
-      </a>
+      <a class="footer-v2-logo footer-v2-logo-new" href="/"><img src="/assets/deva-logo.svg" alt="Deva Alüminyum"></a>
       <h2>Yapının çizgisini alüminyumla tamamlıyoruz.</h2>
       <p>Kompozit cephe, alüminyum doğrama, korkuluk, cam balkon, ofis bölme ve otomatik kapı uygulamalarında çözüm ortağınız.</p>
       <div class="footer-v2-contact">
