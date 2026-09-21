@@ -92,7 +92,7 @@ index_hits=[]
 # Phase 1: probe up to two crawl indexes per year to locate the site's active years.
 year_groups={}
 for item in idx:
-    m=re.search(r"CC-MAIN-(\\d{4})-", item.get("id",""))
+    m=re.search(r"CC-MAIN-(\d{4})-", item.get("id",""))
     if not m: continue
     year_groups.setdefault(m.group(1),[]).append(item)
 
@@ -111,7 +111,7 @@ for item in probe:
         index_hits.append({"index":item.get("id",""),"count":len(rows),"phase":"probe"})
         print("PROBE",item.get("id"),len(rows))
         if rows:
-            m=re.search(r"CC-MAIN-(\\d{4})-",item.get("id",""))
+            m=re.search(r"CC-MAIN-(\d{4})-",item.get("id",""))
             if m: hit_years.add(m.group(1))
         for x in rows:
             key=(x.get("url"),x.get("digest"))
