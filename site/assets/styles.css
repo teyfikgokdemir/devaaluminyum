@@ -640,3 +640,35 @@ body:has(.cookie-banner) .back-to-top{
 .service-top-clean{justify-content:flex-end}
 .service-top-clean>span:first-child{display:none}
 .service-card .service-top{margin-bottom:28px}
+
+/* About page */
+.about-layout{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:72px;
+  align-items:start;
+}
+.about-intro h2{font-size:clamp(34px,4.2vw,56px);max-width:520px}
+.about-copy{max-width:760px}
+.about-copy p{font-size:18px;line-height:1.85;color:#c8cfd1;margin:0 0 24px}
+.about-value-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.about-value-card{
+  padding:36px;
+  min-height:340px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:linear-gradient(145deg,rgba(20,25,28,.98),rgba(14,18,20,.98));
+}
+.about-value-card h2{font-size:clamp(28px,3vw,40px);margin-top:14px}
+.about-value-card p{color:var(--muted);font-size:16px;line-height:1.8}
+.about-service-list{display:flex;flex-wrap:wrap;gap:10px}
+.about-service-list span{
+  padding:10px 14px;border:1px solid var(--line);border-radius:999px;
+  background:rgba(255,255,255,.025);color:#d7dcde;font-size:13px
+}
+@media(max-width:820px){
+  .about-layout{grid-template-columns:1fr;gap:28px}
+  .about-value-grid{grid-template-columns:1fr}
+  .about-value-card{min-height:0;padding:28px}
+  .about-copy p{font-size:16px}
+}
