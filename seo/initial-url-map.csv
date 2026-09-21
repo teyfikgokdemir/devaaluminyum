@@ -1,0 +1,15 @@
+priority,new_path,topic,status
+P0,/,Deva Alüminyum Kayseri ana sayfa,ready
+P0,/iletisim,İletişim ve Kayseri işletme bilgileri,ready
+P0,/hakkimizda,Deva Alüminyum kurumsal geçmişi,pending_archive
+P0,/hizmetler,Genel hizmetler,ready
+P0,/kompozit-cephe-sistemleri,Kompozit cephe ve kaplama,ready
+P0,/aluminyum-dograma,Alüminyum doğrama,ready
+P0,/cam-balkon-sistemleri,Cam balkon sistemleri,ready
+P0,/aluminyum-korkuluk-sistemleri,Alüminyum balkon merdiven Fransız balkon korkulukları,ready
+P0,/silikon-cephe-sistemleri,Silikon cephe kaplama,ready
+P0,/fotoselli-otomatik-kapi,Fotoselli otomatik kapı sistemleri,ready
+P0,/aluminyum-ofis-bolme,Alüminyum ofis bölme sistemleri,ready
+P1,/bina-giris-kapilari,Bina giriş kapısı imalatı,ready
+P1,/projeler,Eski proje ve referans galerisi,pending_archive
+P1,/referanslar,Doğrulanmış referanslar,pending_archive
