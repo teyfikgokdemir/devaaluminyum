@@ -1,12 +1,11 @@
-name: Recover web archives
+name: Recover exact Wayback snapshots
 
 on:
   push:
     branches: [main]
     paths:
       - ".github/workflows/archive-recovery.yml"
-      - "scripts/archive_recovery.py"
-      - "scripts/commoncrawl_recovery.py"
+      - "scripts/exact_wayback_recovery.py"
   workflow_dispatch:
 
 permissions:
@@ -15,15 +14,15 @@ permissions:
 jobs:
   recover:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests warcio
-      - name: Recover Common Crawl archive
-        run: python scripts/commoncrawl_recovery.py
+      - run: pip install requests beautifulsoup4
+      - name: Recover exact 2025 Wayback snapshots
+        run: python scripts/exact_wayback_recovery.py
       - name: Commit recovered archive
         run: |
           git config user.name "deva-recovery-bot"
@@ -33,5 +32,5 @@ jobs:
             echo "No recovered changes"
             exit 0
           fi
-          git commit -m "archive: recover devaaluminyum.com web history"
+          git commit -m "archive: recover exact Deva Alüminyum 2025 snapshots"
           git push
