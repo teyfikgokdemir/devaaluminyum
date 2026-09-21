@@ -46,12 +46,25 @@ for p in html_files:
     desc=soup.find("meta",attrs={"name":"description"})
     canonical=soup.find("link",attrs={"rel":"canonical"})
     h1=soup.find_all("h1")
-    schema=soup.find("script",attrs={"type":"application/ld+json"})
+    schemas=soup.find_all("script",attrs={"type":"application/ld+json"})
+    og_title=soup.find("meta",attrs={"property":"og:title"})
+    og_desc=soup.find("meta",attrs={"property":"og:description"})
+    og_img=soup.find("meta",attrs={"property":"og:image"})
+    twitter=soup.find("meta",attrs={"name":"twitter:card"})
+    favicon=soup.find("link",attrs={"rel":"icon"})
     if not title: issues.append([rel,"missing_title"])
     if not desc or not desc.get("content","").strip(): issues.append([rel,"missing_description"])
     if not canonical or not canonical.get("href","").startswith("https://devaaluminyum.com.tr"): issues.append([rel,"bad_canonical"])
     if len(h1)!=1: issues.append([rel,f"h1_count_{len(h1)}"])
-    if not schema: issues.append([rel,"missing_schema"])
+    if not schemas: issues.append([rel,"missing_schema"])
+    for idx,schema in enumerate(schemas):
+        try: json.loads(schema.string or schema.get_text())
+        except Exception: issues.append([rel,f"invalid_schema_{idx}"])
+    if not og_title or not og_title.get("content","").strip(): issues.append([rel,"missing_og_title"])
+    if not og_desc or not og_desc.get("content","").strip(): issues.append([rel,"missing_og_description"])
+    if not og_img or not og_img.get("content","").startswith("https://devaaluminyum.com.tr/"): issues.append([rel,"bad_og_image"])
+    if not twitter or twitter.get("content")!="summary_large_image": issues.append([rel,"bad_twitter_card"])
+    if not favicon or favicon.get("href")!="/assets/deva-mark.svg": issues.append([rel,"bad_favicon"])
     # Internal absolute links
     for a in soup.find_all("a",href=True):
         href=a["href"]
@@ -67,8 +80,13 @@ for p in html_files:
                 issues.append([rel,"broken_link:"+href])
     pages.append({"path":rel,"title":title,"h1_count":len(h1),"canonical":canonical.get("href","") if canonical else ""})
 
-# sitemap and redirects
+# sitemap, robots, redirects and critical brand assets
 sitemap=(DIST/"sitemap.xml").read_text(encoding="utf-8") if (DIST/"sitemap.xml").exists() else ""
+robots=(DIST/"robots.txt").read_text(encoding="utf-8") if (DIST/"robots.txt").exists() else ""
+if "User-agent: *" not in robots or "Sitemap: https://devaaluminyum.com.tr/sitemap.xml" not in robots:
+    issues.append(["robots.txt","invalid_or_missing_directives"])
+for asset in ["assets/deva-logo.svg","assets/deva-mark.svg","assets/styles.css","assets/site.js"]:
+    if not (DIST/asset).exists(): issues.append(["assets","missing:"+asset])
 for pg in pages:
     if pg["path"]=="/": expected="https://devaaluminyum.com.tr/"
     else: expected="https://devaaluminyum.com.tr"+pg["path"]
@@ -98,12 +116,18 @@ grades={}
 for r in img_rows: grades[r[-1]]=grades.get(r[-1],0)+1
 report={
     "html_pages":len(html_files),
+    "expected_min_pages":26,
     "issues":len(issues),
     "issue_list":[{"page":a,"issue":b} for a,b in issues],
     "images":len(img_rows),
     "image_grades":grades,
     "preview_bytes":sum(p.stat().st_size for p in DIST.rglob("*") if p.is_file()),
 }
+if len(html_files) < 26:
+    issues.append(["site",f"too_few_html_pages:{len(html_files)}"])
+
+report["issues"]=len(issues)
+report["issue_list"]=[{"page":a,"issue":b} for a,b in issues]
 (QA/"site-audit.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
 print(json.dumps(report,ensure_ascii=False))
 if issues:
