@@ -636,3 +636,7 @@ body:has(.cookie-banner) .back-to-top{
   .contact-service-grid a{min-height:52px;padding:12px 14px}
   .contact-services-cta{align-items:flex-start;flex-direction:column}
 }
+
+.service-top-clean{justify-content:flex-end}
+.service-top-clean>span:first-child{display:none}
+.service-card .service-top{margin-bottom:28px}
