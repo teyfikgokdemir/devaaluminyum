@@ -262,7 +262,20 @@ def build():
     refs_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / Referanslar</div><section class="page-hero"><div class="wrap"><div class="eyebrow">Seçili çalışmalar</div><h1>Referans uygulamalarımız</h1><p class="lead">Deva Alüminyum’un farklı uygulama alanlarından seçili proje ve uygulama görselleri.</p></div></section><section class="section"><div class="wrap"><div class="gallery">{gallery}</div></div></section></main>"""
     write_route("referanslar",shell("Referanslar | Deva Alüminyum","Deva Alüminyum’un seçili uygulama ve referans projeleri.","/referanslar/",refs_body))
 
-    contact_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / İletişim</div><section class="page-hero"><div class="wrap"><div class="eyebrow">İletişim</div><h1>Projenizi konuşalım.</h1></div></section><section class="section"><div class="wrap contact-box"><div class="contact-panel"><h2>Deva Alüminyum</h2><p class="lead">Kayseri</p><p><strong>Telefon</strong><br><a href="tel:{PHONE}">{DISPLAY_PHONE}</a></p><p><strong>WhatsApp</strong><br><a href="https://wa.me/905333820705">Mesaj gönder</a></p><p><strong>E-posta</strong><br><a href="mailto:{EMAIL}">{EMAIL}</a></p><p><strong>Adres</strong><br>{ADDRESS}</p><p class="small">Telefon, e-posta ve adres bilgilerimiz üzerinden doğrudan iletişime geçebilirsiniz.</p></div><div class="contact-panel"><h3>Hizmet alanları</h3><p>Kompozit cephe, alüminyum doğrama, silikon cephe, korkuluk sistemleri, bina giriş kapıları, ofis bölmeleri, fotoselli kapılar ve cam balkon.</p><p class="small">Projeniz için fotoğraf, ölçü ve uygulama detaylarını paylaşarak hızlıca bilgi alabilirsiniz.</p></div></div></section></main>"""
+    contact_body=f"""<main id="main-content"><div class="wrap breadcrumbs"><a href="/">Anasayfa</a> / İletişim</div><section class="page-hero"><div class="wrap"><div class="eyebrow">İletişim</div><h1>Projenizi konuşalım.</h1></div></section><section class="section"><div class="wrap contact-box"><div class="contact-panel"><h2>Deva Alüminyum</h2><p class="lead">Kayseri</p><p><strong>Telefon</strong><br><a href="tel:{PHONE}">{DISPLAY_PHONE}</a></p><p><strong>WhatsApp</strong><br><a href="https://wa.me/905333820705">Mesaj gönder</a></p><p><strong>E-posta</strong><br><a href="mailto:{EMAIL}">{EMAIL}</a></p><p><strong>Adres</strong><br>{ADDRESS}</p><p class="small">Telefon, e-posta ve adres bilgilerimiz üzerinden doğrudan iletişime geçebilirsiniz.</p></div><div class="contact-panel contact-services"><div class="contact-services-head"><div><div class="eyebrow">Hizmetler</div><h3>Uygulama alanlarımız</h3></div><p>Yapınıza uygun alüminyum ve cephe çözümlerini tek noktadan planlıyoruz.</p></div><div class="contact-service-grid">
+<a href="/aluminyum-kompozit-kaplama/"><span>Kompozit cephe kaplama</span><b>↗</b></a>
+<a href="/aluminyum-dograma/"><span>Alüminyum doğrama</span><b>↗</b></a>
+<a href="/silikon-cephe-kaplama/"><span>Silikon cephe</span><b>↗</b></a>
+<a href="/cam-balkon-sistemleri/"><span>Cam balkon</span><b>↗</b></a>
+<a href="/balkon-korkuluklari/"><span>Balkon korkulukları</span><b>↗</b></a>
+<a href="/fransiz-balkon-korkuluklari/"><span>Fransız balkon</span><b>↗</b></a>
+<a href="/merdiven-korkuluklari/"><span>Merdiven korkulukları</span><b>↗</b></a>
+<a href="/bina-giris-kapilari/"><span>Bina giriş kapıları</span><b>↗</b></a>
+<a href="/aluminyum-ofis-bolme/"><span>Ofis bölme sistemleri</span><b>↗</b></a>
+<a href="/fotoselli-otomatik-kapi/"><span>Fotoselli otomatik kapı</span><b>↗</b></a>
+<a href="/bina-giris-kompozit-kaplama/"><span>Bina giriş kaplama</span><b>↗</b></a>
+<a href="/fabrika-yonetim-binasi-kompozit-kaplama/"><span>Fabrika cephe uygulamaları</span><b>↗</b></a>
+</div><div class="contact-services-cta"><span>Projeniz için fotoğraf ve yaklaşık ölçü paylaşabilirsiniz.</span><a class="btn primary" href="https://wa.me/905333820705">WhatsApp</a></div></div></div></section></main>"""
     write_route("iletisim",shell("İletişim | Deva Alüminyum","Deva Alüminyum Kayseri telefon ve WhatsApp iletişim bilgileri.","/iletisim/",contact_body))
 
     for slug,name,desc,_id in services:
