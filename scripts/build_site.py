@@ -79,8 +79,27 @@ def schema(page_name, page_url, service=None):
     if page_url==DOMAIN+"/":
       data.append({
         "@context":"https://schema.org",
+        "@type":"WebSite",
+        "name":"Deva Alüminyum",
+        "url":DOMAIN,
+        "inLanguage":"tr-TR"
+      })
+      data.append({
+        "@context":"https://schema.org",
         "@type":"FAQPage",
         "mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in FAQ_ITEMS]
+      })
+    else:
+      crumbs=[{"@type":"ListItem","position":1,"name":"Anasayfa","item":DOMAIN+"/"}]
+      if service:
+        crumbs.append({"@type":"ListItem","position":2,"name":"Hizmetler","item":DOMAIN+"/hizmetler/"})
+        crumbs.append({"@type":"ListItem","position":3,"name":service,"item":page_url})
+      else:
+        crumbs.append({"@type":"ListItem","position":2,"name":page_name.split(" | ")[0],"item":page_url})
+      data.append({
+        "@context":"https://schema.org",
+        "@type":"BreadcrumbList",
+        "itemListElement":crumbs
       })
     if service:
       data.append({
