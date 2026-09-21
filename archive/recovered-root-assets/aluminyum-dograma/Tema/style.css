@@ -1,0 +1,397 @@
+@charset "utf-8";
+/* CSS Document */
+body { margin:0px; padding:0px; background:#000; overflow-y:scroll;  }
+.body     { width:100%; height:100%; position:fixed; }
+html,h2,h1,h3,h4,p { margin:0px; padding:0px; }
+
+
+/*
+##########################################################################################
+###################################### BURAYA DİKKAT #####################################
+######################################### DİKKAT #########################################
+########################## DİKKAT EDİN BENİ HASTA ETMEYİN :D #############################
+
+Alttaki uzunluklar kucuk ve buyuk resimlerin kesilme boyutunu belirtiyor. 
+GALERİ SAYFASINDAKİ KÜÇÜK RESMİN KESİLME BOYUNDAN TUT, SLİDER RESMİNİN BOYUTUNA KADAR
+
+*/
+
+/* galeri1 yazısını sakın değiştirmeyin,  ve uzunluk ve yukseklik yazarken PX yazısını koymamazlık yapmayın */
+.galeri1 { padding:3px; width:150px; height:150px; border:1px solid #ccc; margin:3px; background:#fff; }
+
+/* slider_w yazısını sakın değiştirmeyin,  ve uzunluk ve yukseklik yazarken PX yazısını koymamazlık yapmayın */
+.slider_w { width:100%; height:100%;   margin:auto; padding-top:0px; overflow:hidden; position: realtive; }
+.slider_w img{ width:100%; height:100%;   }
+
+
+
+
+
+.formlar1 { position:fixed; bottom:0px; left:50%; margin-left:-180px; z-index:600; }
+.form1    { padding:7px 15px 7px 40px; background:#FF3366; font-family:font1; font-size:18px; color:#fff; float:left; position:relative;
+		transition:All 0.3000s ease; 
+-webkit-transition:All 0.3000s ease;
+   -moz-transition:All 0.3000s ease; 
+	 -o-transition:All 0.3000s ease; 
+ }
+.form2    { padding:7px 15px 7px 40px; background:#2173c0; font-family:font1; font-size:18px; color:#fff; float:left; position:relative;
+		transition:All 0.3000s ease; 
+-webkit-transition:All 0.3000s ease;
+   -moz-transition:All 0.3000s ease; 
+	 -o-transition:All 0.3000s ease; 
+ } 
+.form3    { width:36px; height:36px; background:#ffc602; font-family:font1; font-size:18px; color:#fff; float:left; position:relative;
+		transition:All 0.3000s ease; 
+-webkit-transition:All 0.3000s ease;
+   -moz-transition:All 0.3000s ease; 
+	 -o-transition:All 0.3000s ease; 
+ }  
+ 
+ 
+.formhover:hover img { 
+
+        transform: rotate(360deg) ;
+-webkit-transform: rotate(360deg) ;
+   -moz-transform: rotate(360deg) ;
+     -o-transform: rotate(360deg) ;
+    -ms-transform: rotate(360deg) ;
+
+ }
+.formhover img { position:absolute; left:5px; top:7px;
+
+		transition:All 0.3000s ease; 
+-webkit-transition:All 0.3000s ease;
+   -moz-transition:All 0.3000s ease; 
+	 -o-transition:All 0.3000s ease; 
+ }
+ 
+.formhover:hover { background:#000000; cursor:pointer; } 
+
+
+
+.logo { position:absolute; z-index:300; top:10px; left:-20px; margin-left:-20px; }
+
+
+.yanmenu {
+padding:7px 15px; margin:0px 0px 4px 0px; color:#fff; background:#000;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+}
+.yanmenu:hover { color:#FFFFFF; background:#ccc; }
+ 
+
+
+ul.menu { position:fixed;   left:0px; top:200px;   z-index:200;  margin:0px; padding:0px; list-style:none; background:#000000; 
+
+ 
+
+
+ }
+ul.menu li {  font-family:font2;   }
+ul.menu li .li_menu { padding:15px 40px; margin:0px;  color:#fff;  
+
+}
+ul.menu li .li_menu:hover { background:#fff;
+
+
+color: #000
+}
+  
+  
+  
+  
+  
+ul.menu li:nth-child(99) { background:#006699; }
+ 
+.numara { position:fixed; right:10px; bottom:5px; z-index:300; font-family:font1; color:#FFFFFF;text-shadow: 1px 1px 0px rgba(0, 0, 0, 1); font-size:24px; }
+.numara img { margin:-3px 2px -6px 2px; cursor:pointer; 
+
+		transition:All 0.2000s ease; 
+-webkit-transition:All 0.2000s ease;
+   -moz-transition:All 0.2000s ease; 
+	 -o-transition:All 0.2000s ease; 
+	 
+        transform: rotate(0deg) ;
+-webkit-transform: rotate(0deg) ;
+   -moz-transform: rotate(0deg) ;
+     -o-transform: rotate(0deg) ;
+    -ms-transform: rotate(0deg) ;
+}
+.numara img:hover {
+
+        transform: rotate(360deg) ;
+-webkit-transform: rotate(360deg) ;
+   -moz-transform: rotate(360deg) ;
+     -o-transform: rotate(360deg) ;
+    -ms-transform: rotate(360deg) ;
+
+ }
+
+
+
+.sosyalmedya { position:absolute; top:30%; right:10px; z-index:300; width:30px;   }
+.sosyalmedya img { cursor:pointer; margin:2px; 
+		transition:All 0.2000s ease; 
+-webkit-transition:All 0.2000s ease;
+   -moz-transition:All 0.2000s ease; 
+	 -o-transition:All 0.2000s ease; 
+
+}
+.sosyalmedya img:hover {
+
+        transform: rotate(360deg) ;
+-webkit-transform: rotate(360deg) ;
+   -moz-transform: rotate(360deg) ;
+     -o-transform: rotate(360deg) ;
+    -ms-transform: rotate(360deg) ;
+
+}
+
+
+
+.b1 { position:absolute; top:410px; left:-80px }
+.b1:hover { cursor:pointer; }
+.b2 { position:absolute; top:390px; left:-10px }
+.b2:hover { cursor:pointer; }
+
+.ackapa { position:absolute; z-index:350; top:580px; left:450px; cursor:pointer; }
+
+
+.langue { position:fixed; left:0px; z-index:400; top:150px; }
+.langue .dil { width:30px; height:24px; font-family:font2; font-size:18px; background:#000000; color:#FFFFFF; margin:1px; text-align:center; padding:7px 0px 0px 0px; }
+.langue .dil:hover  { background:#e41111 }
+.langue .dilac      { background:#e41111 }
+
+
+.hdon:hover { 
+
+        transform: rotate(360deg) ;
+-webkit-transform: rotate(360deg) ;
+   -moz-transform: rotate(360deg) ;
+     -o-transform: rotate(360deg) ;
+    -ms-transform: rotate(360deg) ;
+
+}
+
+.hzom:hover { 
+
+		transform: scale(1.100);
+-webkit-transform: scale(1.100);
+   -moz-transform: scale(1.100);
+     -o-transform: scale(1.100);
+    -ms-transform: scale(1.100);
+
+}
+
+.rad8 {
+
+-webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+        border-radius: 8px;
+
+}
+
+
+
+
+.menu_sol { 
+padding:0px 0px 0px 15px; background: url(menu_sol.png); margin:-5px 0px -5px 0px; height:57px; font-family:font1; font-size:22px; line-height:53px; color:#FFFFFF; 
+
+		transition:All 0.2000s ease; 
+-webkit-transition:All 0.2000s ease;
+   -moz-transition:All 0.2000s ease; 
+	 -o-transition:All 0.2000s ease; 
+
+
+}
+
+.menu_sol:hover { 
+
+ margin:-5px 0px -5px 8px; 
+
+}
+
+/*
+.mslider_bg { background:url(bg_trans.png); width: 100%; text-align:center; }
+*/
+
+
+.footer1 { width:80%; padding-right: 10%; padding-left: 10%;    margin:10px auto 0px ; font-family:font4; display:none; text-align:right; padding-top:15px; padding-bottom:10px; font-size:12px;  }
+.index1 { width:600px; min-height:85px; float:right;  margin-top:10px; padding:25px 0px 0px 30px; font-family:font4; font-size:13px;  }
+.index1 h2 { font-family:font2; font-size:20px; margin:0px; padding:0px; }
+.index1 p { line-height:16px }
+.footer1 {  position: fixed; top: 0px; z-index:999999; right: 0px; display: block; display:inline-block; background:#fff; margin: 0px; padding: 3px; width:400px; text-align:center; }
+
+#GP1       { width:1000px; padding:0px 0px 0px 0px;  height:200px; position:relative;   } 
+.GP1       { float:left; left: -5000px; position:relative; visibility:hidden;	}
+.GP1 ul    { margin:0px; padding:0px; list-style:none; width:900px; }
+.GP1 ul li { padding:0 0px; margin:0px; width:190px; height:190px; margin:5px; position:relative; }
+.GP1 ul li img { width:190px; height:190px; }
+.GP1 ul li:hover  { opacity: 0.6;     filter: alpha(opacity=60); /* For IE8 and earlier */}
+.GP1 ul li .imask { width:190px; height:190px; background:url(mask2.png); position:absolute; left:0px; top:0px; z-index:80;  }
+
+img.prev1 { cursor:pointer; position:absolute; top:80px; left:-30px; width:30px; height:30px; }
+img.next1 { cursor:pointer; position:absolute; top:80px; right:-30px; width:30px; height:30px;}
+ 
+
+
+p.ibilgi { border:1px solid #ccc; padding:7px 15px; margin:2px; box-shadow:inset 5px 0px 32px #e0dfdf; }
+
+.nnam { float:left; padding:8px 7px 0px 10px; height:24px;  width:50px; font-size:12px; margin-top:4px; text-align:left; }
+.SSin { float:left; padding:0px 10px 0px 10px; height:30px; border:1px solid #ccc; outline:none; margin:4px 0px 0px 0px;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; box-shadow:inset 5px 0px 32px #e0dfdf; 
+}
+.SSte { float:left; padding:10px 10px 10px 10px; font-family:Arial, Helvetica, sans-serif; font-size:12px; border:1px solid #ccc; outline:none; margin:4px 0px 0px 0px;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;  box-shadow:inset 5px 0px 32px #e0dfdf;
+}
+.SSse { float:left; padding:0px 10px 0px 10px; height:30px; border:1px solid #ccc; outline:none; margin:4px 0px 0px 0px;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;  box-shadow:inset 5px 0px 32px #e0dfdf;
+}
+.hatavar  { padding:20px; background:#FF3333; color:#FFFFFF; font-size:12px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; cursor:pointer; display:none }
+.okmsg    { padding:20px; background:#3eaf20; color:#FFFFFF; font-size:12px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; cursor:pointer; display:none }
+.hatavar2 { padding:20px; background:#FF3333; color:#FFFFFF; font-size:12px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; cursor:pointer; display:none }
+
+
+.s_bilgiler{ position: absolute; right: 50px; background:#fff; bottom:5px; border-radius: 2px; padding: 10px; z-index:99; font-size: 12px; font-family: tahoma; }
+.s_bilgiler b{ font-weight: bold; color:#666; }
+
+.s_bilgiler2{ position: absolute; left: 50px; background:#fff; bottom:5px; border-radius: 2px; padding: 10px; z-index:99; font-size: 12px; font-family: tahoma; }
+.s_bilgiler2 b{ font-weight: bold; color:#666; }
+
+.anailetisim { width:330px;  margin-left:10px;  margin-top:10px;   float:left; padding:15px;  }
+.anailetisim h2 { font-family:font1; font-size:19px; color:#000000; margin:0px; padding:4px; }
+.anailetisim p  { font-family:font4; font-size:14px; color:#333; margin:3px; padding:4px; }
+
+.haritas { float:left; padding:10px; background:#FFFFFF; }
+.anahorde { }
+
+
+.mslider_bg { }
+
+
+.izin1 { width:1000px; margin-left:200px;   position:relative; z-index:100; position:relative; }
+.izin2 { min-height:600px; border-radius:6px; font-family:font4; font-size:14px; color:#333; padding:50px 20px 50px 20px; line-height:20px;  
+position:relative; background:#FFFFFF   }
+.izin3 { width:465px; display:none; height:50px;  background:#eee; border-radius: 2px ; position:absolute; top:-70px; left:300px; text-align:center; font-family:font2; font-size:26px; color:#404040; line-height:50px; text-align:center; }
+.izin4 { position:relative; z-index:200; }
+
+.sol-a { width:200px; float:left; }
+.sol-b { width:700px; float:left; margin-left:30px; }
+
+
+
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0; margin: auto;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {margin: auto;  border: 0px solid #fff; position: relative;  }
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+
+.carousel li {margin-right: 5px}
+
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a {width: 49px; height: 49px; margin:0px 0 0; display: block; background: url(images/bg_direction_nav.png) no-repeat 0 0; position: absolute;  z-index: 10; cursor: pointer; text-indent: -9999px;   -webkit-transition: all .3s ease;}
+
+.flex-direction-nav .flex-next { right:15px;   bottom:230px; background:url(ileri.png) }
+.flex-direction-nav .flex-prev { left:15px;   bottom:230px; background:url(geri.png) }
+
+ 
+.flex-direction-nav .flex-disabled {  cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom:0px; text-align: center; z-index:50; display:none}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {  }
+  .flex-direction-nav .flex-next {  }
+}
+
+.mask {  width:1100px; height:500px;   position:absolute; z-index:10; top:0px; background:url(mask.png) no-repeat;}
+
+
+
+
+.header { width:1000px; margin:0 auto; height: 80px; position:relative; }
+.logo   { position:absolute; left:0px; z-index:800; top:0px; }
+.numara { position:absolute; right:-40px; top:70px; z-index:800;  }
+
+.destek{width:210px; height:71px; position:absolute; right:-40px; top:70px; z-index:800; background:url(destek.png); text-align:center; line-height:90px; font-family:font1; color:#FFFFFF;text-shadow: 1px 1px 0px rgba(0, 0, 0, 1); font-size:24px;}
+
+.gonderr { padding: 5px 15px 5px 15px; cursor:pointer;  }
+.maps_baslik { display: block; font-weight: bold; font-size: 15px; border-bottom:1px solid #ccc;  }
+
+
+
+.sitil-1 { width:45%; margin:5px; height:140px; background:#fff; float:left; padding:10px; overflow:hidden; }
+.sitil-1 img { float:left; margin-right:10px; width:140px; height:140px; }
+.sitil-1 h2 { margin:0px; padding:0px; font-family:font1; font-size:20px; color:#333333 }
+.sitil-1 p  { margin:0px; padding:0px; font-family:font4; font-size:14px; color:#666; line-height:19px }
+.sitil-1:hover { background:#ccc }
+
+
+.sitil-urun { width:155px; margin:3px; height:205px; background:#fff; float:left; padding:5px; overflow:hidden; }
+.sitil-urun img { width:155px; height:120px; }
+.sitil-urun h2 { margin:3px; padding:0px; font-family:arial; font-size:13px; font-weight: bold; color:#153e67 }
+.sitil-urun span { margin:3px; padding:0px; font-family:arial; font-size:12px; font-weight: bold; color:#000 }
+.sitil-urun span b { margin:3px; padding:0px; font-family:arial; font-size:12px; font-weight: bold; color:#153e67 }
+.sitil-urun p  { margin:0px; padding:0px; font-family:tahoma; font-size:11px; color:#666; line-height:19px }
+.sitil-urun:hover { background:#ccc }
+
+.hide { display:none; }
+
+.fulekran { width:100%; height:100%; position:fixed; bottom:0px; left:0px; overflow:hidden; }
+.fulekran img { width:100%; height:100%; }
+.fulekran .slides { position:relative;  }
+.flex-prev { top:50%; }
+.flex-next { top:50%; }
+.fulekran .mask { background:url(mask-p.png); width:100%; height:100%; }
+.logo { position:fixed; left:0px; top:50px; margin:0px; }
