@@ -247,7 +247,7 @@ def shell(title,desc,path,body,service=None,article=None):
 
   <div class="wrap footer-v2-bottom">
     <span>© 2026 Deva Alüminyum</span>
-    <span class="footer-v2-credit"><a href="https://olivon.com.tr/" target="_blank" rel="noopener">Olivon Ajans</a> tarafından hazırlanmıştır.</span>
+    <span class="footer-v2-credit"><img src="/assets/olivon-mark.svg" alt="" aria-hidden="true"><a href="https://olivon.com.tr/" target="_blank" rel="noopener">Olivon Ajans</a> tarafından hazırlanmıştır.</span>
     <span>Kayseri · Kocasinan</span>
   </div>
 </footer>
