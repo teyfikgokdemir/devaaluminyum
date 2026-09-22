@@ -247,7 +247,7 @@ def shell(title,desc,path,body,service=None,article=None):
 
   <div class="wrap footer-v2-bottom">
     <span>© 2026 Deva Alüminyum</span>
-    <span class="footer-v2-credit"><img src="/assets/olivon-mark.svg" alt="" aria-hidden="true"><a href="https://olivon.com.tr/" target="_blank" rel="noopener">Olivon Ajans</a> tarafından hazırlanmıştır.</span>
+    <span class="footer-v2-credit"><svg class="olivon-credit-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><defs><radialGradient id="olivonOrb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22 18) rotate(48) scale(52)"><stop offset="0" stop-color="#FFD1B8"/><stop offset=".16" stop-color="#FF8A70"/><stop offset=".48" stop-color="#D95343"/><stop offset=".78" stop-color="#7A2B25"/><stop offset="1" stop-color="#211314"/></radialGradient><linearGradient id="olivonSheen" x1="12" y1="10" x2="52" y2="56" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity=".18"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient></defs><circle cx="32" cy="32" r="24" fill="url(#olivonOrb)"/><circle cx="32" cy="32" r="24" fill="url(#olivonSheen)"/></svg><a href="https://olivon.com.tr/" target="_blank" rel="noopener">Olivon Ajans</a> tarafından hazırlanmıştır.</span>
     <span>Kayseri · Kocasinan</span>
   </div>
 </footer>
