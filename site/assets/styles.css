@@ -2329,3 +2329,33 @@ body{
     content:none !important;
   }
 }
+
+.footer-v2-credit{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+}
+.footer-v2-credit img{
+  width:15px;
+  height:15px;
+  flex:0 0 15px;
+  opacity:.68;
+  filter:saturate(.82) brightness(.9);
+  transition:opacity .2s ease,filter .2s ease,transform .2s ease;
+}
+.footer-v2-credit:hover img{
+  opacity:.9;
+  filter:saturate(1) brightness(1);
+  transform:translateY(-1px);
+}
+@media(max-width:820px){
+  .footer-v2-credit{
+    display:flex !important;
+  }
+  .footer-v2-credit img{
+    width:14px;
+    height:14px;
+    flex-basis:14px;
+  }
+}
